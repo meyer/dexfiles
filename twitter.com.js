@@ -1,0 +1,1 @@
+// $('.module.wtf-module,.module.trends,.tweet.promoted-tweet').hide();
