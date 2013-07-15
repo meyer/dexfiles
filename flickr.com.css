@@ -5,6 +5,7 @@ https://gist.github.com/miekd/5950455
 
 #eyebrow { display: none !important; }
 
+/* TODO: Fix padding above user profiles. */
 body.with-eyebrow {
 	padding-top: 49px !important; background: none !important;
 }
