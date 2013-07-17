@@ -1,0 +1,37 @@
+.dribbble-over{
+/*	display: none!important;*/
+}
+
+ol.dribbbles li div.dribbble-img img {
+	width: 100%;
+	max-height: 300px;
+}
+
+body#shots ol.dribbbles li.group:nth-child(4n),
+body#shots ol.dribbbles li.group {
+	width: 31.27147766323%;
+	max-width: 400px;
+	margin: 0 3.092783505155% 0 0;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+body#shots ol.dribbbles li.group:nth-child(3n){
+	margin-right: 0;
+}
+
+body#shots #content {
+  position: relative;
+  max-width: 1260px;
+}
+
+body#shots #main.main-full,
+body#shots #main.full-800 {
+  float: none;
+  width: auto;
+  max-width: 100%;
+}
+
+body#shots #header-inner{
+	max-width: 1260px;
+}

@@ -1,8 +1,8 @@
 // TODO: Make this sexier.
 
 $(document).ready(function(){
-	// Auto-load 2x shot
-	$('ol.group div[data-picture]').removeAttr('data-picture').each(function(){
+	// Nuke picturefill on the grid page
+	$('#shots ol.group div[data-picture]').removeAttr('data-picture').each(function(){
 		$div = $(this);
 		retinaURL = $('div[data-media]', $div).data('src');
 		// Animate? Suuuure.
