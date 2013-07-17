@@ -1,0 +1,13 @@
+.tag.special-tag{}
+
+.tag.special-tag .key{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-right: 4px;
+}
+
+.tag.special-tag .key:after{
+	content: ":";
+	font-size: 11px;
+}
