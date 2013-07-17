@@ -1,3 +1,7 @@
+.the-shot .single-img img{
+	image-rendering:-webkit-optimize-contrast;
+}
+
 a,span.badge{
 	-webkit-transition: color 140ms ease-in-out, background-color 140ms ease-in-out;
 }
