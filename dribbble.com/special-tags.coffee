@@ -30,7 +30,7 @@ $tags = $('#tags')
 
 if $tags.length
 
-	$newTagContainer = $('<ol class="tags group">').prependTo($tags)
+	$newTagContainer = $('<ol class="tags group">')
 
 	formatSlug = (slug, category) ->
 		list = slug.split('-')
@@ -51,20 +51,29 @@ if $tags.length
 
 		return formatted.join(' ')
 
-	formatTags = (category) ->
-		$("a[href*='tags/#{category}:'][rel='tag']", $tags).each ->
-			$tag = $(@)
-			$s = $('strong', $tag);
+	formatTags = (category_array) ->
+		tagCount = 0
 
-			slug = $s.text().replace "#{category}:",''
-			text = formatSlug(slug, category)
+		for category in category_array
+			$tags_to_format = $("a[href*='tags/#{category}:'][rel='tag']", $tags)
+			$tags_to_format.each ->
+				$tag = $(@)
+				$s = $('strong', $tag);
 
-			$li = $tag.parent()
-			$li.appendTo $newTagContainer
+				slug = $s.text()
+				slug = slug.replace "#{category}:",''
+				text = formatSlug(slug, category)
 
-			$li.addClass "tag-#{category} special-tag"
+				$li = $tag.parent()
+				$li.appendTo $newTagContainer
 
-			$s.html "<span class='key'>#{category}</span><span class='val'>#{text}</span>"
+				$li.addClass "tag-#{category} special-tag"
 
-	formatTags 'tool'
-	formatTags 'typeface'
+				$s.html "<span class='key'>#{category}</span><span class='val'>#{text}</span>"
+
+			tagCount += $tags_to_format.length
+
+		return tagCount > 0
+
+	if formatTags ['tool','typeface']
+		$newTagContainer.prependTo($tags)

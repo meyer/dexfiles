@@ -1,3 +1,33 @@
+/*
+
+cool body classes:
+.logged-in
+
+cool div#doc classes:
+.route-home
+.route-profile // your user profile
+
+user profile wrapper: .wrapper-profile
+
+profile tweet list
+==================
+
+wrapper: div#timeline.content-main > div.stream-container > div.stream.profile-stream
+
+tweet list: ol#streams-items-id
+	classes: stream-items js-navigable-stream
+
+unclicked tweet wrapper: li#stream-item-tweet-TWEETID
+	classes: stream-item expanding-stream-item
+
+tweet: .tweet
+	classes: tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet my-tweet
+
+*/
+
+/*  */
+.dashboard .js-mini-profile-stats,
+.dashboard .profile-summary,
 .tweet.promoted-tweet,
 .module.wtf-module,
 .module.trends,
@@ -15,11 +45,6 @@ html,body{
 *,
 .permalink-tweet p{
 	-webkit-font-smoothing: antialiased;
-/*	font-family: 'Ideal Sans';*/
-}
-
-input{
-/*	font-family: 'Ideal Sans';*/
 }
 
 a{
@@ -178,11 +203,12 @@ button#global-new-tweet-button{
 
 #doc{
 	height: auto;
+	min-height: 100%!important;
+	background-color: rgba(0, 0, 0, .6) !important;
 }
 
 #page-outer{
-	background-color: rgba(0, 0, 0, .6) !important;
-	height: 100%;
+	height: auto;
 	padding-bottom: 30px;
 	min-height: 100%;
 }
@@ -226,34 +252,6 @@ button#global-new-tweet-button{
 	margin-top: 0;
 	margin-bottom: 0;
 }
-/*
-
-
-.js-mini-current-user{
-	position: relative;
-}
-
-.account-summary-small{
-	width: 280px;
-	margin: 0 auto;
-}
-
-.account-summary .content img.avatar{
-	position: absolute;
-	left: -40px;
-}
-
-.stats a{
-	width: 250px;
-	text-align: center;
-}
-
-*/
-
-.dashboard .js-mini-profile-stats,
-.dashboard .profile-summary{
-	display: none;
-}
 
 .module.mini-profile .tweet-box,
 #tweet-box-template{
@@ -277,37 +275,30 @@ button#global-new-tweet-button{
 
 .home-tweet-box{
 	background-color: #f4f6f4;
-	padding: 12px 80px;
+	border-bottom: 1px solid #dcdddc;
+	padding: 12px 90px;
 	margin-bottom: 10px;
 	-webkit-border-radius: 0px;
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
-}
-
-.home-tweet-box{
-	border-bottom: 1px solid #dcdddc;
 	margin-bottom: -1px!important;
 	z-index: 100;
 	position: relative;
 }
 
+#tweet-box-template,
 #tweet-box-mini-home-profile{
 	width: 100%;
 	-webkit-box-sizing: border-box;
 }
 
 .inline-reply-tweetbox #tweet-box-template{
-	width: 666px; /* GASP */
+	-webkit-box-sizing: border-box!important;
+	width: 100%!important;
 }
 
 .inline-reply-tweetbox{
-	padding-right: 80px;
-	padding-left: 80px;
-}
-
-#tweet-box-template{
-	width: 100%!important;
-	-webkit-box-sizing: border-box;
+	padding: 10px 90px;
 }
 
 .profile-modal .content .tweet-text{
@@ -319,10 +310,11 @@ button#global-new-tweet-button{
 .content .tweet-text{
 	font-size: 24px;
 	line-height: 28px;
-	margin: 6px 0!important;
+	margin: 3px 0!important;
 	max-width: 580px;
 }
 
+/* Deemphasize retweets */
 .tweet[data-retweeter]{
 	opacity: .2;
 }
@@ -350,11 +342,6 @@ button#global-new-tweet-button{
 	display: inline-block!important;
 	opacity: 0;
 	-webkit-transition: opacity 200ms linear;
-}
-
-
-.tweet-actions *{
-	background-color: none!important;
 }
 
 .tweet:hover .tweet-actions{
@@ -388,11 +375,9 @@ button#global-new-tweet-button{
 	border-top: 2px solid #dcdddc!important;
 }
 
-#timeline
-
-.new-tweets-bar{
-	margin: 20px 80px;
-	-webkit-border-radius: 6px;
+#timeline .new-tweets-bar{
+	margin: 20px 90px;
+	-webkit-border-radius: 3px;
 	-webkit-box-shadow: none!important;
 	border: 1px solid #e7e8e7;
 	-webkit-transition: background-color 200ms linear;
@@ -403,7 +388,7 @@ button#global-new-tweet-button{
 }
 
 .tweet{
-	padding: 25px 140px;
+	padding: 25px 90px;
 }
 
 .stream .tweet:hover .tweet-actions,.stream .stream-item.open .expanded-conversation .tweet-actions{
@@ -424,6 +409,301 @@ button#global-new-tweet-button{
 
 .modal-content{
 	position: relative;
+}
+
+.modal-content .modal-header{
+	display: none;
+}
+
+.modal-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.modal-close{
+	border: none!important;
+	box-shadow: none!important;
+	background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%);
+	background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%);
+	background-image: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%);
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.modal-close:hover{
+	background: none!important;
+	background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%)!important;
+	background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%)!important;
+	background-image: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%)!important;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 53.3%, rgba(0, 0, 0, 0.4) 100%)!important;
+}
+
+.modal-close{
+	padding: 4px 14px 50px 50px !important;
+}
+
+.modal-close span{
+	background: none!important;
+	opacity: .8;
+	text-shadow: 0 -1px rgba(0,0,0,.5), 0 0 10px rgba(0,0,0,1);
+	-webkit-transition: opacity 200ms ease-in-out;
+}
+
+.modal-close:hover span{
+	opacity: 1;
+}
+
+.modal-close span:after{
+	content: "×";
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #FFF!important;
+	color: rgba(255,255,255,1)!important;
+}
+
+.stream .tweet:hover .tweet-actions,.stream .stream-item.open .expanded-conversation .tweet-actions{
+	background-color: none!important;
+}
+
+.wrapper{
+	background: none!important;
+}
+
+#global-actions{
+	margin-left: 104px;
+}
+
+#global-actions a{
+	-webkit-border-radius: 20px;
+	height: 30px;
+	padding: 0 10px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+#global-actions a i{
+	margin-top: 3px;
+}
+
+h1.icon{
+/*	position: absolute;
+	margin: 0;
+	left: 42px;
+	top: 10px;*/
+	margin-top: 10px;
+}
+
+.route-profile ol#stream-items-id>li>div{
+	padding: 15px 12px;
+	font-size: 14px;
+}
+
+#stream-items-id .user-actions{
+	margin-top: 9px;
+}
+
+.user-actions.not-following{
+	opacity: .2;
+	-webkit-transition: opacity 200ms linear;
+}
+
+.user-actions.not-following:hover{
+	opacity: 1;
+}
+
+/* Expand/contract tweet */
+.expand-action-wrapper,
+.js-hide-details{
+	display: none!important;
+}
+
+.tweet .metadata{
+
+}
+
+h2#content-main-heading{
+	text-align: center;
+}
+
+.wrapper-home .module.mini-profile{
+	margin-bottom: 0;
+	-webkit-border-radius: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+.header-inner{
+	display: none;
+}
+
+.client-and-actions{
+	margin-top: 0;
+	z-index: 100;
+}
+
+img.avatar{
+	-webkit-border-radius: 3px!important;
+}
+
+.tweet .stream-item-footer:empty{
+	display: none;
+}
+
+.expanded-conversation.expansion-container li .tweet{
+	padding-left: 90px!important;
+	padding-right: 90px;
+}
+
+.stream-item .content{
+	margin-left: 0;
+}
+
+.account,
+.interest-category,
+.list,
+.saved-search,
+.tweet,.app,
+.discover-item{
+	position:relative;
+	min-height:31px;
+}
+
+.modal-content .username,
+.modal-content .fullname{
+	font-size: 14px;
+}
+
+.username,
+.fullname{
+	font-size: 18px;
+}
+
+.route-profile .stream-item>div{
+	padding: 20px 138px!important
+}
+
+.js-list-link strong{
+	font-size: 18px!important;
+}
+
+.module{
+	margin-bottom: 0px;
+	z-index: 5;
+	position: relative;
+}
+
+/* This hides favorites and lists, unfortunately. */
+.route-profile .dashboard{
+	display: none;
+}
+
+/* top bar search stuff */
+.global-nav .pull-right{
+	float: right;
+	text-align:left;
+	margin-right: 80px;
+}
+
+.stream-item.open .expansion-container:first-child>.original-tweet .dogear,
+.stream-item.open .in-reply-to li:first-child .tweet .dogear,
+.stream-item.after-expanded>.tweet .dogear,
+.content-main .stream-items>.stream-item.open .expansion-container>li:first-child .tweet .dogear{
+	border-top-right-radius: 0px;
+}
+
+.stream .tweet:hover .tweet-actions,
+.stream .stream-item.open .expanded-conversation .tweet-actions,
+.tweet-actions{
+	background: none !important;
+}
+
+.stream .stream-item .tweet-actions,
+.stream .stream-item.open .tweet-actions,
+.stream .stream-item-activity .stream-item-footer .tweet-actions,
+.stream .stream-item.open .expanded-conversation .original-tweet-container .tweet-actions{
+	background-color:#fff;
+	box-shadow:-10px 0 15px #fff;
+}
+
+/* Icon color */
+.sm-reply,.sm-rt,.sm-fav,.sm-image,.sm-video,.sm-audio,.sm-geo,.sm-in,.sm-lock,.sm-trash,.sm-page,.sm-embed,.sm-summary,.sm-chat,.sm-bird,.sm-top-tweet,.sm-more{
+	background-color:#AAA!important;
+	background-position-y: -190px!important;
+}
+.tweet.favorited .sm-fav{
+	background-color:#ff9b00!important;
+}
+
+.tweet.retweeted .time,
+.tweet.favorited .time{
+	margin-right: 0;
+}
+
+.nav-new{
+	background-position:-200px -81px;
+	width:24px;
+	left: 13px!important;
+	height:1px!important;
+	display: block!important;
+	position: absolute;
+	top: 27px!important;
+}
+
+.content-main .expansion-container>li .view-more-container .view-more-link{
+	display: inline-block;
+	padding: 14px 10px;
+	font-size: 13px;
+	margin-left: 130px;
+}
+
+.stream-item-header .avatar,.permalink-header .avatar{
+	position: absolute;
+	top: -1px;
+	left: -10px;
+	float: left;
+}
+
+.stream-item-header .account-group{
+	position: relative;
+}
+
+.opened-tweet,
+.opened-tweet:hover{
+	background: none;
+	-webkit-border-radius: 0px!important;
+}
+
+ol.expanded-conversation li.original-tweet-container,
+.permalink-tweet:hover,
+.permalink-tweet.focus,
+.stream-item.open .original-tweet:hover,
+.stream-item.open .original-tweet.focus{
+	background: #f5f6f5 !important;
+}
+
+.opened-tweet{
+	padding-bottom: 10px;
+}
+
+.client-and-actions{
+	visibility: hidden;
+}
+
+.expanded-conversation {
+
+}
+
+.expanded-conversation span.icon[class*='sm-'],
+.expanded-conversation i[class*='sm-'],
+
+.opened-tweet:hover span.icon[class*='sm-'],
+.opened-tweet:hover i[class*='sm-'],
+
+.opened-tweet span.icon[class*='sm-'],
+.opened-tweet i[class*='sm-']{
+	background-position-y: -220px!important;
 }
 
 .modal-content .modal-header{

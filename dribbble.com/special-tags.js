@@ -35,7 +35,7 @@
   $tags = $('#tags');
 
   if ($tags.length) {
-    $newTagContainer = $('<ol class="tags group">').prependTo($tags);
+    $newTagContainer = $('<ol class="tags group">');
     formatSlug = function(slug, category) {
       var formatted, i, list, regex, substitute, word, _i, _len, _ref;
       list = slug.split('-');
@@ -57,21 +57,31 @@
       }
       return formatted.join(' ');
     };
-    formatTags = function(category) {
-      return $("a[href*='tags/" + category + ":'][rel='tag']", $tags).each(function() {
-        var $li, $s, $tag, slug, text;
-        $tag = $(this);
-        $s = $('strong', $tag);
-        slug = $s.text().replace("" + category + ":", '');
-        text = formatSlug(slug, category);
-        $li = $tag.parent();
-        $li.appendTo($newTagContainer);
-        $li.addClass("tag-" + category + " special-tag");
-        return $s.html("<span class='key'>" + category + "</span><span class='val'>" + text + "</span>");
-      });
+    formatTags = function(category_array) {
+      var $tags_to_format, category, tagCount, _i, _len;
+      tagCount = 0;
+      for (_i = 0, _len = category_array.length; _i < _len; _i++) {
+        category = category_array[_i];
+        $tags_to_format = $("a[href*='tags/" + category + ":'][rel='tag']", $tags);
+        $tags_to_format.each(function() {
+          var $li, $s, $tag, slug, text;
+          $tag = $(this);
+          $s = $('strong', $tag);
+          slug = $s.text();
+          slug = slug.replace("" + category + ":", '');
+          text = formatSlug(slug, category);
+          $li = $tag.parent();
+          $li.appendTo($newTagContainer);
+          $li.addClass("tag-" + category + " special-tag");
+          return $s.html("<span class='key'>" + category + "</span><span class='val'>" + text + "</span>");
+        });
+        tagCount += $tags_to_format.length;
+      }
+      return tagCount > 0;
     };
-    formatTags('tool');
-    formatTags('typeface');
+    if (formatTags(['tool', 'typeface'])) {
+      $newTagContainer.prependTo($tags);
+    }
   }
 
 }).call(this);
