@@ -83,27 +83,27 @@ body{
 }
 
 .dashboard ul.js-nav-links li:first-child:nth-last-child(1) {
-    width: 100%;
+	width: 100%;
 }
 
 .dashboard ul.js-nav-links li:first-child:nth-last-child(2),
 .dashboard ul.js-nav-links li:first-child:nth-last-child(2) ~ li {
-    width: 50%;
+	width: 50%;
 }
 
 .dashboard ul.js-nav-links li:first-child:nth-last-child(3),
 .dashboard ul.js-nav-links li:first-child:nth-last-child(3) ~ li {
-    width: 33.3333%;
+	width: 33.3333%;
 }
 
 .dashboard ul.js-nav-links li:first-child:nth-last-child(4),
 .dashboard ul.js-nav-links li:first-child:nth-last-child(4) ~ li {
-    width: 25%;
+	width: 25%;
 }
 
 .dashboard ul.js-nav-links li:first-child:nth-last-child(5),
 .dashboard ul.js-nav-links li:first-child:nth-last-child(5) ~ li {
-    width: 20%;
+	width: 20%;
 }
 
 .dashboard ul.js-nav-links li{

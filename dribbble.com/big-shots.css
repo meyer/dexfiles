@@ -30,9 +30,9 @@ body#shots #header-inner{
 
 body#shots #main.main-full,
 body#shots #main.full-800 {
-  float: none;
-  width: auto;
-  max-width: 100%;
+	float: none;
+	width: auto;
+	max-width: 100%;
 }
 
 img{
