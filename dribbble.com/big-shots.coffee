@@ -3,7 +3,10 @@ if typeof SHOTS != 'undefined'
 		do (shot) ->
 			$shot = $("#screenshot-#{shot.id}")
 			$div = $('div[data-picture]',$shot).removeAttr('data-picture')
-			retinaURL = $('div[data-media]', $div).data('src').replace '_still.gif', '.gif'
+			retinaURL = $('div[data-media]', $div).data('src')
+				.replace('_still.gif', '.gif')
+				.replace('_animated_1x.gif', '_animated.gif')
+				.replace('_1x.gif', '.gif')
 
 			if ~retinaURL.indexOf "_1x."
 				$shot.addClass 'retina-shot'
