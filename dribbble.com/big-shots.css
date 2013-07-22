@@ -43,17 +43,35 @@ ol.dribbbles li.group .extras{
 	position: relative;
 }
 
+/*ol.dribbbles li div.dribbble span.rebound-mark{
+	border-radius: 3px;
+	background: #89ba56;
+}*/
+
+ol.dribbbles li div.dribbble span[class]{
+	margin-right: 8px;
+}
+
+/*span.screenshot-dash a.twotimes,
+span.screenshot-dash a.twotimes:hover,
+#main.full-800 span.screenshot-dash a.twotimes,*/
 ol.dribbbles .retina-shot .extras:after{
+	display: inline-block;
 	content: "@2x";
+	color: #ea4b87;
 	color: #999;
 	height: 16px;
-	position: absolute;
-	bottom: 0;
-	right: -35px;
-	-webkit-border-radius: 2px;
+	border-radius: 3px;
 	z-index: 10000000;
 	font-size: 12px;
 	line-height: 16px;
 	width: 30px;
+/*	text-align: center;*/
 	font-weight: bold;
+}
+
+ol.dribbbles .retina-shot .extras:after{
+	position: absolute;
+	bottom: 0;
+	right: -30px;
 }

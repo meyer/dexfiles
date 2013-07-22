@@ -22,7 +22,12 @@
 	background-repeat: no-repeat!important;
 	z-index: 100;
 	opacity: 1;
-	transition: height 130ms ease-out, width 130ms ease-out, opacity 130ms ease-out, top 130ms ease-out, left 130ms ease-out;
+	transition:
+		height  130ms ease-out,
+		width   130ms ease-out,
+		opacity 130ms ease-out,
+		top     130ms ease-out,
+		left    130ms ease-out;
 	cursor: none;
 }
 

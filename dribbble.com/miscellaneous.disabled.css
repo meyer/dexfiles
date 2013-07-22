@@ -3,7 +3,7 @@
 }
 
 a,span.badge{
-	-webkit-transition: color 140ms ease-in-out, background-color 140ms ease-in-out;
+	transition: color 140ms ease-in-out, background-color 140ms ease-in-out;
 }
 
 ol.prevnext li.prev,
@@ -11,8 +11,6 @@ ol.prevnext li.next,
 div.the-shot div.single,
 form.comment textarea,
 ol.dribbbles li div.dribbble {
-	-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
-	-moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
 }
 
@@ -24,11 +22,9 @@ form.comment textarea {
 	border: none;
 	background: #ffffff;
 	border-radius: 4px;
-	-webkit-transition: max-height 200ms ease-in-out, background-color 200ms linear;
-	-moz-transition: max-height 200ms ease-in-out, background-color 200ms linear;
-	-o-transition: max-height 200ms ease-in-out, background-color 200ms linear;
-	transition: max-height 200ms ease-in-out, background-color 200ms linear;
-
+	transition:
+		max-height       200ms ease-in-out,
+		background-color 200ms linear;
 	max-height: 40px;
 	padding: 10px;
 }
@@ -49,10 +45,8 @@ a.unfollow:hover,
 a.action,
 a.action:hover, a.follow:hover, a.unfollow:hover, div.follow-prompt a.unblock:hover,
 a.edit-avatar{
-	-webkit-border-radius: 3px;
+	border-radius: 3px;
 	background-image: none;
-	-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
-	-moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.11);
 }
 
@@ -62,8 +56,6 @@ a.edit-avatar{
 }
 
 #nav li ul.tabs{
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21), 0 0 0 1px rgba(0, 0, 0, 0.11);
-	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21), 0 0 0 1px rgba(0, 0, 0, 0.11);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.21), 0 0 0 1px rgba(0, 0, 0, 0.11);
 }
 

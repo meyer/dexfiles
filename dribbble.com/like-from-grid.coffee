@@ -5,65 +5,66 @@ DRIBBBLE SHOT LIKE API NOTES
 
 Text after the ID is optional.
 
-I guess they’re just chopping off the non-integer stuff
-when they look up the shot (smart).
-
 To like and unlike shot 123456, respectively:
 POST /$username/likes?screenshot_id=123456[-Shot-URL]
 POST /$username/likes/123456[-Shot-URL] ? _method: 'delete'
 
-Here’s what I don’t get… the goofy URLs. Why not something like:
-
-LIKE URL:   /meyer/liked/123456
-UNLIKE URL: /meyer/unliked/123456
-
-or:
-
-LIKE URL:   /shot/123456-Shot-URL?action=like
-UNLIKE URL: /shot/123456-Shot-URL?action=dislike
-
-??
-
-Whatever.
-
 ###
-
-# SHOTS has everything we need and is also unaccessible. FML.
 
 profile_url = $('#t-profile>a').attr('href')
 
-$('#shots ol.dribbbles>li').each ->
-	$shot = $(@)
-	shot_id = $shot.attr('id').replace 'screenshot-',''
-	$li = $('li.fav',$shot)
+console.log "Profile URL: #{profile_url}"
 
-	$li.children('a').click ->
-		faved = $li.hasClass 'marked'
-		console.log "Shot #{shot_id} fav status: #{faved}"
+if typeof SHOTS != 'undefined'
+	for shot in SHOTS
+		do (shot) -> # let’s do shots!
+			# attachments_count: 0
+			# commented_on: false
+			# comments_count: 12
+			# comments_since_last_view: true
+			# created_at: "July 21, 2013"
+			# id: 1164032
+			# is_rebound: false
+			# liked: true
+			# liked_by_html: null
+			# likes_count: 114
+			# rebounds_count: 0
+			# view_count: 1445
 
-		post_obj =
-			data: {}
-			url: "#{profile_url}/likes"
+			$shot = $("#screenshot-#{shot.id}")
+			shotTitle = $('.dribbble-over strong', $shot).text()
+			$li = $('li.fav',$shot)
 
-		if faved
-			post_obj.data = _method: 'delete'
-			post_obj.url = "#{post_obj.url}/#{shot_id}"
-		else
-			post_obj.url = "#{post_obj.url}?screenshot_id=#{shot_id}"
+			$li.children('a').click ->
+				$a = $(@)
 
-		console.log post_obj
+				post_obj =
+					data: {}
+					type: 'POST'
+					url: "#{profile_url}/likes"
 
-		$.ajax(post_obj).complete (x, status) ->
-			if status == 'success'
-				if faved
-					$li.removeClass 'marked'
+				if shot.liked
+					post_obj.data = _method: 'delete'
+					post_obj.url = "#{post_obj.url}/#{shot.id}"
 				else
-					$li.addClass 'marked'
+					post_obj.url = "#{post_obj.url}?screenshot_id=#{shot.id}"
 
-				console.log "Succesfully did that thing."
-			else
-				console.log "Fuck."
-			console.log "Output:"
-			console.log x
+				$.ajax(post_obj).complete (x, status) ->
+					if status == 'success'
+						if shot.liked
+							# Unlike it!
+							$li.removeClass 'marked'
+							$a.text --shot.likes_count
+							shot.liked = false
+							console.log "Succesfully unliked shot #{shot.id}: “#{shotTitle}”"
+						else
+							# Like it!
+							$li.addClass 'marked'
+							$a.text ++shot.likes_count
+							shot.liked = true
+							console.log "Succesfully liked shot #{shot.id}: “#{shotTitle}”"
 
-		false
+					else
+						console.log "Fuck."
+
+				false
