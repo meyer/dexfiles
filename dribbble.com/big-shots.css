@@ -38,3 +38,22 @@ body#shots #main.full-800 {
 img{
 	/*image-rendering:-webkit-optimize-contrast;*/
 }
+
+ol.dribbbles li.group .extras{
+	position: relative;
+}
+
+ol.dribbbles .retina-shot .extras:after{
+	content: "@2x";
+	color: #999;
+	height: 16px;
+	position: absolute;
+	bottom: 0;
+	right: -35px;
+	-webkit-border-radius: 2px;
+	z-index: 10000000;
+	font-size: 12px;
+	line-height: 16px;
+	width: 30px;
+	font-weight: bold;
+}
