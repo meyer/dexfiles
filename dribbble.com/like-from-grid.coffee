@@ -1,16 +1,3 @@
-###
-
-DRIBBBLE SHOT LIKE API NOTES
-============================
-
-Text after the ID is optional.
-
-To like and unlike shot 123456, respectively:
-POST /$username/likes?screenshot_id=123456[-Shot-URL]
-POST /$username/likes/123456[-Shot-URL] ? _method: 'delete'
-
-###
-
 profile_url = $('#t-profile>a').attr('href')
 
 if typeof SHOTS != 'undefined'

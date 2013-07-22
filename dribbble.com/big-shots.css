@@ -8,6 +8,7 @@ ol.dribbbles li div.dribbble-img img {
 	max-height: 300px;
 }
 
+
 body#shots ol.dribbbles li.group:nth-child(2n),
 body#shots ol.dribbbles li.group {
 	width: 31.27147766323%;
@@ -16,17 +17,56 @@ body#shots ol.dribbbles li.group {
 	margin-bottom: 20px;
 }
 
+/* TODO: Fix bucket list. */
+body#user-profile ol.dribbbles li.group:nth-child(2n),
+body#user-profile ol.dribbbles li.group,
+body#profile ol.dribbbles li.group:nth-child(2n),
+body#profile ol.dribbbles li.group{
+	width: 47.916666666667%;
+	max-width: 420px;
+}
+
+body#user-profile ol.dribbbles li.group:nth-child(2n),
+body#profile ol.dribbbles li.group:nth-child(2n){
+	float: right;
+}
+
+body#user-profile ol.dribbbles li.group:nth-child(2n),
+body#profile ol.dribbbles li.group:nth-child(2n),
 body#shots ol.dribbbles li.group:nth-child(3n){
 	margin-right: 0;
 }
 
-body#shots #content{
-  max-width: 1344px;
+body#user-profile #header-inner,
+body#user-profile #content,
+body#profile #header-inner,
+body#profile #content{
+	max-width: 1182px;
 }
 
-body#shots #header-inner{
-	max-width: 1330px;
+body#shots #header-inner,
+body#shots #content{
+	max-width: 1344px;
 }
+
+/*
+body#user-profile #header-inner,
+body#user-profile #content,
+body#profile #header-inner,
+body#profile #content{
+	max-width: 1344px;
+}
+
+#main {
+	width: 65.3%;
+}
+
+div.profile-actions,
+div.secondary {
+	float: right;
+	width: 31%;
+}
+*/
 
 body#shots #main.main-full,
 body#shots #main.full-800 {
