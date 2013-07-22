@@ -13,8 +13,6 @@ POST /$username/likes/123456[-Shot-URL] ? _method: 'delete'
 
 profile_url = $('#t-profile>a').attr('href')
 
-console.log "Profile URL: #{profile_url}"
-
 if typeof SHOTS != 'undefined'
 	for shot in SHOTS
 		do (shot) -> # let’s do shots!

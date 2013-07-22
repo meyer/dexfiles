@@ -17,8 +17,6 @@ POST /$username/likes/123456[-Shot-URL] ? _method: 'delete'
 
   profile_url = $('#t-profile>a').attr('href');
 
-  console.log("Profile URL: " + profile_url);
-
   if (typeof SHOTS !== 'undefined') {
     _fn = function(shot) {
       var $li, $shot, shotTitle;
