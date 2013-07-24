@@ -1,8 +1,33 @@
 profile_url = $('#t-profile>a').attr('href')
 
 likePending = false
+likeIndicatorTime = 1200
 
 SHOTS_BY_ID = {}
+
+showLikeIndicator = (shotID, options) ->
+
+	if likePending
+		if likePending != shotID
+			console.log 'WAT'
+			return false
+
+	unnn = ''
+	if 'action' of options
+		if options.action == 'like'
+		else if options.action == 'unlike'
+			unnn = 'un '
+		else
+			return false
+
+	$shot = $("#screenshot-#{shotID}")
+	$likeIndicator = $("<div class='#{unnn}like-indicator'><div></div></div>")
+
+	$('.dribbble-img', $shot).append $likeIndicator
+
+	setTimeout ->
+		$likeIndicator.remove()
+	, likeIndicatorTime
 
 changeFavStatus = (shotID, like_or_unlike) ->
 	if likePending
@@ -33,11 +58,9 @@ changeFavStatus = (shotID, like_or_unlike) ->
 		url: "#{profile_url}/likes"
 
 	if shot.liked && like_or_unlike == 'like'
-		$likeIndicator = $('<div class="like-indicator"><div></div></div>')
-		$('.dribbble-img', $shot).append $likeIndicator
-		setTimeout ->
-			$likeIndicator.remove()
-		, 1000
+
+		showLikeIndicator shot.id,
+			action: 'like'
 
 		console.log "Shot #{shot.id} already liked! Dummy!"
 		likePending = false
@@ -64,13 +87,10 @@ changeFavStatus = (shotID, like_or_unlike) ->
 
 				shot.liked = false
 
-				$likeIndicator = $('<div class="un like-indicator"><div></div></div>')
-				$('.dribbble-img', $shot).append $likeIndicator
-				setTimeout ->
-					$likeIndicator.remove()
-				, 1000
+				showLikeIndicator shot.id,
+					action: 'unlike'
 
-				console.log "Succesfully unliked shot #{shot.id}"
+				console.log 'UN LIEK'
 			else
 				# Like it!
 				$likeLink.parent().addClass 'marked'
@@ -78,13 +98,10 @@ changeFavStatus = (shotID, like_or_unlike) ->
 
 				shot.liked = true
 
-				$likeIndicator = $('<div class="like-indicator"><div></div></div>')
-				$('.dribbble-img', $shot).append $likeIndicator
-				setTimeout ->
-					$likeIndicator.remove()
-				, 1000
+				showLikeIndicator shot.id,
+					action: 'like'
 
-				console.log "Succesfully liked shot #{shot.id}"
+				console.log 'LIEK'
 
 		likePending = false
 		return
