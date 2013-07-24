@@ -1,0 +1,37 @@
+ol.dribbbles li div.dribbble a.dribbble-over{
+	width: 94%;
+	margin: 3% 3% 0;
+	/* Override jQuery */
+	opacity: 1!important;
+	background-color: rgba(255, 255, 255, 0);
+	padding: 6px;
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over strong{
+	background: rgba(0,0,0, 0.4);
+	padding: 6px 10px;
+	color: rgba(255,255,255,.9);
+	transition: opacity 200ms linear;
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over strong,
+ol.dribbbles li div.dribbble a.dribbble-over span.comment{
+
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over span.comment,
+ol.dribbbles li div.dribbble a.dribbble-over em{
+	display: none;
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over:hover strong{
+	opacity: 0;
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over:hover span.comment,
+ol.dribbbles li div.dribbble a.dribbble-over:hover em{
+	opacity: 1;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}

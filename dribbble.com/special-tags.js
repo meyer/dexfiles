@@ -7,7 +7,8 @@
 
   replacements = {
     tool: {
-      '^cs$': 'CS'
+      '^cs$': 'CS',
+      '^cc$': 'CC'
     },
     typeface: {
       '^df$': 'DF',
@@ -43,7 +44,7 @@
       slug = slug.toLowerCase();
       for (i = _i = 0, _len = list.length; _i < _len; i = ++_i) {
         word = list[i];
-        if (__indexOf.call(ignored_caps, word) < 0 || (i === 0 && __indexOf.call(ignored_caps, word) >= 0)) {
+        if (__indexOf.call(ignored_caps, word) < 0 || i === 0) {
           word = word.charAt(0).toUpperCase() + word.substr(1);
         }
         if (__indexOf.call(replacements, category) >= 0) {

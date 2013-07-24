@@ -1,8 +1,9 @@
-ignored_caps = ['and','of', 'the']
+ignored_caps = ['and','of','the']
 
 replacements =
 	tool:
 		'^cs$':  'CS'
+		'^cc$':  'CC'
 
 	# Foundries
 	typeface:
@@ -39,7 +40,7 @@ if $tags.length
 		slug = slug.toLowerCase()
 
 		for word, i in list
-			if word not in ignored_caps or (i is 0 and word in ignored_caps)
+			if word not in ignored_caps or i is 0
 				word = word.charAt(0).toUpperCase()+word.substr(1)
 
 			if category in replacements

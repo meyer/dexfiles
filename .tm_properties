@@ -1,0 +1,1 @@
+excludeInBrowser = "{$excludeInBrowser, screenshots.psd, dexfiles.esproj}"
