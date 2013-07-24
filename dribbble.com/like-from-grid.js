@@ -120,8 +120,11 @@
         return false;
       });
       clickCount = 0;
-      return $('.dribbble-over', $shot).click(function() {
+      return $('.dribbble-over', $shot).click(function(e) {
         var _this = this;
+        if (e.metaKey) {
+          return;
+        }
         clickCount++;
         clearTimeout(dblclkTimeout);
         if (clickCount >= 2) {

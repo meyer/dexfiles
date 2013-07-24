@@ -125,7 +125,10 @@ if typeof SHOTS != 'undefined'
 
 			# Double-click to like
 			clickCount = 0
-			$('.dribbble-over', $shot).click ->
+			$('.dribbble-over', $shot).click (e) ->
+				# command-clicked?
+				return if e.metaKey
+
 				clickCount++
 				clearTimeout dblclkTimeout
 				if clickCount >= 2
