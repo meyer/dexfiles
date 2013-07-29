@@ -43,7 +43,7 @@
 
 .like-indicator{
 	opacity: 0;
-	-webkit-animation: pulse 1200ms ease-in-out 0ms;
+	-webkit-animation: pulse 1000ms ease-in-out 0ms;
 	background-color: rgba(255,255,255,.9);
 	z-index: 10;
 	overflow: hidden;
@@ -55,10 +55,10 @@
 	background-position: center;
 
 	-webkit-background-size: 240px;
-	-webkit-animation: heart-asplode 1200ms ease-in-out 0ms;
+	-webkit-animation: heart-asplode 1000ms ease-in-out 0ms;
 }
 
 .un.like-indicator div{
 	background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><path d="M47.95 8.002c-6.552 0-10.926 2.997-13.414 5.44l-2.801 8.426 4.873-.693-3.445 11.494 3.847-.467-5.662 17.869 1.603-13.767-4.289.644 2.119-10.962-5.055.443 3.242-13.463c-2.558-2.338-6.788-4.964-12.918-4.964-7.748 0-14.05 7.288-14.05 15.413 0 13.85 15.418 20.105 30.001 34.583 14.583-14.48 30.001-20.735 30.001-34.583-.001-8.125-6.304-15.413-14.052-15.413z" fill="#EA4C88"/></svg>');
-	-webkit-animation: heart-implode 1200ms ease-in-out 0ms;
+	-webkit-animation: heart-implode 1000ms ease-in-out 0ms;
 }

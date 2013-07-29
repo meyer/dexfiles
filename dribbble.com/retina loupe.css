@@ -12,7 +12,8 @@
 .retina-shot div[data-picture]{
 /*	-webkit-transform: translateZ(0);*/
 /*	-webkit-transition: opacity 200ms linear;*/
-	transition: opacity 130ms ease-out;
+	opacity: 1;
+	transition: opacity 170ms ease-out;
 }
 
 #main:not(.full-800) .retina-shot:hover div[data-picture]{
@@ -33,22 +34,22 @@
 	background-repeat: no-repeat!important;
 	z-index: 100;
 	opacity: 1;
-	transition: opacity 130ms ease-out;
-/*	transition:
-		height  130ms ease-out,
-		width   130ms ease-out,
-		opacity 130ms ease-out,
-		top     130ms ease-out,
-		left    130ms ease-out;*/
+	transition:
+		height  170ms ease-out,
+		width   170ms ease-out,
+		opacity 170ms ease-out,
+		top     170ms ease-out,
+		left    170ms ease-out;
 	cursor: none;
+	display: block;
 }
 
 .loupe-hidden #retina-loupe>div,
 .full-800 #retina-loupe>div{
-/*	opacity: 0;
+	opacity: 0;
 	height: 0;
 	width: 0;
 	top: 0;
-	left: 0;*/
-	display: none;
+	left: 0;
+/*	display: none;*/
 }
