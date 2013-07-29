@@ -8,13 +8,34 @@ ol.dribbbles li div.dribbble-img img {
 	max-height: 300px;
 }
 
-
 body#shots ol.dribbbles li.group:nth-child(2n),
 body#shots ol.dribbbles li.group {
 	width: 31.27147766323%;
 	margin: 0 3.092783505155% 0 0;
 	height: auto;
 	margin-bottom: 20px;
+}
+
+.dribbbles .dribbble div[data-picture]{
+	-webkit-filter: grayscale(50%);
+	opacity: .5;
+	image-rendering:-webkit-optimize-contrast;
+}
+
+@-webkit-keyframes fadeInAllSexyLike{
+	0%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.full-image{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	-webkit-animation: fadeInAllSexyLike 1000ms;
 }
 
 /* TODO: Fix bucket list. */

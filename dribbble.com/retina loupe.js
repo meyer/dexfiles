@@ -2,7 +2,7 @@ $(function(){
 	var $shot = $('.the-shot');
 
 	if( $shot.length ){
-		var $shotContainer = $('.single',$shot).addClass('retina-unavailable');
+		var $shotContainer = $('.single',$shot);
 		var $shotImage = $(".single-img img",$shot).first().addClass('original');
 		var retinaShotURL = $('.twotimes').attr('href');
 
@@ -14,7 +14,7 @@ $(function(){
 		console.log('Retina shot URL: '+retinaShotURL);
 
 		// We have a retina shot!
-		$shotContainer.removeClass('retina-unavailable');
+		$shotContainer.addClass('retina-shot');
 
 		var img = new Image();
 		img.src = retinaShotURL;
