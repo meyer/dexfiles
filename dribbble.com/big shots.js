@@ -20,10 +20,9 @@
           img = new Image();
           img.src = retinaURL;
           img.className = 'full-image';
-          return img.addEventListener('load', function() {
-            console.log("Image " + this.src + " loaded.");
+          return img.addEventListener('load', (function() {
             return p.appendChild(img);
-          }, false);
+          }), false);
         })(id));
       }
       return _results;
