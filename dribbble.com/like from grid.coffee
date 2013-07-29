@@ -2,110 +2,110 @@
 	likePending = false
 	likeIndicatorTime = 1200
 
-	SHOTS_BY_ID = {}
+	changeFavStatus = (shotID, like_or_unlike) ->
+		if likePending
+			console.log "ALREADY LIKING SHOT #{likePending}"
+			return false
+		likePending = shotID
+		shot = d.shots[shotID]
+		$shot = $("#screenshot-#{shotID}")
+		$shotLink = $('.dribbble-over', $shot)
 
-	if d.loggedIn
-		showLikeIndicator = (shotID, options) ->
+		# Favorite indicator with fav count
+		$likeLink = $('li.fav a',$shot)
 
-			if likePending
-				if likePending != shotID
-					console.log 'WAT'
-					return false
+		# Are we toggling?
+		if like_or_unlike == 'toggle'
+			like_or_unlike = 'like'
+			if shot.liked
+				like_or_unlike = 'unlike'
 
-			unnn = ''
+		# Ignore everything but like/unlike
+		if like_or_unlike != 'like' && like_or_unlike != 'unlike'
+			likePending = false
+			return
 
-			if 'action' of options
-				if options.action == 'like'
-				else if options.action == 'unlike'
-					unnn = 'un '
+		post_obj =
+			data: {}
+			type: 'POST'
+			url: "#{d.profileURL}/likes"
+
+		if shot.liked && like_or_unlike == 'like'
+
+			showLikeIndicator shot.id, action: 'like'
+
+			console.log "Shot #{shot.id} already liked! Dummy!"
+			likePending = false
+			return
+		else if !shot.liked && like_or_unlike == 'unlike'
+			console.log "Shot #{shot.id} already unliked! Stupid!"
+			likePending = false
+			return
+
+		if like_or_unlike == 'unlike'
+			post_obj.data = _method: 'delete'
+			post_obj.url = "#{post_obj.url}/#{shot.id}"
+		else
+			post_obj.url = "#{post_obj.url}?screenshot_id=#{shot.id}"
+
+		console.log "Here’s the plan: we’re gonna #{like_or_unlike} shot number #{shot.id}"
+
+		$.ajax(post_obj).complete (x, status) ->
+			if status == 'success'
+				if like_or_unlike == 'unlike'
+					# Unlike it!
+					$likeLink.parent().removeClass 'marked'
+					$likeLink.text --shot.likes_count
+
+					shot.liked = false
+
+					showLikeIndicator shot.id,
+						action: 'unlike'
+
+					console.log 'UN LIEK'
 				else
-					return false
+					# Like it!
+					$likeLink.parent().addClass 'marked'
+					$likeLink.text ++shot.likes_count
 
-			$shot = $("#screenshot-#{shotID}")
-			$likeIndicator = $("<div class='#{unnn}like-indicator'><div></div></div>")
+					shot.liked = true
 
-			$eff = $('.dribbble-shot', $shot).append $likeIndicator
+					showLikeIndicator shot.id,
+						action: 'like'
 
-			# setTimeout ->
-			# 	$likeIndicator.remove()
-			# , likeIndicatorTime
+					console.log 'LIEK'
 
-		changeFavStatus = (shotID, like_or_unlike) ->
-			if likePending
-				console.log "ALREADY LIKING SHOT #{likePending}"
+			likePending = false
+			return
+
+	showLikeIndicator = (shotID, options) ->
+		if likePending
+			if parseInt(likePending) != parseInt(shotID)
+				console.log 'WAT'
 				return false
-			likePending = shotID
-			shot = d.shots[shotID]
-			$shot = $("#screenshot-#{shotID}")
-			$shotLink = $('.dribbble-over', $shot)
 
-			# Favorite indicator with fav count
-			$likeLink = $('li.fav a',$shot)
+		unnn = ''
 
-			# Are we toggling?
-			if like_or_unlike == 'toggle'
-				like_or_unlike = 'like'
-				if shot.liked
-					like_or_unlike = 'unlike'
-
-			# Ignore everything but like/unlike
-			if like_or_unlike != 'like' && like_or_unlike != 'unlike'
-				likePending = false
-				return
-
-			post_obj =
-				data: {}
-				type: 'POST'
-				url: "#{d.profileURL}/likes"
-
-			if shot.liked && like_or_unlike == 'like'
-
-				showLikeIndicator shot.id,
-					action: 'like'
-
-				console.log "Shot #{shot.id} already liked! Dummy!"
-				likePending = false
-				return
-			else if !shot.liked && like_or_unlike == 'unlike'
-				console.log "Shot #{shot.id} already unliked! Stupid!"
-				likePending = false
-				return
-
-			if like_or_unlike == 'unlike'
-				post_obj.data = _method: 'delete'
-				post_obj.url = "#{post_obj.url}/#{shot.id}"
+		if 'action' of options
+			if options.action == 'like'
+			else if options.action == 'unlike'
+				unnn = 'un '
 			else
-				post_obj.url = "#{post_obj.url}?screenshot_id=#{shot.id}"
+				return false
 
-			console.log "Here’s the plan: we’re gonna #{like_or_unlike} shot number #{shot.id}"
+		$shot = $("#screenshot-#{shotID}")
+		$likeIndicator = $("<div class='#{unnn}like-indicator'><div></div></div>")
 
-			$.ajax(post_obj).complete (x, status) ->
-				if status == 'success'
-					if like_or_unlike == 'unlike'
-						# Unlike it!
-						$likeLink.parent().removeClass 'marked'
-						$likeLink.text --shot.likes_count
+		$eff = $('.dribbble-shot', $shot).append $likeIndicator
 
-						shot.liked = false
+		setTimeout ->
+			$likeIndicator.remove()
+			likePending = false
+		, likeIndicatorTime
 
-						showLikeIndicator shot.id,
-							action: 'unlike'
 
-						console.log 'UN LIEK'
-					else
-						# Like it!
-						$likeLink.parent().addClass 'marked'
-						$likeLink.text ++shot.likes_count
-
-						shot.liked = true
-
-						showLikeIndicator shot.id,
-							action: 'like'
-
-						console.log 'LIEK'
-
-				likePending = false
-				return
+	# The Loop
+	if d.loggedIn
 
 		# Might need to be bumped to ~400ms
 		clickTime = 300
@@ -113,12 +113,12 @@
 
 		if d.shots
 			for id, shot of d.shots
-				do (id) ->
-					$shot = $("#screenshot-#{id}")
+				do (id,shot) ->
+					$shot = $("#screenshot-#{shot.id}")
 
 					# Click tiny heart to like. Might nuke this. idk.
 					$("li.fav a", $shot).click ->
-						changeFavStatus(id, 'toggle')
+						changeFavStatus(shot.id, 'toggle')
 						return false
 
 					# Double-click to like
@@ -131,7 +131,7 @@
 
 						if clickCount >= 2
 							if clickCount == 2
-								changeFavStatus(id, 'like')
+								changeFavStatus(shot.id, 'like')
 							else
 								console.log clickCount + ' clicks and counting!'
 							dblclkTimeout = setTimeout ->
