@@ -31,10 +31,18 @@ body#shots ol.dribbbles li.group {
 	}
 }
 
+ol.dribbbles li div.dribbble a.dribbble-over{
+	bottom: 0px;
+}
+
+.dribbble-img{
+	position: relative;
+}
+
 .full-image{
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 0px;
+	left: 0px;
 	-webkit-animation: fadeInAllSexyLike 1000ms;
 }
 
