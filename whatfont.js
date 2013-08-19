@@ -4,7 +4,11 @@
 // Bookmarklet:
 // javascript:(function(){ __activate_whatfont(); })();
 
-function _whatFont() {
+var _whatFont;
+
+// (function($){
+
+_whatFont = function() {
 	'use strict';
 
 	var
@@ -208,10 +212,10 @@ function _whatFont() {
 		init: function() {
 			//Insert the stylesheet
 			// if (css.CSS_URL) {
-			// 	css.LINK = $("<link>").attr({
-			// 		'rel': 'stylesheet',
-			// 		'href': css.CSS_URL
-			// 	}).appendTo("head");
+			//	css.LINK = $("<link>").attr({
+			//		'rel': 'stylesheet',
+			//		'href': css.CSS_URL
+			//	}).appendTo("head");
 			// }
 		},
 
@@ -464,15 +468,15 @@ function _whatFont() {
 			panel.tmpl = (function() {
 				var tmpl = $('<div class="elem panel">' + '<div class="panel_title">' + '<span class="title_text"></span>' + '<a class="close_button" title="Close">&times;</a>' + '</div>' +
 
-							 '<div class="panel_content">' + '<ul class="panel_properties">' + '<li>' + '<dl class="font_family">' + '<dt class="panel_label">Font Family</dt>' + '<dd class="panel_value"></dd>' + '</dl>' + '</li>' +
+							'<div class="panel_content">' + '<ul class="panel_properties">' + '<li>' + '<dl class="font_family">' + '<dt class="panel_label">Font Family</dt>' + '<dd class="panel_value"></dd>' + '</dl>' + '</li>' +
 
-							 '<li>' + '<div class="size_line_height clearfix">' + '<dl class="size section">' + '<dt class="panel_label">Font Size</dt>' + '<dd class="panel_value"></dd>' + '</dl>' + '<dl class="line_height">' + '<dt class="panel_label">Line Height</dt>' + '<dd class="panel_value"></dd>' + '</dl>' + '</div>' + '</li>' +
+							'<li>' + '<div class="size_line_height clearfix">' + '<dl class="size section">' + '<dt class="panel_label">Font Size</dt>' + '<dd class="panel_value"></dd>' + '</dl>' + '<dl class="line_height">' + '<dt class="panel_label">Line Height</dt>' + '<dd class="panel_value"></dd>' + '</dl>' + '</div>' + '</li>' +
 
-							 '<li class="panel_no_border_bottom">' + '<dl class="type_info clearfix">' + '<dt class="panel_label"></dt>' + '<dd class="type_preview">' + "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz" + '</dd>' + '</dl>' +
+							'<li class="panel_no_border_bottom">' + '<dl class="type_info clearfix">' + '<dt class="panel_label"></dt>' + '<dd class="type_preview">' + "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz" + '</dd>' + '</dl>' +
 
-							 '<div class="font_services panel_label" style="display:none;">' + 'Font Served by ' + '</div>' + '</li>' + '</ul>' +
+							'<div class="font_services panel_label" style="display:none;">' + 'Font Served by ' + '</div>' + '</li>' + '</ul>' +
 
-							 '<div class="panel_tools clearfix">' + '<div class="panel_tools_left">' + '<div class="color_info">' + '<a title="Click to change color format" class="color_info_sample">&nbsp;</a>' + '<span class="color_info_value"></span>' + '</div>' + '</div>' + '<div class="panel_tools_right">' + '<a href="https://twitter.com/share" class="tweet_icon" target="_blank">Tweet</a>' + '</div>' + '</div>' + '</div>' + '</div>');
+							'<div class="panel_tools clearfix">' + '<div class="panel_tools_left">' + '<div class="color_info">' + '<a title="Click to change color format" class="color_info_sample">&nbsp;</a>' + '<span class="color_info_value"></span>' + '</div>' + '</div>' + '<div class="panel_tools_right">' + '<a href="https://twitter.com/share" class="tweet_icon" target="_blank">Tweet</a>' + '</div>' + '</div>' + '</div>' + '</div>');
 
 				return (function() {
 					return tmpl.clone();
@@ -846,6 +850,8 @@ function _whatFont() {
 
 	return _wf;
 }
+
+// })(window.dex.jquery);
 
 function __activate_whatfont(){
 	var wf = _whatFont();

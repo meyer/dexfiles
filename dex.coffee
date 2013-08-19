@@ -1,4 +1,9 @@
+# Loaded right after Dex’s jQuery
+# window.dex =
+# 	jquery: jQuery.noConflict(true)
+
 window.dexfiles = {}
+
 window.DexConfig = (getters) ->
 	_cache = {}
 	# Object to return
