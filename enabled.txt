@@ -3,6 +3,8 @@ Do not modify this file!
 dex.js
 cloud to butt.js
 
+typography.css
+
 500px.com/fix letterspaced Helvetica.css
 
 buzzfeed.com/see yaaaaa.css
@@ -14,7 +16,6 @@ dribbble.com/big shots.js
 dribbble.com/grid overlay tweaks.css
 dribbble.com/like from grid.css
 dribbble.com/like from grid.js
--- dribbble.com/miscellaneous.css
 dribbble.com/retina loupe.css
 dribbble.com/retina loupe.js
 dribbble.com/show retina shots by default.js
@@ -40,4 +41,3 @@ tumblr.com/hide ads.css
 
 twitter.com/deemphasize crap.css
 twitter.com/i have bad eyes.css
--- twitter.com/single-column timeline.css
