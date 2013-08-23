@@ -6,9 +6,8 @@ global:
 500px.com:
 - fix letterspaced Helvetica
 buzzfeed.com:
-- see yaaaaa
+- utilities/blackout
 dribbble.com:
-- setup
 - big shots
 - grid overlay tweaks
 - like from grid
@@ -23,9 +22,9 @@ facebook.com:
 flickr.com:
 - hide eyebrow
 huffingtonpost.com:
-- buzzfeed.com/see yaaaaa
+- utilities/blackout
 quickmeme.com:
-- buzzfeed.com/see yaaaaa
+- utilities/blackout
 rog.ie:
 - text alignment change
 tumblr.com:
