@@ -1,0 +1,146 @@
+.dribbble-over{
+	/*display: none!important;*/
+}
+
+ol.dribbbles li div.dribbble-img img {
+	width: 100%;
+	max-width: 400px;
+	max-height: 300px;
+}
+
+body#shots ol.dribbbles li.group:nth-child(2n),
+body#shots ol.dribbbles li.group {
+	width: 31.27147766323%;
+	margin: 0 3.092783505155% 0 0;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.dribbbles .dribbble div[data-picture]{
+	-webkit-filter: grayscale(50%);
+	opacity: .5;
+	image-rendering:-webkit-optimize-contrast;
+}
+
+@-webkit-keyframes fadeInAllSexyLike{
+	0%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over{
+	bottom: 0px;
+}
+
+.dribbble-img{
+	position: relative;
+}
+
+.full-image{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-webkit-animation: fadeInAllSexyLike 1000ms;
+}
+
+/* TODO: Fix bucket list. */
+body#user-profile ol.dribbbles li.group:nth-child(2n),
+body#user-profile ol.dribbbles li.group,
+body#profile ol.dribbbles li.group:nth-child(2n),
+body#profile ol.dribbbles li.group{
+	width: 47.916666666667%;
+	max-width: 420px;
+}
+
+body#user-profile ol.dribbbles li.group:nth-child(2n),
+body#profile ol.dribbbles li.group:nth-child(2n){
+	float: right;
+}
+
+body#user-profile ol.dribbbles li.group:nth-child(2n),
+body#profile ol.dribbbles li.group:nth-child(2n),
+body#shots ol.dribbbles li.group:nth-child(3n){
+	margin-right: 0;
+}
+
+body#user-profile #header-inner,
+body#user-profile #content,
+body#profile #header-inner,
+body#profile #content{
+	max-width: 1182px;
+}
+
+body#shots #header-inner,
+body#shots #content{
+	max-width: 1344px;
+}
+
+/*
+body#user-profile #header-inner,
+body#user-profile #content,
+body#profile #header-inner,
+body#profile #content{
+	max-width: 1344px;
+}
+
+#main {
+	width: 65.3%;
+}
+
+div.profile-actions,
+div.secondary {
+	float: right;
+	width: 31%;
+}
+*/
+
+body#shots #main.main-full,
+body#shots #main.full-800 {
+	float: none;
+	width: auto;
+	max-width: 100%;
+}
+
+img{
+	/*image-rendering:-webkit-optimize-contrast;*/
+}
+
+ol.dribbbles li.group .extras{
+	position: relative;
+}
+
+/*ol.dribbbles li div.dribbble span.rebound-mark{
+	border-radius: 3px;
+	background: #89ba56;
+}*/
+
+ol.dribbbles li div.dribbble span[class]{
+	margin-right: 8px;
+}
+
+/*span.screenshot-dash a.twotimes,
+span.screenshot-dash a.twotimes:hover,
+#main.full-800 span.screenshot-dash a.twotimes,*/
+ol.dribbbles .retina-shot .extras:after{
+	display: inline-block;
+	content: "@2x";
+	color: #ea4b87;
+	color: #999;
+	height: 16px;
+	border-radius: 3px;
+	z-index: 10000000;
+	font-size: 12px;
+	line-height: 16px;
+	width: 30px;
+/*	text-align: center;*/
+	font-weight: bold;
+}
+
+ol.dribbbles .retina-shot .extras:after{
+	position: absolute;
+	bottom: 0;
+	right: -30px;
+}
