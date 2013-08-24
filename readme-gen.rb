@@ -19,13 +19,15 @@ end
 
 authors = YAML::load_file 'authors.yaml'
 
-toc = "# dexfiles\n\nSites I’ve tweaked with [Dex](https://github.com/meyer/dex).\n\n"
+toc = "# dexfiles\n\n"
+
+toc << "**Sites I’ve tweaked with [Dex](https://github.com/meyer/dex)**\n\n"
 
 out = capture_stdout do
 	puts "\n\n"
 	Dir.glob("*/").each do |folder|
 		puts "## #{folder[0...-1]}\n\n"
-		toc << "**#{folder[0...-1]}**\n\n"
+		toc << "- **#{folder[0...-1]}**\n"
 		Dir.glob("#{folder}*/").each do |subfolder|
 			if File.exists? "#{subfolder}info.yaml"
 				info = YAML::load_file "#{subfolder}info.yaml"
@@ -43,16 +45,16 @@ out = capture_stdout do
 
 			# TODO: Make sure this is how Github slugifies headings
 			slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-			toc << "* [#{title}](##{slug})\n\n"
+			toc << "  - [#{title}](##{slug})\n"
 
 			if info.has_key? 'Description'
-				print "\n"+info['Description']
+				puts "\n"+info['Description']
 			else
-				print "\nNo `info.yaml` provided."
+				puts "\nNo `info.yaml` provided."
 			end
 
 			if info.has_key? 'Author'
-				print "\n\n**Author**: "
+				print "\n- **Author**: "
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
@@ -62,17 +64,17 @@ out = capture_stdout do
 				else
 					print info['Author']
 				end
+				puts
 			end
 
 			if info.has_key? 'URL'
-				puts "\n**Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
+				puts "- **Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
 			end
 
-			puts "\n**[View on Github](#{subfolder})**"
-
-			puts "\n\n"
+			puts "- **[View project folder](#{subfolder})**"
+			puts "\n"
 		end
-		puts "\n\n"
+		puts "\n"
 	end
 end
 

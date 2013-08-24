@@ -1,77 +1,42 @@
 # dexfiles
 
-Sites I’ve tweaked with [Dex](https://github.com/meyer/dex).
+**Sites I’ve tweaked with [Dex](https://github.com/meyer/dex)**
 
-**500px.com**
-
-* [Fix Letterspaced Helvetica](#fix-letterspaced-helvetica)
-
-**dribbble.com**
-
-* [Big Shots](#big-shots)
-
-* [Like From Grid](#like-from-grid)
-
-* [Miscellaneous](#miscellaneous)
-
-* [Retina Loupe](#retina-loupe)
-
-* [Show Retina Shots By Default](#show-retina-shots-by-default)
-
-* [Special Tags](#special-tags)
-
-**dropbox.com**
-
-* [Open Sans to Helvetica](#open-sans-to-helvetica)
-
-**facebook.com**
-
-* [Helvetica](#helvetica)
-
-* [Hide Ads](#hide-ads)
-
-**flickr.com**
-
-* [Hide Yahoo “Eyebrow”](#hide-yahoo-eyebrow)
-
-**global**
-
-* [Cloud To Butt](#cloud-to-butt)
-
-* [Allow Pinning Anywhere](#allow-pinning-anywhere)
-
-* [shutup.css](#shutupcss)
-
-* [Miscellaneous Typography Improvements](#miscellaneous-typography-improvements)
-
-**reddit.com**
-
-* [Embiggen.js](#embiggenjs)
-
-**rog.ie**
-
-* [Left-Align Text](#left-align-text)
-
-**thepiratebay.sx**
-
-* [Remove Pop-under Click Handler](#remove-pop-under-click-handler)
-
-**tumblr.com**
-
-* [De-emphasize Sponsored Content](#de-emphasize-sponsored-content)
-
-**twitter.com**
-
-* [De-emphasize Retweets and Ads](#de-emphasize-retweets-and-ads)
-
-* [I Have Bad Eyes](#i-have-bad-eyes)
-
-* [Single-Column Timeline](#single-column-timeline)
-
-**utilities**
-
-* [Blackout](#blackout)
-
+- **500px.com**
+  - [Fix Letterspaced Helvetica](#fix-letterspaced-helvetica)
+- **dribbble.com**
+  - [Big Shots](#big-shots)
+  - [Like From Grid](#like-from-grid)
+  - [Miscellaneous](#miscellaneous)
+  - [Retina Loupe](#retina-loupe)
+  - [Show Retina Shots By Default](#show-retina-shots-by-default)
+  - [Special Tags](#special-tags)
+- **dropbox.com**
+  - [Open Sans to Helvetica](#open-sans-to-helvetica)
+- **facebook.com**
+  - [Helvetica](#helvetica)
+  - [Hide Ads](#hide-ads)
+- **flickr.com**
+  - [Hide Yahoo “Eyebrow”](#hide-yahoo-eyebrow)
+- **global**
+  - [Cloud To Butt](#cloud-to-butt)
+  - [Allow Pinning Anywhere](#allow-pinning-anywhere)
+  - [shutup.css](#shutupcss)
+  - [Miscellaneous Typography Improvements](#miscellaneous-typography-improvements)
+- **reddit.com**
+  - [Embiggen.js](#embiggenjs)
+- **rog.ie**
+  - [Left-Align Text](#left-align-text)
+- **thepiratebay.sx**
+  - [Remove Pop-under Click Handler](#remove-pop-under-click-handler)
+- **tumblr.com**
+  - [De-emphasize Sponsored Content](#de-emphasize-sponsored-content)
+- **twitter.com**
+  - [De-emphasize Retweets and Ads](#de-emphasize-retweets-and-ads)
+  - [I Have Bad Eyes](#i-have-bad-eyes)
+  - [Single-Column Timeline](#single-column-timeline)
+- **utilities**
+  - [Blackout](#blackout)
 
 
 ## 500px.com
@@ -80,10 +45,8 @@ Sites I’ve tweaked with [Dex](https://github.com/meyer/dex).
 
 No more letterspaced Helvetica! Why would you do that to a font?!
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](500px.com/fix letterspaced Helvetica/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](500px.com/fix letterspaced Helvetica/)**
 
 
 ## dribbble.com
@@ -92,48 +55,41 @@ No more letterspaced Helvetica! Why would you do that to a font?!
 
 Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](dribbble.com/big shots/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](dribbble.com/big shots/)**
 
 ### Like From Grid
 
 Adds the ability to like shots on grid pages by double-clicking on them. Hot!
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](dribbble.com/like from grid/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](dribbble.com/like from grid/)**
 
 ### Miscellaneous
 
 No `info.yaml` provided.
-**[View on Github](dribbble.com/miscellaneous/)**
-
+- **[View project folder](dribbble.com/miscellaneous/)**
 
 ### Retina Loupe
 
 Adds a retina loupe on individual shot pages for peeping those @2x pixels.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](dribbble.com/retina loupe/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](dribbble.com/retina loupe/)**
 
 ### Show Retina Shots By Default
 
 Auto-show retina shots on individual shot pages.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](dribbble.com/show retina shots by default/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](dribbble.com/show retina shots by default/)**
 
 ### Special Tags
 
 Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](dribbble.com/special tags/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](dribbble.com/special tags/)**
 
 
 ## dropbox.com
@@ -142,10 +98,8 @@ Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work 
 
 Swaps out Open Sans for Helvetica.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](dropbox.com/helvetica/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](dropbox.com/helvetica/)**
 
 
 ## facebook.com
@@ -154,18 +108,15 @@ Swaps out Open Sans for Helvetica.
 
 Swaps Lucide Grande out for Helvetica. Pretend like you’ve got new timeline! Impress your friends (if you have any)!
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](facebook.com/helvetica/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](facebook.com/helvetica/)**
 
 ### Hide Ads
 
 Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](facebook.com/hide ads/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](facebook.com/hide ads/)**
 
 
 ## flickr.com
@@ -173,11 +124,8 @@ Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blo
 ### Hide Yahoo “Eyebrow”
 
 Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet).
-**Source**: [gist.github.com/miekd/5950455](https://gist.github.com/miekd/5950455)
-
-**[View on Github](flickr.com/hide eyebrow/)**
-
-
+- **Source**: [gist.github.com/miekd/5950455](https://gist.github.com/miekd/5950455)
+- **[View project folder](flickr.com/hide eyebrow/)**
 
 
 ## global
@@ -186,38 +134,31 @@ Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet).
 
 Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old.
 
-**Author**: [Steven Frank](http://twitter.com/stevenf)
-**Source**: [github.com/panicsteve/cloud-to-butt](https://github.com/panicsteve/cloud-to-butt)
-
-**[View on Github](global/cloud to butt/)**
-
+- **Author**: [Steven Frank](http://twitter.com/stevenf)
+- **Source**: [github.com/panicsteve/cloud-to-butt](https://github.com/panicsteve/cloud-to-butt)
+- **[View project folder](global/cloud to butt/)**
 
 ### Allow Pinning Anywhere
 
 Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](global/remove pinterest meta tag/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](global/remove pinterest meta tag/)**
 
 ### shutup.css
 
 Loads a CSS file that nukes comments around the web
 
-**Author**: [Steven Frank](http://twitter.com/stevenf)
-**Source**: [stevenf.com/shutup-css](http://stevenf.com/shutup-css)
-
-**[View on Github](global/shutup/)**
-
+- **Author**: [Steven Frank](http://twitter.com/stevenf)
+- **Source**: [stevenf.com/shutup-css](http://stevenf.com/shutup-css)
+- **[View project folder](global/shutup/)**
 
 ### Miscellaneous Typography Improvements
 
 Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](global/typography/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](global/typography/)**
 
 
 ## reddit.com
@@ -226,12 +167,9 @@ Disable antialiased font smoothing and enable kerning everywhere! Note: I haven�
 
 A bookmarklet for expanding images on Reddit.
 
-**Author**: [Elliott Kember](http://twitter.com/elliottkember)
-**Source**: [gist.github.com/elliottkember/6121258](https://gist.github.com/elliottkember/6121258)
-
-**[View on Github](reddit.com/embiggen/)**
-
-
+- **Author**: [Elliott Kember](http://twitter.com/elliottkember)
+- **Source**: [gist.github.com/elliottkember/6121258](https://gist.github.com/elliottkember/6121258)
+- **[View project folder](reddit.com/embiggen/)**
 
 
 ## rog.ie
@@ -240,10 +178,8 @@ A bookmarklet for expanding images on Reddit.
 
 Changes justified text to be left-aligned.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](rog.ie/text alignment change/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](rog.ie/text alignment change/)**
 
 
 ## thepiratebay.sx
@@ -252,10 +188,8 @@ Changes justified text to be left-aligned.
 
 This is supposed to remove that silly pop-under click handler, but it doesn’t work. Yet.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](thepiratebay.sx/remove click handler/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](thepiratebay.sx/remove click handler/)**
 
 
 ## tumblr.com
@@ -264,10 +198,8 @@ This is supposed to remove that silly pop-under click handler, but it doesn’t 
 
 Fades out sponsored content.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](tumblr.com/hide ads/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](tumblr.com/hide ads/)**
 
 
 ## twitter.com
@@ -276,26 +208,22 @@ Fades out sponsored content.
 
 Fades out retweets and ads.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](twitter.com/deemphasize crap/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](twitter.com/deemphasize crap/)**
 
 ### I Have Bad Eyes
 
 Bumps up tweet font size to something that isn’t headache-inducingly small.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](twitter.com/i have bad eyes/)**
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](twitter.com/i have bad eyes/)**
 
 ### Single-Column Timeline
 
 Experimental single-column timeline. Sidebar content is completely hidden.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](twitter.com/single-column timeline/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](twitter.com/single-column timeline/)**
 
 
 ## utilities
@@ -304,9 +232,7 @@ Experimental single-column timeline. Sidebar content is completely hidden.
 
 Wipe a whole website from the face of the earth! Like opt-in SOPA.
 
-**Author**: [Mike Meyer](http://twitter.com/meyer)
-**[View on Github](utilities/blackout/)**
-
-
+- **Author**: [Mike Meyer](http://twitter.com/meyer)
+- **[View project folder](utilities/blackout/)**
 
 
