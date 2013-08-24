@@ -29,7 +29,8 @@ out = capture_stdout do
 	puts "\n\n"
 	Dir.glob("*/").each do |folder|
 		puts "## #{folder[0...-1]}\n\n"
-		toc << "- **#{folder[0...-1]}**\n"
+		slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
+		toc << "- **[#{folder[0...-1]}](##{slug})**\n"
 		Dir.glob("#{folder}*/").each do |subfolder|
 			no_yaml = true
 			if File.exists? "#{subfolder}info.yaml"
@@ -47,14 +48,13 @@ out = capture_stdout do
 			end
 
 			# TODO: Make sure this is how Github slugifies headings
-			slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-
+			# slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
 			# n += 1
 			# slug << "-#{n}"
 
-			toc << "  - [#{title}](##{slug})\n"
+			toc << "  - #{title}\n"
 
-			print "- <a id='#{slug}'></a>**#{title}**. "
+			print "- **#{title}** [[↩](#{subfolder})] — "
 
 			if info.has_key? 'Description'
 				print info['Description']
@@ -85,9 +85,6 @@ out = capture_stdout do
 			if info.has_key? 'URL'
 				puts "  - **Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
 			end
-
-			puts "  - [View project folder](#{subfolder})"
-			puts "\n"
 		end
 		puts "\n"
 	end
