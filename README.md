@@ -12,8 +12,10 @@
 - **[thepiratebay.sx](#thepiratebaysx)**
 - **[tumblr.com](#tumblrcom)**
 - **[twitter.com](#twittercom)**
-- **[global](#global)**
-- **[utilities](#utilities)**
+
+
+---
+
 
 
 ## 500px.com
@@ -68,7 +70,7 @@
 
 - **[Cloud To Butt](global/cloud to butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
 - **[Allow Pinning Anywhere](global/remove pinterest meta tag/)** by [Mike Meyer](http://twitter.com/meyer) — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
-- **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web [View source page](http://stevenf.com/shutup-css).
+- **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 - **[Miscellaneous Typography Improvements](global/typography/)** by [Mike Meyer](http://twitter.com/meyer) — Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
 
 ## utilities

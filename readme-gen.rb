@@ -29,8 +29,12 @@ out = capture_stdout do
 	puts "\n\n"
 	Dir.glob("{*.*/,global/,utilities/}").each do |folder|
 		puts "## #{folder[0...-1]}\n\n"
-		slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-		toc << "- **[#{folder[0...-1]}](##{slug})**\n"
+
+		unless ['global/','utilities/'].include? folder
+			slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
+			toc << "- **[#{folder[0...-1]}](##{slug})**\n"
+		end
+
 		Dir.glob("#{folder}*/").each do |subfolder|
 			no_yaml = true
 			if File.exists? "#{subfolder}info.yaml"
@@ -73,6 +77,7 @@ out = capture_stdout do
 
 			if info.has_key? 'Description'
 				print info['Description']
+				print '.' unless '.?!'.include? info['Description'][-1,1]
 			else
 				if no_yaml
 					print "No `info.yaml` file was found in `/#{subfolder}`."
@@ -95,6 +100,6 @@ end
 
 # puts toc + out.string
 
-File.open('README.md', 'w+') {|f| f.write(toc + out.string) }
+File.open('README.md', 'w+') {|f| f.write(toc + "\n\n---\n\n" + out.string) }
 
 puts "Updated dat README"
