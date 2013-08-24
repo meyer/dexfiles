@@ -69,7 +69,7 @@ out = capture_stdout do
 				end
 			end
 
-			print "\n\t"
+			print " — "
 
 			if info.has_key? 'Description'
 				print info['Description']
