@@ -47,14 +47,16 @@ out = capture_stdout do
 			slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
 			toc << "  - [#{title}](##{slug})\n"
 
+			print "\n| **Description** | "
 			if info.has_key? 'Description'
-				puts "\n"+info['Description']
+				print info['Description']
 			else
-				puts "\nNo `info.yaml` provided."
+				puts "No `info.yaml` provided."
 			end
+			puts " |"
 
 			if info.has_key? 'Author'
-				print "\n- **Author**: "
+				print "\n| **Author** | "
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
@@ -64,14 +66,14 @@ out = capture_stdout do
 				else
 					print info['Author']
 				end
-				puts
+				puts " |"
 			end
 
 			if info.has_key? 'URL'
-				puts "- **Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
+				puts "| **Source** | [#{info['URL'].split('://')[1]}](#{info['URL']}) |"
 			end
 
-			puts "- **[View project folder](#{subfolder})**"
+			puts "| **Github link** | [View project folder](#{subfolder}) |"
 			puts "\n"
 		end
 		puts "\n"
