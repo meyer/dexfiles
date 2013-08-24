@@ -58,10 +58,10 @@ out = capture_stdout do
 
 			# toc << "  - #{title}\n"
 
-			print "- **[#{title}](#{subfolder})** "
+			print "- **[#{title}](#{subfolder})**"
 
-			if info.has_key? 'Author'
-				print 'by '
+			if info.has_key? 'Author' && info['Author'] != 'Mike Meyer'
+				print ' by '
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
