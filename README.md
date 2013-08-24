@@ -2,234 +2,265 @@
 
 Sites I’ve tweaked with [Dex](https://github.com/meyer/dex).
 
-*500px.com*
+**500px.com**
+
 * [Fix Letterspaced Helvetica](#fix-letterspaced-helvetica)
-*dribbble.com*
+
+**dribbble.com**
+
 * [Big Shots](#big-shots)
+
 * [Like From Grid](#like-from-grid)
+
 * [Miscellaneous](#miscellaneous)
+
 * [Retina Loupe](#retina-loupe)
+
 * [Show Retina Shots By Default](#show-retina-shots-by-default)
+
 * [Special Tags](#special-tags)
-*dropbox.com*
+
+**dropbox.com**
+
 * [Open Sans to Helvetica](#open-sans-to-helvetica)
-*facebook.com*
+
+**facebook.com**
+
 * [Helvetica](#helvetica)
+
 * [Hide Ads](#hide-ads)
-*flickr.com*
+
+**flickr.com**
+
 * [Hide Yahoo “Eyebrow”](#hide-yahoo-eyebrow)
-*global*
+
+**global**
+
 * [Cloud To Butt](#cloud-to-butt)
+
 * [Allow Pinning Anywhere](#allow-pinning-anywhere)
+
 * [shutup.css](#shutupcss)
+
 * [Miscellaneous Typography Improvements](#miscellaneous-typography-improvements)
-*reddit.com*
+
+**reddit.com**
+
 * [Embiggen.js](#embiggenjs)
-*rog.ie*
+
+**rog.ie**
+
 * [Left-Align Text](#left-align-text)
-*thepiratebay.sx*
+
+**thepiratebay.sx**
+
 * [Remove Pop-under Click Handler](#remove-pop-under-click-handler)
-*tumblr.com*
+
+**tumblr.com**
+
 * [De-emphasize Sponsored Content](#de-emphasize-sponsored-content)
-*twitter.com*
+
+**twitter.com**
+
 * [De-emphasize Retweets and Ads](#de-emphasize-retweets-and-ads)
+
 * [I Have Bad Eyes](#i-have-bad-eyes)
+
 * [Single-Column Timeline](#single-column-timeline)
-*utilities*
+
+**utilities**
+
 * [Blackout](#blackout)
+
 
 
 ## 500px.com
 
-* ### Fix Letterspaced Helvetica [↩](500px.com/fix letterspaced Helvetica/)
+### [Fix Letterspaced Helvetica](500px.com/fix letterspaced Helvetica/)
 
-	No more letterspaced Helvetica! Why would you do that to a font?!
+No more letterspaced Helvetica! Why would you do that to a font?!
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## dribbble.com
 
-* ### Big Shots [↩](dribbble.com/big shots/)
+### [Big Shots](dribbble.com/big shots/)
 
-	Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
+Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-* ### Like From Grid [↩](dribbble.com/like from grid/)
+### [Like From Grid](dribbble.com/like from grid/)
 
-	Adds the ability to like shots on grid pages by double-clicking on them. Hot!
+Adds the ability to like shots on grid pages by double-clicking on them. Hot!
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-* ### Miscellaneous [↩](dribbble.com/miscellaneous/)
+### [Miscellaneous](dribbble.com/miscellaneous/)
 
-	No `info.yaml` provided.
+No `info.yaml` provided.
 
+**Author**: 
 
+### [Retina Loupe](dribbble.com/retina loupe/)
 
-* ### Retina Loupe [↩](dribbble.com/retina loupe/)
+Adds a retina loupe on individual shot pages for peeping those @2x pixels.
 
-	Adds a retina loupe on individual shot pages for peeping those @2x pixels.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+### [Show Retina Shots By Default](dribbble.com/show retina shots by default/)
 
-* ### Show Retina Shots By Default [↩](dribbble.com/show retina shots by default/)
+Auto-show retina shots on individual shot pages.
 
-	Auto-show retina shots on individual shot pages.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+### [Special Tags](dribbble.com/special tags/)
 
-* ### Special Tags [↩](dribbble.com/special tags/)
+Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
 
-	Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
-
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## dropbox.com
 
-* ### Open Sans to Helvetica [↩](dropbox.com/helvetica/)
+### [Open Sans to Helvetica](dropbox.com/helvetica/)
 
-	Swaps out Open Sans for Helvetica.
+Swaps out Open Sans for Helvetica.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## facebook.com
 
-* ### Helvetica [↩](facebook.com/helvetica/)
+### [Helvetica](facebook.com/helvetica/)
 
-	Swaps Lucide Grande out for Helvetica. Pretend like you’ve got new timeline! Impress your friends (if you have any)!
+Swaps Lucide Grande out for Helvetica. Pretend like you’ve got new timeline! Impress your friends (if you have any)!
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-* ### Hide Ads [↩](facebook.com/hide ads/)
+### [Hide Ads](facebook.com/hide ads/)
 
-	Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
+Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## flickr.com
 
-* ### Hide Yahoo “Eyebrow” [↩](flickr.com/hide eyebrow/)
+### [Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)
 
-	Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet).
+Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet).
 
-
-	[Source](https://gist.github.com/miekd/5950455)
+**Author**: **Source**: [gist.github.com/miekd/5950455](https://gist.github.com/miekd/5950455))
 
 
 
 
 ## global
 
-* ### Cloud To Butt [↩](global/cloud to butt/)
+### [Cloud To Butt](global/cloud to butt/)
 
-	Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old.
+Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old.
 
-	[Steven Frank](http://twitter.com/stevenf) made this.
-	[Source](https://github.com/panicsteve/cloud-to-butt)
-
-
-* ### Allow Pinning Anywhere [↩](global/remove pinterest meta tag/)
-
-	Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
-
-	[Mike Meyer](http://twitter.com/meyer) made this.
-
-* ### shutup.css [↩](global/shutup/)
-
-	Loads a CSS file that nukes comments around the web
-
-	[Steven Frank](http://twitter.com/stevenf) made this.
-	[Source](http://stevenf.com/shutup-css)
+**Author**: [Steven Frank](http://twitter.com/stevenf)**Source**: [github.com/panicsteve/cloud-to-butt](https://github.com/panicsteve/cloud-to-butt))
 
 
-* ### Miscellaneous Typography Improvements [↩](global/typography/)
+### [Allow Pinning Anywhere](global/remove pinterest meta tag/)
 
-	Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
+Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
+
+### [shutup.css](global/shutup/)
+
+Loads a CSS file that nukes comments around the web
+
+**Author**: [Steven Frank](http://twitter.com/stevenf)**Source**: [stevenf.com/shutup-css](http://stevenf.com/shutup-css))
+
+
+### [Miscellaneous Typography Improvements](global/typography/)
+
+Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
+
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## reddit.com
 
-* ### Embiggen.js [↩](reddit.com/embiggen/)
+### [Embiggen.js](reddit.com/embiggen/)
 
-	A bookmarklet for expanding images on Reddit.
+A bookmarklet for expanding images on Reddit.
 
-	[Elliott Kember](http://twitter.com/elliottkember) made this.
-	[Source](https://gist.github.com/elliottkember/6121258)
+**Author**: [Elliott Kember](http://twitter.com/elliottkember)**Source**: [gist.github.com/elliottkember/6121258](https://gist.github.com/elliottkember/6121258))
 
 
 
 
 ## rog.ie
 
-* ### Left-Align Text [↩](rog.ie/text alignment change/)
+### [Left-Align Text](rog.ie/text alignment change/)
 
-	Changes justified text to be left-aligned.
+Changes justified text to be left-aligned.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## thepiratebay.sx
 
-* ### Remove Pop-under Click Handler [↩](thepiratebay.sx/remove click handler/)
+### [Remove Pop-under Click Handler](thepiratebay.sx/remove click handler/)
 
-	This is supposed to remove that silly pop-under click handler, but it doesn’t work. Yet.
+This is supposed to remove that silly pop-under click handler, but it doesn’t work. Yet.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## tumblr.com
 
-* ### De-emphasize Sponsored Content [↩](tumblr.com/hide ads/)
+### [De-emphasize Sponsored Content](tumblr.com/hide ads/)
 
-	Fades out sponsored content.
+Fades out sponsored content.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## twitter.com
 
-* ### De-emphasize Retweets and Ads [↩](twitter.com/deemphasize crap/)
+### [De-emphasize Retweets and Ads](twitter.com/deemphasize crap/)
 
-	Fades out retweets and ads.
+Fades out retweets and ads.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-* ### I Have Bad Eyes [↩](twitter.com/i have bad eyes/)
+### [I Have Bad Eyes](twitter.com/i have bad eyes/)
 
-	Bumps up tweet font size to something that isn’t headache-inducingly small.
+Bumps up tweet font size to something that isn’t headache-inducingly small.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
-* ### Single-Column Timeline [↩](twitter.com/single-column timeline/)
+### [Single-Column Timeline](twitter.com/single-column timeline/)
 
-	Experimental single-column timeline. Sidebar content is completely hidden.
+Experimental single-column timeline. Sidebar content is completely hidden.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 
 ## utilities
 
-* ### Blackout [↩](utilities/blackout/)
+### [Blackout](utilities/blackout/)
 
-	Wipe a whole website from the face of the earth! Like opt-in SOPA.
+Wipe a whole website from the face of the earth! Like opt-in SOPA.
 
-	[Mike Meyer](http://twitter.com/meyer) made this.
+**Author**: [Mike Meyer](http://twitter.com/meyer)
 
 
 

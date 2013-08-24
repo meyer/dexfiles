@@ -25,7 +25,7 @@ out = capture_stdout do
 	puts "\n\n"
 	Dir.glob("*/").each do |folder|
 		puts "## #{folder[0...-1]}\n\n"
-		toc << "*#{folder[0...-1]}*\n"
+		toc << "**#{folder[0...-1]}**\n\n"
 		Dir.glob("#{folder}*/").each do |subfolder|
 			if File.exists? "#{subfolder}info.yaml"
 				info = YAML::load_file "#{subfolder}info.yaml"
@@ -33,30 +33,27 @@ out = capture_stdout do
 				info = {}
 			end
 
-			print "* "
-
 			title = ''
 			if info.has_key? 'Title'
 				title = info['Title']
 			else
 				title = subfolder.split('/')[1].gsub(/\w+/){|w| w.capitalize}
 			end
-			puts "### #{title} [↩](#{subfolder})"
+			puts "### [#{title}](#{subfolder})"
 
 			# TODO: Make sure this is how Github slugifies headings
 			slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-			toc << "* [#{title}](##{slug})\n"
+			toc << "* [#{title}](##{slug})\n\n"
 
 			if info.has_key? 'Description'
-				print "\n\t"+info['Description']
+				print "\n"+info['Description']
 			else
-				print "\n\tNo `info.yaml` provided."
+				print "\nNo `info.yaml` provided."
 			end
 
-			puts "\n\n"
+			print "\n\n**Author**: "
 
 			if info.has_key? 'Author'
-				print "\t"
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
@@ -66,11 +63,10 @@ out = capture_stdout do
 				else
 					print info['Author']
 				end
-				print ' made this.'
 			end
 
 			if info.has_key? 'URL'
-				puts "\n\t[Source](#{info['URL']})"
+				puts "**Source**: [#{info['URL'].split('://')[1]}](#{info['URL']}))"
 			end
 
 			puts "\n\n"
