@@ -29,8 +29,10 @@ out = capture_stdout do
 		puts "## #{folder[0...-1]}\n\n"
 		toc << "- **#{folder[0...-1]}**\n"
 		Dir.glob("#{folder}*/").each do |subfolder|
+			no_yaml = true
 			if File.exists? "#{subfolder}info.yaml"
 				info = YAML::load_file "#{subfolder}info.yaml"
+				no_yaml = false
 			else
 				info = {}
 			end
@@ -49,6 +51,12 @@ out = capture_stdout do
 
 			if info.has_key? 'Description'
 				puts info['Description']
+			else
+				if no_yaml
+					puts "No `info.yaml` file was found in `/#{subfolder}`."
+				else
+					puts "No description provided."
+				end
 			end
 
 			if info.has_key? 'Author'

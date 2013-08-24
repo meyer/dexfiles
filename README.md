@@ -60,6 +60,7 @@ Adds the ability to like shots on grid pages by double-clicking on them. Hot!
 - [View project folder](dribbble.com/like from grid/)
 
 ### Miscellaneous
+No `info.yaml` file was found in `/dribbble.com/miscellaneous/`.
 - [View project folder](dribbble.com/miscellaneous/)
 
 ### Retina Loupe
