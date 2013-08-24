@@ -32,7 +32,7 @@ out = capture_stdout do
 
 		unless ['global/','utilities/'].include? folder
 			slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-			toc << "- **[#{folder[0...-1]}](##{slug})**\n"
+			toc << "- [#{folder[0...-1]}](##{slug})\n"
 		end
 
 		Dir.glob("#{folder}*/").each do |subfolder|

@@ -2,16 +2,16 @@
 
 **Sites I’ve tweaked with [Dex](https://github.com/meyer/dex)**
 
-- **[500px.com](#500pxcom)**
-- **[dribbble.com](#dribbblecom)**
-- **[dropbox.com](#dropboxcom)**
-- **[facebook.com](#facebookcom)**
-- **[flickr.com](#flickrcom)**
-- **[reddit.com](#redditcom)**
-- **[rog.ie](#rogie)**
-- **[thepiratebay.sx](#thepiratebaysx)**
-- **[tumblr.com](#tumblrcom)**
-- **[twitter.com](#twittercom)**
+- [500px.com](#500pxcom)
+- [dribbble.com](#dribbblecom)
+- [dropbox.com](#dropboxcom)
+- [facebook.com](#facebookcom)
+- [flickr.com](#flickrcom)
+- [reddit.com](#redditcom)
+- [rog.ie](#rogie)
+- [thepiratebay.sx](#thepiratebaysx)
+- [tumblr.com](#tumblrcom)
+- [twitter.com](#twittercom)
 
 
 ---
