@@ -1,6 +1,6 @@
 # dexfiles
 
-**Sites I’ve tweaked with [Dex](https://github.com/meyer/dex)**
+Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**
 
 - [500px.com](#500pxcom)
 - [dribbble.com](#dribbblecom)
