@@ -39,7 +39,7 @@ out = capture_stdout do
 			else
 				title = subfolder.split('/')[1].gsub(/\w+/){|w| w.capitalize}
 			end
-			puts "### [#{title}](#{subfolder})"
+			puts "### #{title}"
 
 			# TODO: Make sure this is how Github slugifies headings
 			slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
@@ -51,9 +51,8 @@ out = capture_stdout do
 				print "\nNo `info.yaml` provided."
 			end
 
-			print "\n\n**Author**: "
-
 			if info.has_key? 'Author'
+				print "\n\n**Author**: "
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
@@ -66,8 +65,10 @@ out = capture_stdout do
 			end
 
 			if info.has_key? 'URL'
-				puts "**Source**: [#{info['URL'].split('://')[1]}](#{info['URL']}))"
+				puts "\n**Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
 			end
+
+			puts "\n**[View on Github](#{subfolder})**"
 
 			puts "\n\n"
 		end
