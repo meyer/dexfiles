@@ -23,6 +23,8 @@ toc = "# dexfiles\n\n"
 
 toc << "**Sites I’ve tweaked with [Dex](https://github.com/meyer/dex)**\n\n"
 
+n = 0
+
 out = capture_stdout do
 	puts "\n\n"
 	Dir.glob("*/").each do |folder|
@@ -43,24 +45,31 @@ out = capture_stdout do
 			else
 				title = subfolder.split('/')[1].gsub(/\w+/){|w| w.capitalize}
 			end
-			puts "### #{title}"
 
 			# TODO: Make sure this is how Github slugifies headings
 			slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
+
+			# n += 1
+			# slug << "-#{n}"
+
 			toc << "  - [#{title}](##{slug})\n"
 
+			print "- <a id='#{slug}'></a>**#{title}**. "
+
 			if info.has_key? 'Description'
-				puts info['Description']
+				print info['Description']
 			else
 				if no_yaml
-					puts "No `info.yaml` file was found in `/#{subfolder}`."
+					print "No `info.yaml` file was found in `/#{subfolder}`."
 				else
-					puts "No description provided."
+					print "No description provided."
 				end
 			end
 
+			puts
+
 			if info.has_key? 'Author'
-				print '- **Author**: '
+				print '  - **Author**: '
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
@@ -74,10 +83,10 @@ out = capture_stdout do
 			end
 
 			if info.has_key? 'URL'
-				puts "- **Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
+				puts "  - **Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
 			end
 
-			puts "- [View project folder](#{subfolder})"
+			puts "  - [View project folder](#{subfolder})"
 			puts "\n"
 		end
 		puts "\n"
