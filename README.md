@@ -42,11 +42,11 @@
 
 ## flickr.com
 
-- **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/miekd/5950455).
+- **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/miekd/5950455).
 
 ## reddit.com
 
-- **[Embiggen.js](reddit.com/embiggen/)** — A bookmarklet for expanding images on Reddit. [View source page](https://gist.github.com/elliottkember/6121258).
+- **[Embiggen.js](reddit.com/embiggen/)** by [Elliott Kember](http://twitter.com/elliottkember) — A bookmarklet for expanding images on Reddit. [View source page](https://gist.github.com/elliottkember/6121258).
 
 ## rog.ie
 
@@ -68,9 +68,9 @@
 
 ## global
 
-- **[Cloud To Butt](global/cloud to butt/)** — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
+- **[Cloud To Butt](global/cloud to butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
 - **[Allow Pinning Anywhere](global/remove pinterest meta tag/)** — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
-- **[shutup.css](global/shutup/)** — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
+- **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 - **[Miscellaneous Typography Improvements](global/typography/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
 
 ## utilities

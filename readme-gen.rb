@@ -60,7 +60,7 @@ out = capture_stdout do
 
 			print "- **[#{title}](#{subfolder})**"
 
-			if info.has_key? 'Author' && info['Author'] != 'Mike Meyer'
+			if info.has_key? 'Author' and info['Author'] != 'Mike Meyer'
 				print ' by '
 				if authors.has_key? info['Author']
 					print '['
