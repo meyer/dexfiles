@@ -54,7 +54,7 @@ out = capture_stdout do
 
 			# toc << "  - #{title}\n"
 
-			print "- **#{title}** "
+			print "- **[#{title}](#{subfolder})** "
 
 			if info.has_key? 'Author'
 				print 'by '
@@ -80,8 +80,6 @@ out = capture_stdout do
 					print "No description provided."
 				end
 			end
-
-			print " [View project page](#{subfolder})."
 
 			if info.has_key? 'URL'
 				print " [View source page](#{info['URL']})."
