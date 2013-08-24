@@ -56,7 +56,7 @@ out = capture_stdout do
 			puts " |"
 
 			if info.has_key? 'Author'
-				print "\n| **Author** | "
+				print "| **Author** | "
 				if authors.has_key? info['Author']
 					print '['
 					print info['Author']
