@@ -54,7 +54,23 @@ out = capture_stdout do
 
 			toc << "  - #{title}\n"
 
-			print "- **#{title}** — "
+			print "- **#{title}** "
+
+			if info.has_key? 'Author'
+				print '*by '
+				if authors.has_key? info['Author']
+					print '['
+					print info['Author']
+					print ']('
+					print authors[info['Author']]
+					print ')'
+				else
+					print info['Author']
+				end
+				print '*'
+			end
+
+			print ' — '
 
 			if info.has_key? 'Description'
 				print info['Description']
@@ -68,25 +84,11 @@ out = capture_stdout do
 
 			print " [View project page](#{subfolder})."
 
-			puts
-
-			if info.has_key? 'Author'
-				print '  - **Author**: '
-				if authors.has_key? info['Author']
-					print '['
-					print info['Author']
-					print ']('
-					print authors[info['Author']]
-					print ')'
-				else
-					print info['Author']
-				end
-				puts
-			end
-
 			if info.has_key? 'URL'
-				puts "  - **Source**: [#{info['URL'].split('://')[1]}](#{info['URL']})"
+				print " [View source page](#{info['URL']})."
 			end
+
+			puts
 		end
 		puts "\n"
 	end
