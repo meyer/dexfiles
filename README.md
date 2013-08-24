@@ -7,13 +7,11 @@
 - **[dropbox.com](#dropboxcom)**
 - **[facebook.com](#facebookcom)**
 - **[flickr.com](#flickrcom)**
-- **[global](#global)**
 - **[reddit.com](#redditcom)**
 - **[rog.ie](#rogie)**
 - **[thepiratebay.sx](#thepiratebaysx)**
 - **[tumblr.com](#tumblrcom)**
 - **[twitter.com](#twittercom)**
-- **[utilities](#utilities)**
 - **[global](#global)**
 - **[utilities](#utilities)**
 
@@ -55,17 +53,6 @@
 - **Hide Yahoo “Eyebrow”** 
 	Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View project page](flickr.com/hide eyebrow/). [View source page](https://gist.github.com/miekd/5950455).
 
-## global
-
-- **Cloud To Butt** by [Steven Frank](http://twitter.com/stevenf)
-	Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View project page](global/cloud to butt/). [View source page](https://github.com/panicsteve/cloud-to-butt).
-- **Allow Pinning Anywhere** by [Mike Meyer](http://twitter.com/meyer)
-	Remove the “no-pin” meta tag whenever it rears its stupid ugly head. [View project page](global/remove pinterest meta tag/).
-- **shutup.css** by [Steven Frank](http://twitter.com/stevenf)
-	Loads a CSS file that nukes comments around the web [View project page](global/shutup/). [View source page](http://stevenf.com/shutup-css).
-- **Miscellaneous Typography Improvements** by [Mike Meyer](http://twitter.com/meyer)
-	Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy. [View project page](global/typography/).
-
 ## reddit.com
 
 - **Embiggen.js** by [Elliott Kember](http://twitter.com/elliottkember)
@@ -94,11 +81,6 @@
 	Bumps up tweet font size to something that isn’t headache-inducingly small. [View project page](twitter.com/i have bad eyes/).
 - **Single-Column Timeline** by [Mike Meyer](http://twitter.com/meyer)
 	Experimental single-column timeline. Sidebar content is completely hidden. [View project page](twitter.com/single-column timeline/).
-
-## utilities
-
-- **Blackout** by [Mike Meyer](http://twitter.com/meyer)
-	Wipe a whole website from the face of the earth! Like opt-in SOPA. [View project page](utilities/blackout/).
 
 ## global
 

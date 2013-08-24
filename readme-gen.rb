@@ -27,11 +27,11 @@ n = 0
 
 out = capture_stdout do
 	puts "\n\n"
-	Dir.glob("{*/,global/,utilities/}").each do |folder|
+	Dir.glob("{*.*/,global/,utilities/}").each do |folder|
 		puts "## #{folder[0...-1]}\n\n"
 		slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
 		toc << "- **[#{folder[0...-1]}](##{slug})**\n"
-		Dir.glob("#{folder}*/").sort().each do |subfolder|
+		Dir.glob("#{folder}*/").each do |subfolder|
 			no_yaml = true
 			if File.exists? "#{subfolder}info.yaml"
 				info = YAML::load_file "#{subfolder}info.yaml"
