@@ -54,7 +54,7 @@ out = capture_stdout do
 
 			toc << "  - #{title}\n"
 
-			print "- **#{title}** [[↩](#{subfolder})] — "
+			print "- **#{title}** — "
 
 			if info.has_key? 'Description'
 				print info['Description']
@@ -65,6 +65,8 @@ out = capture_stdout do
 					print "No description provided."
 				end
 			end
+
+			print " [View project page](#{subfolder})."
 
 			puts
 
