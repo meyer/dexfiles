@@ -1,4 +1,4 @@
-((d) ->
+do(d = dex.config, $ = dex.utils.jquery) ->
 	likePending = false
 	likeIndicatorTime = 1200
 
@@ -146,5 +146,3 @@
 							, clickTime
 
 						false
-
-)(window.dexfiles.dribbble)

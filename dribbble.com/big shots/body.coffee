@@ -1,4 +1,4 @@
-((d) ->
+do(d = dex.config, $ = dex.utils.jquery) ->
 	if d.shots
 		for id, s of d.shots
 			do (id) ->
@@ -23,5 +23,3 @@
 				img.src = retinaURL
 				img.className = 'full-image'
 				img.addEventListener 'load', (-> p.appendChild img), false
-
-)(window.dexfiles.dribbble)
