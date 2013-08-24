@@ -26,7 +26,7 @@
 
 - **[Big Shots](dribbble.com/big shots/)** by [Mike Meyer](http://twitter.com/meyer) — Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
 - **[Like From Grid](dribbble.com/like from grid/)** by [Mike Meyer](http://twitter.com/meyer) — Adds the ability to like shots on grid pages by double-clicking on them. Hot!
-- **[Miscellaneous](dribbble.com/miscellaneous/)**  — No `info.yaml` file was found in `/dribbble.com/miscellaneous/`.
+- **[Miscellaneous](dribbble.com/miscellaneous/)** by [Mike Meyer](http://twitter.com/meyer) — I forgot what this is. Hmmm.
 - **[Retina Loupe](dribbble.com/retina loupe/)** by [Mike Meyer](http://twitter.com/meyer) — Adds a retina loupe on individual shot pages for peeping those @2x pixels.
 - **[Show Retina Shots By Default](dribbble.com/show retina shots by default/)** by [Mike Meyer](http://twitter.com/meyer) — Auto-show retina shots on individual shot pages.
 - **[Special Tags](dribbble.com/special tags/)** by [Mike Meyer](http://twitter.com/meyer) — Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
