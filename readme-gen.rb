@@ -21,7 +21,7 @@ authors = YAML::load_file 'authors.yaml'
 
 toc = "# dexfiles\n\n"
 
-toc << "**Sites I’ve tweaked with [Dex](https://github.com/meyer/dex)**\n\n"
+toc << "Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**\n\n"
 
 n = 0
 
