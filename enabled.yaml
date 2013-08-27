@@ -1,34 +1,31 @@
 ---
-global:
-- cloud to butt
-- remove pinterest meta tag
-- typography
 500px.com:
 - fix letterspaced Helvetica
-buzzfeed.com:
-- utilities/blackout
-dribbble.com:
-- big shots
-- grid overlay tweaks
-- like from grid
-- retina loupe
-- show retina shots by default
-- special tags
-dropbox.com:
-- helvetica
+tumblr.com:
+- hide ads
 facebook.com:
 - helvetica
 - hide ads
-flickr.com:
-- hide eyebrow
+dribbble.com:
+- like from grid
+- retina loupe
+- show retina shots by default
+- big shots
+- special tags
 huffingtonpost.com:
-- utilities/blackout
-quickmeme.com:
 - utilities/blackout
 rog.ie:
 - text alignment change
-tumblr.com:
-- hide ads
 twitter.com:
 - deemphasize crap
 - i have bad eyes
+flickr.com:
+- hide eyebrow
+quickmeme.com:
+- utilities/blackout
+buzzfeed.com:
+- utilities/blackout
+dropbox.com:
+- helvetica
+global:
+- remove pinterest meta tag

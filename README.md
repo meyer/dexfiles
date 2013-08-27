@@ -1,6 +1,6 @@
 # dexfiles
 
-Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**
+Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - [500px.com](#500pxcom)
 - [dribbble.com](#dribbblecom)
@@ -63,6 +63,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**
 ## twitter.com
 
 - **[De-emphasize Retweets and Ads](twitter.com/deemphasize crap/)** — Fades out retweets and ads.
+- **[Feather](twitter.com/feather/)** by [Chris Masterson](http://twitter.com/chrismasterson) — No description provided. [View source page](http://chrismasterson.me/feather/).
 - **[I Have Bad Eyes](twitter.com/i have bad eyes/)** — Bumps up tweet font size to something that isn’t headache-inducingly small.
 - **[Single-Column Timeline](twitter.com/single-column timeline/)** — Experimental single-column timeline. Sidebar content is completely hidden.
 
