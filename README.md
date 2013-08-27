@@ -7,6 +7,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [dropbox.com](#dropboxcom)
 - [facebook.com](#facebookcom)
 - [flickr.com](#flickrcom)
+- [pinterest.com](#pinterestcom)
 - [reddit.com](#redditcom)
 - [rog.ie](#rogie)
 - [thepiratebay.sx](#thepiratebaysx)
@@ -43,6 +44,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## flickr.com
 
 - **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/miekd/5950455).
+
+## pinterest.com
+
+- **[Fix Hamburger Icon](pinterest.com/fix hamburger icon/)** — Bump the hamburger menu icon down a bit.
 
 ## reddit.com
 
