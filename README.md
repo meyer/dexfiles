@@ -18,6 +18,16 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ---
 
 
+## global
+
+- **[Cloud To Butt](global/cloud to butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
+- **[Allow Pinning Anywhere](global/remove pinterest meta tag/)** — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
+- **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
+- **[Miscellaneous Typography Improvements](global/typography/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
+
+## utilities
+
+- **[Blackout](utilities/blackout/)** — Wipe a whole website from the face of the earth! Like opt-in SOPA.
 
 ## 500px.com
 
@@ -71,15 +81,4 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Feather](twitter.com/feather/)** by [Chris Masterson](http://twitter.com/chrismasterson) — No description provided. [View source page](http://chrismasterson.me/feather/).
 - **[I Have Bad Eyes](twitter.com/i have bad eyes/)** — Bumps up tweet font size to something that isn’t headache-inducingly small.
 - **[Single-Column Timeline](twitter.com/single-column timeline/)** — Experimental single-column timeline. Sidebar content is completely hidden.
-
-## global
-
-- **[Cloud To Butt](global/cloud to butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
-- **[Allow Pinning Anywhere](global/remove pinterest meta tag/)** — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
-- **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
-- **[Miscellaneous Typography Improvements](global/typography/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
-
-## utilities
-
-- **[Blackout](utilities/blackout/)** — Wipe a whole website from the face of the earth! Like opt-in SOPA.
 

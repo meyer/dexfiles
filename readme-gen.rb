@@ -26,8 +26,8 @@ toc << "Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.\n\n"
 n = 0
 
 out = capture_stdout do
-	puts "\n\n"
-	Dir.glob("{*.*/,global/,utilities/}").each do |folder|
+	puts "\n"
+	Dir.glob("{global/,utilities/,*.*/}").each do |folder|
 		puts "## #{folder[0...-1]}\n\n"
 
 		unless ['global/','utilities/'].include? folder
