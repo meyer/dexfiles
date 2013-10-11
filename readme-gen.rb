@@ -2,7 +2,6 @@
 # encoding: utf-8
 
 require 'yaml'
-
 require 'stringio'
 
 # http://thinkingdigitally.com/archive/capturing-output-from-puts-in-ruby/
@@ -31,6 +30,7 @@ out = capture_stdout do
 		puts "## #{folder[0...-1]}\n\n"
 
 		unless ['global/','utilities/'].include? folder
+			# TODO: Make sure this is how Github slugifies headings
 			slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
 			toc << "- [#{folder[0...-1]}](##{slug})\n"
 		end
@@ -50,13 +50,6 @@ out = capture_stdout do
 			else
 				title = subfolder.split('/')[1].gsub(/\w+/){|w| w.capitalize}
 			end
-
-			# TODO: Make sure this is how Github slugifies headings
-			# slug = title.downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-			# n += 1
-			# slug << "-#{n}"
-
-			# toc << "  - #{title}\n"
 
 			print "- **[#{title}](#{subfolder})**"
 
@@ -95,10 +88,6 @@ out = capture_stdout do
 		puts "\n"
 	end
 end
-
-# puts out.string # yeah i do
-
-# puts toc + out.string
 
 File.open('README.md', 'w+') {|f| f.write(toc + "\n\n---\n\n" + out.string) }
 

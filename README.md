@@ -7,6 +7,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [dropbox.com](#dropboxcom)
 - [facebook.com](#facebookcom)
 - [flickr.com](#flickrcom)
+- [instagram.com](#instagramcom)
 - [pinterest.com](#pinterestcom)
 - [reddit.com](#redditcom)
 - [rog.ie](#rogie)
@@ -55,6 +56,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/miekd/5950455).
 
+## instagram.com
+
+- **[Round Avatars](instagram.com/round avatars/)** — Round user avatars on Instagram.com.
+
 ## pinterest.com
 
 - **[Fix Hamburger Icon](pinterest.com/fix hamburger icon/)** — Bump the hamburger menu icon down a bit.
@@ -80,5 +85,6 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[De-emphasize Retweets and Ads](twitter.com/deemphasize crap/)** — Fades out retweets and ads.
 - **[Feather](twitter.com/feather/)** by [Chris Masterson](http://twitter.com/chrismasterson) — No description provided. [View source page](http://chrismasterson.me/feather/).
 - **[I Have Bad Eyes](twitter.com/i have bad eyes/)** — Bumps up tweet font size to something that isn’t headache-inducingly small.
+- **[Round Avatars](twitter.com/round avatars/)** — Round user avatars on Twitter.com.
 - **[Single-Column Timeline](twitter.com/single-column timeline/)** — Experimental single-column timeline. Sidebar content is completely hidden.
 

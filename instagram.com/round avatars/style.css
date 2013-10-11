@@ -1,0 +1,21 @@
+.timelineBookmark .Image, .timelineBookmark .Image::after,
+.timelineCommentAvatar.Image,
+.ImageBlock .ibImg,
+.avatar-profile, .user-avatar,
+.avatar-profile b, .user-avatar b,
+.img-outset, .img-inset,
+.img-outset b, .img-inset b,
+.avatar-container{
+	border-radius: 50%;
+}
+
+.avatar-container {
+	bottom: 41px;
+	width: 110px;
+	height: 110px;
+	padding-bottom: 5px;
+}
+
+.avatar-container .button{
+	top: 36px;
+}

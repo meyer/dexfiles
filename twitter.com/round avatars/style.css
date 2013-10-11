@@ -1,0 +1,7 @@
+.avatar,
+.conversation-module .conversation-tweet-item .stream-item-header .avatar,
+.profile-card.profile-header .avatar,
+.profile-card.profile-header .profile-picture,
+.recent-tweets .tweet .avatar{
+	border-radius: 50%;
+}
