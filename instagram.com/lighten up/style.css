@@ -1,0 +1,70 @@
+body, {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.timelineFeedPage{
+	background: #FFF;
+}
+
+.timelineBookmark{
+	text-shadow: none;
+}
+
+.timelineBookmarkAvatar::after, .timelineCommentAvatar::after, .timelinePhoto::after{
+	content: none;
+}
+
+.timelineCenter{
+	background: none;
+	border: none;
+	max-width: 640px;
+}
+
+.timelineLikes{
+	display: none;
+}
+
+.timelineCard,
+.timelineCaption.timelineComment,
+.timelineLikes{
+	border: none;
+	box-shadow: none;
+	background: #FFF;
+	margin: 0;
+}
+
+.timelinePhoto{
+	box-shadow: none;
+}
+
+.timelineCard{
+	position: relative;
+	border-radius: 0;
+}
+
+.top-bar{
+	border: none;
+	box-shadow: none;
+	background: rgba(0,0,0,.5);
+	height: 44px;
+}
+
+.top-bar-actions > li > a:active, .top-bar-actions > li > a.link-active, html.touch .top-bar-actions > li > a.pressed{
+	background: none;
+	box-shadow: none;
+}
+
+.timelinePhoto, .timelinePhoto .Image, .timelinePhoto::after{
+	border-radius: 3px;
+}
+
+.timelinePhoto::after{
+	content: none;
+}
+
+.timelineCard .mediaPhoto .timelinePhoto{
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
