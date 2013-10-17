@@ -1,11 +1,16 @@
-.timelineBookmark .Image, .timelineBookmark .Image::after,
+.timelineBookmark .Image,
+.timelineBookmark .Image::after,
+.timelineBookmarkAvatar::after,
+.timelineBookmarkAvatar .Image,
 .timelineCommentAvatar.Image,
+.timelineCommentAvatar::after,
 .ImageBlock .ibImg,
 .avatar-profile, .user-avatar,
 .avatar-profile b, .user-avatar b,
 .img-outset, .img-inset,
 .img-outset b, .img-inset b,
-.avatar-container{
+.avatar-container,
+.timelineCommentAvatar .Image{
 	border-radius: 50%;
 }
 
