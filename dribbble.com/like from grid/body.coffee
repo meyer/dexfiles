@@ -1,4 +1,4 @@
-do(d = dex.config, $ = dex.utils.jquery) ->
+do(d = dex.config) ->
 	likePending = false
 	likeIndicatorTime = 1200
 
@@ -7,17 +7,17 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 			console.log "ALREADY LIKING SHOT #{likePending}"
 			return false
 		likePending = shotID
-		shot = d.shots[shotID]
-		$shot = $("#screenshot-#{shotID}")
-		$shotLink = $('.dribbble-over', $shot)
+		shotMeta = d.shots[shotID]
+		shot = document.getElementById "screenshot-#{shotID}"
+		shotLink = shot.getElementsByClassName('dribbble-over')[0]
 
 		# Favorite indicator with fav count
-		$likeLink = $('li.fav a',$shot)
+		likeLink = shot.querySelectorAll('li.fav a')[0]
 
 		# Are we toggling?
 		if like_or_unlike == 'toggle'
 			like_or_unlike = 'like'
-			if shot.liked
+			if shotMeta.liked
 				like_or_unlike = 'unlike'
 
 		# Ignore everything but like/unlike
@@ -30,47 +30,47 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 			type: 'POST'
 			url: "#{d.profileURL}/likes"
 
-		if shot.liked && like_or_unlike == 'like'
+		if shotMeta.liked && like_or_unlike == 'like'
 
-			showLikeIndicator shot.id, action: 'like'
+			showLikeIndicator shotMeta.id, action: 'like'
 
-			console.log "Shot #{shot.id} already liked! Dummy!"
+			console.log "Shot #{shotMeta.id} already liked! Dummy!"
 			likePending = false
 			return
-		else if !shot.liked && like_or_unlike == 'unlike'
-			console.log "Shot #{shot.id} already unliked! Stupid!"
+		else if !shotMeta.liked && like_or_unlike == 'unlike'
+			console.log "Shot #{shotMeta.id} already unliked! Stupid!"
 			likePending = false
 			return
 
 		if like_or_unlike == 'unlike'
 			post_obj.data = _method: 'delete'
-			post_obj.url = "#{post_obj.url}/#{shot.id}"
+			post_obj.url = "#{post_obj.url}/#{shotMeta.id}"
 		else
-			post_obj.url = "#{post_obj.url}?screenshot_id=#{shot.id}"
+			post_obj.url = "#{post_obj.url}?screenshot_id=#{shotMeta.id}"
 
-		console.log "Here’s the plan: we’re gonna #{like_or_unlike} shot number #{shot.id}"
+		console.log "Here’s the plan: we’re gonna #{like_or_unlike} shot number #{shotMeta.id}"
 
-		$.ajax(post_obj).complete (x, status) ->
+		dex.utils.ajax post_obj, (x, status) ->
 			if status == 'success'
 				if like_or_unlike == 'unlike'
 					# Unlike it!
-					$likeLink.parent().removeClass 'marked'
-					$likeLink.text --shot.likes_count
+					likeLink.parentNode.classList.remove 'marked'
+					likeLink.innerHTML = --shotMeta.likes_count
 
-					shot.liked = false
+					shotMeta.liked = false
 
-					showLikeIndicator shot.id,
+					showLikeIndicator shotMeta.id,
 						action: 'unlike'
 
 					console.log 'UN LIEK'
 				else
 					# Like it!
-					$likeLink.parent().addClass 'marked'
-					$likeLink.text ++shot.likes_count
+					likeLink.parentNode.classList.add 'marked'
+					likeLink.innerHTML = ++shotMeta.likes_count
 
-					shot.liked = true
+					shotMeta.liked = true
 
-					showLikeIndicator shot.id,
+					showLikeIndicator shotMeta.id,
 						action: 'like'
 
 					console.log 'LIEK'
@@ -93,13 +93,16 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 			else
 				return false
 
-		$shot = $("#screenshot-#{shotID}")
-		$likeIndicator = $("<div class='#{unnn}like-indicator'><div></div></div>")
+		shot = document.getElementById("screenshot-#{shotID}")
+		likeIndicator = document.createElement 'div'
+		likeIndicator.classList = '#{unnn}like-indicator'
+		likeIndicator.appendChild document.createElement 'div'
 
-		$eff = $('.dribbble-shot', $shot).append $likeIndicator
+		eff = shot.getElementsByClassName('dribbble-shot')[0]
+		eff.appendChild likeIndicator
 
 		setTimeout ->
-			$likeIndicator.remove()
+			eff.removeChild likeIndicator
 			likePending = false
 		, likeIndicatorTime
 
@@ -112,18 +115,19 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 		dblclkTimeout = false
 
 		if d.shots
-			for id, shot of d.shots
-				do (id,shot) ->
-					$shot = $("#screenshot-#{shot.id}")
+			for id, shotMeta of d.shots
+				do (id,shotMeta) ->
+					shot = document.getElementById "screenshot-#{shotMeta.id}"
 
 					# Click tiny heart to like. Might nuke this. idk.
-					$("li.fav a", $shot).click ->
-						changeFavStatus(shot.id, 'toggle')
-						return false
+					shot.querySelectorAll("li.fav a")[0].addEventListener 'click', (e) ->
+						changeFavStatus(shotMeta.id, 'toggle')
+						e.preventDefault()
+					, false
 
 					# Double-click to like
 					clickCount = 0
-					$('.dribbble-over', $shot).click (e) ->
+					shot.getElementsByClassName('dribbble-over')[0].addEventListener 'click', (e) ->
 						return if e.metaKey # command-clicked?
 
 						clickCount++
@@ -131,7 +135,7 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 
 						if clickCount >= 2
 							if clickCount == 2
-								changeFavStatus(shot.id, 'like')
+								changeFavStatus(shotMeta.id, 'like')
 							else
 								console.log clickCount + ' clicks and counting!'
 							dblclkTimeout = setTimeout ->
@@ -141,8 +145,9 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 							dblclkTimeout = setTimeout =>
 								if clickCount != 2
 									console.log 'Double-click didn’t happen. *single tear rolls down face*'
-									document.location.href = $(@).attr 'href'
+									console.log e.target.href
+									document.location.href = e.target.href
 								clickCount = 0
 							, clickTime
 
-						false
+						e.preventDefault()

@@ -1,4 +1,4 @@
-do(d = dex.config, $ = dex.utils.jquery) ->
+do(d = dex.config) ->
 
 	$shot = $(".the-shot")
 

@@ -1,4 +1,4 @@
-do(d = dex.config, $ = dex.utils.jquery) ->
+do(d = dex.config) ->
 
 	ignored_caps = ['and','of','the']
 

@@ -2,7 +2,7 @@
 (function() {
   var __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-  (function(d, $) {
+  (function(d) {
     var $newTagContainer, $tags, formatSlug, formatTags, ignored_caps, replacements;
     ignored_caps = ['and', 'of', 'the'];
     replacements = {
@@ -82,6 +82,6 @@
         return $newTagContainer.prependTo($tags);
       }
     }
-  })(dex.config, dex.utils.jquery);
+  })(dex.config);
 
 }).call(this);

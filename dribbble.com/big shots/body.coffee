@@ -1,4 +1,4 @@
-do(d = dex.config, $ = dex.utils.jquery) ->
+do(d = dex.config) ->
 	if d.shots
 		for id, s of d.shots
 			do (id) ->
@@ -9,7 +9,7 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 
 				retinaURL = shot.querySelectorAll('div[data-media]')[0].getAttribute 'data-src'
 
-				# Animate shots? No thanks.
+				# Uncomment to allow animated shots
 				# retinaURL = retinaURL.replace('_still.gif', '.gif')
 				# retinaURL = retinaURL.replace('_animated_1x.gif', '_animated.gif')
 				# retinaURL = retinaURL.replace('_1x.gif', '.gif')
@@ -23,3 +23,5 @@ do(d = dex.config, $ = dex.utils.jquery) ->
 				img.src = retinaURL
 				img.className = 'full-image'
 				img.addEventListener 'load', (-> p.appendChild img), false
+	else
+		console.log 'No shots to process :('
