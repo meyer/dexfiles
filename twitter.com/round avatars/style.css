@@ -2,6 +2,7 @@
 .conversation-module .conversation-tweet-item .stream-item-header .avatar,
 .profile-card.profile-header .avatar,
 .profile-card.profile-header .profile-picture,
-.recent-tweets .tweet .avatar{
+.recent-tweets .tweet .avatar,
+.content-main .expansion-container .tweet.descendant .stream-item-header .avatar{
 	border-radius: 50%;
 }

@@ -1,7 +1,11 @@
-/* TODO: Fix invisible URL fragment issue. */
 .tweet-text,
 .recent-tweets p{
 	font-size: 20px!important;
 	line-height: 24px!important;
 	margin: 4px 0 6px;
+}
+
+/* No idea why optimizeLegibility causes this text to show up. */
+.tweet a .invisible, .dm-message a .invisible, .bio a .invisible {
+	text-rendering: auto;
 }
