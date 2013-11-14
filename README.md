@@ -54,10 +54,11 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## flickr.com
 
-- **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/miekd/5950455).
+- **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** by Maykel Loomans/Nikhil Nigade — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/dezinezync/6173068).
 
 ## instagram.com
 
+- **[Lighten Up](instagram.com/lighten up/)** — Strip back all the borders and text shadows and stuff. Have I been using iOS 7 too long? Answer: yes.
 - **[Round Avatars](instagram.com/round avatars/)** — Round user avatars on Instagram.com.
 
 ## pinterest.com
