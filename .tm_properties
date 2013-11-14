@@ -1,0 +1,5 @@
+[source,source.python]
+softTabs = false
+tabSize = 2
+softWrap = false
+wrapColumn = 80
