@@ -33,7 +33,7 @@ end
 out = capture_stdout do
 	puts "\n"
 	Dir.glob("{global/,utilities/,*.*/}").each do |folder|
-		# Check for /folder/subfolder/
+		# Check for /folder/
 		next if gitignore.include? folder
 
 		puts "## #{folder[0...-1]}\n\n"
