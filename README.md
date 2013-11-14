@@ -22,6 +22,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## global
 
 - **[Cloud To Butt](global/cloud to butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
+- **[Lobster 2 Georgia](global/lobster sux/)** — Change all instances of Lobster to Georgia because Lobster is turrible.
 - **[Allow Pinning Anywhere](global/remove pinterest meta tag/)** — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
 - **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 - **[Miscellaneous Typography Improvements](global/typography/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
