@@ -24,9 +24,18 @@ toc << "Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.\n\n"
 
 n = 0
 
+# Ignore gitignored folders
+gitignore = []
+File.open('.gitignore').read.gsub!(/\r?\n/, "\n").each_line do |f|
+	gitignore.push f
+end
+
 out = capture_stdout do
 	puts "\n"
 	Dir.glob("{global/,utilities/,*.*/}").each do |folder|
+		# Check for /folder/subfolder/
+		next if gitignore.include? folder
+
 		puts "## #{folder[0...-1]}\n\n"
 
 		unless ['global/','utilities/'].include? folder
@@ -36,6 +45,8 @@ out = capture_stdout do
 		end
 
 		Dir.glob("#{folder}*/").each do |subfolder|
+			# Check for /folder/subfolder/
+			next if gitignore.include? subfolder
 			no_yaml = true
 			if File.exists? "#{subfolder}info.yaml"
 				info = YAML::load_file "#{subfolder}info.yaml"
