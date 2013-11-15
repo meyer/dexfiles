@@ -22,7 +22,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## global
 
 - **[Cloud To Butt](global/cloud to butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
-- **[Lobster 2 Georgia](global/lobster sux/)** — Change all instances of Lobster to Georgia because Lobster is turrible.
+- **[Everything Sux](global/everything sux/)** — Turn that frown upside-down! Change Lobster, Open Sans, and Proxima Nova to much better alternatives.
 - **[Allow Pinning Anywhere](global/remove pinterest meta tag/)** — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
 - **[shutup.css](global/shutup/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 - **[Miscellaneous Typography Improvements](global/typography/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: I haven’t tested performance at all. Might eat all your RAMs. IDK. Sorryyyyy.
@@ -43,10 +43,6 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Retina Loupe](dribbble.com/retina loupe/)** — Adds a retina loupe on individual shot pages for peeping those @2x pixels.
 - **[Show Retina Shots By Default](dribbble.com/show retina shots by default/)** — Auto-show retina shots on individual shot pages.
 - **[Special Tags](dribbble.com/special tags/)** — Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
-
-## dropbox.com
-
-- **[Open Sans to Helvetica](dropbox.com/helvetica/)** — Swaps out Open Sans for Helvetica.
 
 ## facebook.com
 

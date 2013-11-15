@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Lobster';
+	src: local('Georgia');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Helvetica Neue');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: local('Helvetica Neue');
+}
+
+/* Typekit */
+@font-face {
+	font-family: 'proxima-nova';
+	src: local('Helvetica Neue');
+}
+
+@font-face {
+	font-family: 'proxima-nova-1';
+	src: local('Helvetica Neue');
+}
+
+@font-face {
+	font-family: 'proxima-nova-2';
+	src: local('Helvetica Neue');
+}
