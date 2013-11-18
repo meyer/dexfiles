@@ -1,6 +1,8 @@
 .DS_Store
 screenshots.psd
 dexfiles.esproj
+node_modules/
+Gruntfile.*
 
 # Ignored modules need a trailing slash
-dropbox.com/internal/
+dropbox.com/
