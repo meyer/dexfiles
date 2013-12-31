@@ -2,35 +2,39 @@
 # All the hard work done by Steven Frank
 # https://github.com/panicsteve/cloud-to-butt
 
-badWords =
-	"My Butt": /\bThe Cloud\b/g
-	"My butt": /\bThe cloud\b/g
-	"my Butt": /\bthe Cloud\b/g
-	"my butt": /\bthe cloud\b/g
-	"butt": /\bcloud\b/g
-	"Butt": /\bCloud\b/g
+try
 
-walk = (node) ->
-	# I stole this function from here:
-	# http://is.gd/mwZp7E
-	switch node.nodeType
-		when 1, 9, 11  # element, document, document fragment
-			child = node.firstChild
-			while child
-				next = child.nextSibling
-				walk child
-				child = next
+    badWords =
+        "My Butt": /\bThe Cloud\b/g
+        "My butt": /\bThe cloud\b/g
+        "my Butt": /\bthe Cloud\b/g
+        "my butt": /\bthe cloud\b/g
+        "butt": /\bcloud\b/g
+        "Butt": /\bCloud\b/g
 
-		when 3 # Text node
-			handleText node
-			break
+    walk = (node) ->
+        # I stole this function from here:
+        # http://is.gd/mwZp7E
+        switch node.nodeType
+            when 1, 9, 11  # element, document, document fragment
+                child = node.firstChild
+                while child
+                    next = child.nextSibling
+                    walk child
+                    child = next
 
-handleText = (textNode) ->
-	v = textNode.nodeValue
+            when 3 # Text node
+                handleText node
+                break
 
-	for replacement, regex of badWords
-		v = v.replace regex, replacement
+    handleText = (textNode) ->
+        v = textNode.nodeValue
 
-	textNode.nodeValue = v
+        for replacement, regex of badWords
+            v = v.replace regex, replacement
 
-walk document.body
+        textNode.nodeValue = v
+
+    walk document.body
+catch e
+    console.log "cloud2butt: #{e}"

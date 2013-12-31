@@ -1,153 +1,141 @@
 do(d = dex.config) ->
-	likePending = false
-	likeIndicatorTime = 1200
+    likePending = false
+    likeIndicatorTime = 1200
 
-	changeFavStatus = (shotID, like_or_unlike) ->
-		if likePending
-			console.log "ALREADY LIKING SHOT #{likePending}"
-			return false
-		likePending = shotID
-		shotMeta = d.shots[shotID]
-		shot = document.getElementById "screenshot-#{shotID}"
-		shotLink = shot.getElementsByClassName('dribbble-over')[0]
+    changeFavStatus = (shotID, like_or_unlike) ->
+        # try
+        throw "ALREADY LIKING SHOT #{likePending}" if likePending
+        likePending = shotID
+        shotMeta = d.shots[shotID]
+        shot = document.getElementById "screenshot-#{shotID}"
+        shotLink = shot.querySelector '.dribbble-over'
+        likeLink = shot.querySelector 'li.fav a'
 
-		# Favorite indicator with fav count
-		likeLink = shot.querySelectorAll('li.fav a')[0]
+        post_obj =
+            data: {}
+            type: 'POST'
+            url: "#{d.profileURL}/likes"
 
-		# Are we toggling?
-		if like_or_unlike == 'toggle'
-			like_or_unlike = 'like'
-			if shotMeta.liked
-				like_or_unlike = 'unlike'
+        switch like_or_unlike
+            when 'like'
+                if shotMeta.liked
+                    showLikeIndicator shotMeta.id, action: 'like'
+                    likePending = false
+                    throw "Shot #{shotMeta.id} already liked! Dummy!"
+                post_obj.url = "#{post_obj.url}?screenshot_id=#{shotMeta.id}"
 
-		# Ignore everything but like/unlike
-		if like_or_unlike != 'like' && like_or_unlike != 'unlike'
-			likePending = false
-			return
+            when 'unlike'
+                unless shotMeta.liked
+                    likePending = false
+                    throw "Shot #{shotMeta.id} already unliked! Stupid!"
+                post_obj.data = {_method: 'delete'}
+                post_obj.url = "#{post_obj.url}/#{shotMeta.id}"
 
-		post_obj =
-			data: {}
-			type: 'POST'
-			url: "#{d.profileURL}/likes"
+            when 'toggle'
+                like_or_unlike = if shotMeta.liked then 'unlike' else 'like'
 
-		if shotMeta.liked && like_or_unlike == 'like'
+            else throw "invalid option: #{like_or_unlike}"
 
-			showLikeIndicator shotMeta.id, action: 'like'
+        console.log "Here’s the plan: we’re gonna #{like_or_unlike} shot number #{shotMeta.id}"
 
-			console.log "Shot #{shotMeta.id} already liked! Dummy!"
-			likePending = false
-			return
-		else if !shotMeta.liked && like_or_unlike == 'unlike'
-			console.log "Shot #{shotMeta.id} already unliked! Stupid!"
-			likePending = false
-			return
+        jQuery.ajax post_obj.url, post_obj.data, (x, status) ->
+            likePending = false
+            throw "AJAX error" unless status is 'success'
 
-		if like_or_unlike == 'unlike'
-			post_obj.data = _method: 'delete'
-			post_obj.url = "#{post_obj.url}/#{shotMeta.id}"
-		else
-			post_obj.url = "#{post_obj.url}?screenshot_id=#{shotMeta.id}"
+            switch like_or_unlike
+                when 'unlike'
+                    likeLink.parentNode.classList.remove 'marked'
+                    likeLink.innerHTML = --shotMeta.likes_count
+                    shotMeta.liked = false
+                    showLikeIndicator shotMeta.id, action: 'unlike'
+                    console.log 'UN LIEK'
 
-		console.log "Here’s the plan: we’re gonna #{like_or_unlike} shot number #{shotMeta.id}"
+                when 'like'
+                    likeLink.parentNode.classList.add 'marked'
+                    likeLink.innerHTML = ++shotMeta.likes_count
+                    shotMeta.liked = true
+                    showLikeIndicator shotMeta.id, action: 'like'
+                    console.log 'LIEK'
 
-		dex.utils.ajax post_obj, (x, status) ->
-			if status == 'success'
-				if like_or_unlike == 'unlike'
-					# Unlike it!
-					likeLink.parentNode.classList.remove 'marked'
-					likeLink.innerHTML = --shotMeta.likes_count
+            return
 
-					shotMeta.liked = false
+        # catch e
+        #     console.log "changeFavStatus error: #{e}"
+        #     console.log e
 
-					showLikeIndicator shotMeta.id,
-						action: 'unlike'
+    showLikeIndicator = (shotID, options) ->
+        if likePending
+            throw "likePending != shotID" unless (likePending|0) is (shotID|0)
 
-					console.log 'UN LIEK'
-				else
-					# Like it!
-					likeLink.parentNode.classList.add 'marked'
-					likeLink.innerHTML = ++shotMeta.likes_count
+        unnn = ""
 
-					shotMeta.liked = true
+        if 'action' of options
+            switch options.action
+                when 'like' then break
+                when 'unlike' then unnn = 'un '
+                else throw "invalid action: #{options.action}"
 
-					showLikeIndicator shotMeta.id,
-						action: 'like'
+        shot = document.getElementById("screenshot-#{shotID}")
+        likeIndicator = document.createElement 'div'
+        likeIndicator.classList.add '#{unnn}like-indicator'
+        likeIndicator.appendChild document.createElement 'div'
 
-					console.log 'LIEK'
+        eff = shot.querySelector '.dribbble-shot'
+        eff.appendChild likeIndicator
 
-			likePending = false
-			return
-
-	showLikeIndicator = (shotID, options) ->
-		if likePending
-			if parseInt(likePending) != parseInt(shotID)
-				console.log 'WAT'
-				return false
-
-		unnn = ''
-
-		if 'action' of options
-			if options.action == 'like'
-			else if options.action == 'unlike'
-				unnn = 'un '
-			else
-				return false
-
-		shot = document.getElementById("screenshot-#{shotID}")
-		likeIndicator = document.createElement 'div'
-		likeIndicator.classList = '#{unnn}like-indicator'
-		likeIndicator.appendChild document.createElement 'div'
-
-		eff = shot.getElementsByClassName('dribbble-shot')[0]
-		eff.appendChild likeIndicator
-
-		setTimeout ->
-			eff.removeChild likeIndicator
-			likePending = false
-		, likeIndicatorTime
+        setTimeout ->
+            eff.removeChild likeIndicator
+            likePending = false
+        , likeIndicatorTime
 
 
-	# The Loop
-	if d.loggedIn
+    try
+        throw "not logged in" unless d.loggedIn
+        throw "no shots" unless d.shots
 
-		# Might need to be bumped to ~400ms
-		clickTime = 300
-		dblclkTimeout = false
+        # Might need to be bumped to ~400ms
+        clickTime = 300
+        dblclkTimeout = false
 
-		if d.shots
-			for id, shotMeta of d.shots
-				do (id,shotMeta) ->
-					shot = document.getElementById "screenshot-#{shotMeta.id}"
 
-					# Click tiny heart to like. Might nuke this. idk.
-					shot.querySelectorAll("li.fav a")[0].addEventListener 'click', (e) ->
-						changeFavStatus(shotMeta.id, 'toggle')
-						e.preventDefault()
-					, false
+        for id, shotMeta of d.shots
+            do (id, shotMeta) ->
+                shot = document.getElementById "screenshot-#{shotMeta.id}"
 
-					# Double-click to like
-					clickCount = 0
-					shot.getElementsByClassName('dribbble-over')[0].addEventListener 'click', (e) ->
-						return if e.metaKey # command-clicked?
+                # Click tiny heart to like. Might nuke this. idk.
+                shot.querySelector("li.fav a").addEventListener 'click', (e) ->
+                    changeFavStatus(shotMeta.id, 'toggle')
+                    e.preventDefault()
+                , false
 
-						clickCount++
-						clearTimeout dblclkTimeout
+                # Double-click to like
+                clickCount = 0
+                shot.querySelector('.dribbble-over').addEventListener 'click', (e) ->
+                    if e.metaKey # command-clicked?
+                        console.log "command click’d"
+                        return
 
-						if clickCount >= 2
-							if clickCount == 2
-								changeFavStatus(shotMeta.id, 'like')
-							else
-								console.log clickCount + ' clicks and counting!'
-							dblclkTimeout = setTimeout ->
-								clickCount = 0
-							, clickTime
-						else
-							dblclkTimeout = setTimeout =>
-								if clickCount != 2
-									console.log 'Double-click didn’t happen. *single tear rolls down face*'
-									console.log e.target.href
-									document.location.href = e.target.href
-								clickCount = 0
-							, clickTime
+                    e.preventDefault()
 
-						e.preventDefault()
+                    clickCount++
+                    clearTimeout dblclkTimeout
+
+                    if clickCount >= 2
+                        if clickCount == 2
+                            changeFavStatus(shotMeta.id, 'like')
+                        else
+                            console.log clickCount + ' clicks and counting!'
+                        dblclkTimeout = setTimeout ->
+                            clickCount = 0
+                        , clickTime
+                    else
+                        dblclkTimeout = setTimeout =>
+                            if clickCount != 2
+                                console.log 'Double-click didn’t happen. *single tear rolls down face*'
+                                console.log e.target.href
+                                document.location.href = e.target.href
+                            clickCount = 0
+                        , clickTime
+
+    catch e
+        console.log "like from grid error: #{e}"

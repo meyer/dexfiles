@@ -1,10 +1,18 @@
-metaTags = document.getElementsByTagName 'meta'
+console.group 'Remove Pinterest nopin tag'
 
-pinterestMetaTagFound = false
+try
+    document.querySelector('meta[name=pinterest]').name = 'please-pin-anything'
+    console.log "Removed nopin meta tag. Go forth and pin!"
+catch
+    console.log "nopin meta tag was not found."
 
-for tag in metaTags
-	if tag.name == 'pinterest'
-		tag.name = 'fuck-pinterest'
-		pinterestMetaTagFound = true
+try
+    images = document.querySelectorAll('img[nopin]')
+    throw "No unpinnable images found." unless images.length
+    images.forEach (img) ->
+        console.log "- #{img.src} is now pinnable."
+        img.removeAttribute 'nopin'
+catch e
+    console.log e
 
-console.log "Pinterest meta tag located? #{pinterestMetaTagFound}"
+console.groupEnd()

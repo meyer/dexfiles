@@ -10,10 +10,12 @@
 }
 
 .retina-shot div[data-picture]{
-/*	-webkit-transform: translateZ(0);*/
-/*	-webkit-transition: opacity 200ms linear;*/
+/*
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 200ms linear;
+*/
 	opacity: 1;
-	transition: opacity 170ms ease-out;
+	transition: opacity 170ms ease-in-out;
 }
 
 #main:not(.full-800) .retina-shot:hover div[data-picture]{
@@ -21,7 +23,7 @@
 	opacity: .5;
 }
 
-#retina-loupe>div{
+#retina-loupe > div{
 	background-color: rgba(0,0,0,.5)!important;
 	position: absolute;
 	height: 200px;
@@ -44,8 +46,8 @@
 	display: block;
 }
 
-.loupe-hidden #retina-loupe>div,
-.full-800 #retina-loupe>div{
+.loupe-hidden #retina-loupe > div,
+.full-800 #retina-loupe > div{
 	opacity: 0;
 	height: 0;
 	width: 0;
