@@ -3,3 +3,7 @@ softTabs = false
 tabSize = 2
 softWrap = false
 wrapColumn = 80
+
+[source.coffee]
+softTabs = true
+tabSize = 4
