@@ -1,3 +1,5 @@
+/* @override http://instagram.com/bullshit */
+
 body {
 	font-size: 1.5rem;
 }
@@ -8,6 +10,10 @@ body, .proxima-nova, body, input, select, textarea{
 
 input, select, textarea{
 	box-shadow: none;
+}
+
+.timelineItem{
+	position: relative;
 }
 
 .timelineSidebar{
@@ -54,12 +60,12 @@ input, select, textarea{
 .timelineLikes{
 	border: none;
 	box-shadow: none;
-	background: #fafafa;
+/*	background: #fafafa;*/
 	margin: 0;
 }
 
 .timelinePhoto{
-	box-shadow: none;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
 }
 
 .timelineCard{
@@ -84,7 +90,7 @@ span.img-outset b{
 .top-bar{
 	border: none;
 	box-shadow: none;
-	background: #FFF;
+	background: rgba(255,255,255,.95);
 	height: 44px;
 	box-shadow: 0 1px 0 rgba(0,0,0,.1);
 }
@@ -112,4 +118,28 @@ span.img-outset b{
 	left: 0;
 	bottom: 0;
 	right: 0;
+}
+
+.top-bar .logo{
+	background: url("/instagram.com/lighten up/instagram-logo.svg") no-repeat bottom center;
+}
+
+a.top-bar-home i{
+	background: url("/instagram.com/lighten up/icon-house.svg") no-repeat center center;
+}
+
+.top-bar-actions > li > a{
+	opacity: .4;
+	-webkit-filter: grayscale(1);
+	-webkit-transition: all 160ms ease-in-out;
+}
+
+#link_profile.dropdown-open a,
+.top-bar-actions > li > a:hover{
+	opacity: .6;
+	-webkit-filter: grayscale(0);
+}
+
+.timelineCommentsViewport{
+	display: none;
 }
