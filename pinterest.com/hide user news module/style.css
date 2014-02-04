@@ -11,12 +11,3 @@
 	margin-top: 0px;
 }
 */
-
-.related-pin{
-    opacity: 0;
-    -webkit-transition: opacity 200ms linear;
-}
-
-.related-pin:hover{
-    opacity: 1;
-}
