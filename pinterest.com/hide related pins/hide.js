@@ -4,18 +4,19 @@
 
   itemsBlocked = 0;
 
-  naughtyURLs = ["/resource/ContextLogResource/create/", "/resource/UserHomefeedResource/get/"];
+  naughtyURLs = ["/resource/ContextLogResource/create/", "/resource/UserHomefeedResource/get/", "/resource/UpdatesResource/get/"];
 
   $(document).ready(function() {
     return $(document).ajaxSuccess(function(e, x, s) {
-      var $newItems;
-      if (~naughtyURLs.indexOf(s.url)) {
-        $newItems = $(".pickedForYou").closest(".item:not(.related-pin)");
+      var $newItems, url;
+      url = s.url.split("?")[0];
+      if (~naughtyURLs.indexOf(url)) {
+        $newItems = $(".recommendationReason").closest(".item:not(.related-pin)");
         itemsBlocked += $newItems.length;
         console.log("" + $newItems.length + " items blocked (total: " + itemsBlocked + ")");
         return $newItems.addClass("related-pin");
       } else {
-        return console.log("URL " + s.url + " is not any of our concern.");
+        return console.log("URL " + url + " is not any of our concern.");
       }
     });
   });
