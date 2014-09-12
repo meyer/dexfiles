@@ -5,9 +5,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [500px.com](#500pxcom)
 - [dribbble.com](#dribbblecom)
 - [facebook.com](#facebookcom)
-- [fastmail.fm](#fastmailfm)
 - [flickr.com](#flickrcom)
-- [google.com](#googlecom)
 - [instagram.com](#instagramcom)
 - [pinterest.com](#pinterestcom)
 - [reddit.com](#redditcom)
@@ -49,28 +47,21 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Helvetica](facebook.com/helvetica/)** — Swaps Lucide Grande out for Helvetica. Pretend like you’ve got new timeline! Impress your friends (if you have any)!
 - **[Hide Ads](facebook.com/hide ads/)** — Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
-
-## fastmail.fm
-
-- **[HOT.UI](fastmail.fm/hotness/)** — UI Improvements and general hotness.
-- **[Unbeta](fastmail.fm/remove beta bkg/)** — Remove the *beta* text from beta.fastmail.fm.
+- **[Hide comments and trends](facebook.com/shutup/)** — Remove trends from the sidebar and comments from each feed post. WIP.
 
 ## flickr.com
 
 - **[Hide Yahoo “Eyebrow”](flickr.com/hide eyebrow/)** by Maykel Loomans/Nikhil Nigade — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/dezinezync/6173068).
 
-## google.com
-
-- **[Minus Google Plus](google.com/minus google plus/)** — No `info.yaml` file was found in `/google.com/minus google plus/`.
-
 ## instagram.com
 
-- **[Lighten Up](instagram.com/lighten up/)** — Strip back all the borders and text shadows and stuff. Have I been using iOS 7 too long? Answer: yes.
+- **[Lighten Up](instagram.com/lighten up/)** — Strip back all the borders and text shadows and stuff. Currently Ultra-Busted.
 - **[Round Avatars](instagram.com/round avatars/)** — Round user avatars on Instagram.com.
 
 ## pinterest.com
 
-- **[Fix Hamburger Icon](pinterest.com/fix hamburger icon/)** — Bump the hamburger menu icon down a bit.
+- **[Hide Related Pins](pinterest.com/hide related pins/)** — No `info.yaml` file was found in `/pinterest.com/hide related pins/`.
+- **[Hide User News Module](pinterest.com/hide user news module/)** — No `info.yaml` file was found in `/pinterest.com/hide user news module/`.
 
 ## reddit.com
 
