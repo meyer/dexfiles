@@ -1,0 +1,18 @@
+#page .copy.post{
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #EEE;
+	max-width: 600px;
+	display: block;
+	overflow: hidden;
+}
+
+.posttitle{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.postbyline{
+	display: block;
+	margin-top: 20px;
+}

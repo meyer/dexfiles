@@ -1,0 +1,15 @@
+#pagination a{
+
+}
+
+#previous_page_link{
+	opacity: .2;
+}
+
+/*
+
+#next_page_link:after{
+	content: " (older stuff)";
+}
+
+*/
