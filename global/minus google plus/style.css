@@ -1,0 +1,3 @@
+a[href*="//plus.google.com/"], a[href*="google.com/+/"]{
+	display: none!important;
+}
