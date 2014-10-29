@@ -7,9 +7,11 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [facebook.com](#facebookcom)
 - [flickr.com](#flickrcom)
 - [instagram.com](#instagramcom)
+- [metafilter.com](#metafiltercom)
 - [pinterest.com](#pinterestcom)
 - [reddit.com](#redditcom)
 - [rog.ie](#rogie)
+- [slack.com](#slackcom)
 - [thepiratebay.sx](#thepiratebaysx)
 - [tumblr.com](#tumblrcom)
 - [twitter.com](#twittercom)
@@ -45,6 +47,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## facebook.com
 
+- **[Embiggen “Hide News Story” button](facebook.com/big remove new item button/)** — I think this is the number one button I click on Facebook.
 - **[Helvetica](facebook.com/helvetica/)** — Swaps Lucide Grande out for Helvetica. Pretend like you’ve got new timeline! Impress your friends (if you have any)!
 - **[Hide Ads](facebook.com/hide ads/)** — Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 - **[Hide comments and trends](facebook.com/shutup/)** — Remove trends from the sidebar and comments from each feed post. WIP.
@@ -57,6 +60,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Lighten Up](instagram.com/lighten up/)** — Strip back all the borders and text shadows and stuff. Currently Ultra-Busted.
 - **[Round Avatars](instagram.com/round avatars/)** — Round user avatars on Instagram.com.
+
+## metafilter.com
+
+- **[Legibility Improvements](metafilter.com/improve legibility/)** — General legibility improvements. Work in progress.
 
 ## pinterest.com
 
@@ -71,19 +78,23 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Left-Align Text](rog.ie/text alignment change/)** — Changes justified text to be left-aligned.
 
+## slack.com
+
+- **[Embiggen Emojis](slack.com/embiggen emoji/)** — Messing around with emojis.
+
 ## thepiratebay.sx
 
 - **[Remove Pop-under Click Handler](thepiratebay.sx/remove click handler/)** — This is supposed to remove that silly pop-under click handler, but it doesn’t work. Yet.
 
 ## tumblr.com
 
+- **[Fix Pagination Confusion](tumblr.com/fix pagination confusion/)** — I’m dumb. Here’s the proof.
 - **[De-emphasize Sponsored Content](tumblr.com/hide ads/)** — Fades out sponsored content.
 
 ## twitter.com
 
 - **[De-emphasize Retweets and Ads](twitter.com/deemphasize crap/)** — Fades out retweets and ads.
 - **[Feather](twitter.com/feather/)** by [Chris Masterson](http://twitter.com/chrismasterson) — No description provided. [View source page](http://chrismasterson.me/feather/).
-- **[I Have Bad Eyes](twitter.com/i have bad eyes/)** — Bumps up tweet font size to something that isn’t headache-inducingly small.
 - **[Round Avatars](twitter.com/round avatars/)** — Round user avatars on Twitter.com.
 - **[Single-Column Timeline](twitter.com/single-column timeline/)** — Experimental single-column timeline. Sidebar content is completely hidden.
 
