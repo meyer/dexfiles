@@ -1,5 +1,4 @@
-do(d = dex.config) ->
-
+$(document).ready ->
 	ignored_caps = ['and','of','the']
 
 	replacements =

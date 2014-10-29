@@ -1,4 +1,4 @@
-.timelineLayout .UFIList,
-.home .UFIList{
+dd.timelineLayout .UFIList,
+dd.home .UFIList{
     display: none;
 }

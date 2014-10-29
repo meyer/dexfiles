@@ -1,0 +1,155 @@
+@mixin replaceFontWithHelvetica($font) {
+
+	/* @group #{$font} */
+
+	@font-face {
+		font-family: $font;
+		font-weight: 100;
+		font-style: normal;
+		src: local('HelveticaNeue-Light');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 100;
+		font-style: italic;
+		src: local('HelveticaNeue-LightItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 200;
+		font-style: normal;
+		src: local('HelveticaNeue-Light');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 200;
+		font-style: italic;
+		src: local('HelveticaNeue-LightItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 300;
+		font-style: normal;
+		src: local('HelveticaNeue-Light');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 300;
+		font-style: italic;
+		src: local('HelveticaNeue-LightItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 400;
+		font-style: normal;
+		src: local('HelveticaNeue');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 400;
+		font-style: italic;
+		src: local('HelveticaNeue-Italic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 500;
+		font-style: normal;
+		src: local('HelveticaNeue');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 500;
+		font-style: italic;
+		src: local('HelveticaNeue-Italic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 600;
+		font-style: normal;
+		src: local('HelveticaNeue-Medium');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 600;
+		font-style: italic;
+		src: local('HelveticaNeue-MediumItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 700;
+		font-style: normal;
+		src: local('HelveticaNeue-Bold');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 700;
+		font-style: italic;
+		src: local('HelveticaNeue-BoldItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 700;
+		font-style: normal;
+		src: local('HelveticaNeue-Bold');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 700;
+		font-style: italic;
+		src: local('HelveticaNeue-BoldItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 800;
+		font-style: normal;
+		src: local('HelveticaNeue-Bold');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 800;
+		font-style: italic;
+		src: local('HelveticaNeue-BoldItalic');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 900;
+		font-style: normal;
+		src: local('HelveticaNeue-Bold');
+	}
+
+	@font-face {
+		font-family: $font;
+		font-weight: 900;
+		font-style: italic;
+		src: local('HelveticaNeue-BoldItalic');
+	}
+
+	/* @end */
+}
+
+@include replaceFontWithHelvetica("Lobster");
+@include replaceFontWithHelvetica("Open Sans");
+@include replaceFontWithHelvetica("Proxima Nova");
+@include replaceFontWithHelvetica("proxima-nova");
+@include replaceFontWithHelvetica("proxima-nova-1");
+@include replaceFontWithHelvetica("proxima-nova-2");
+@include replaceFontWithHelvetica("Circular");
+@include replaceFontWithHelvetica("bryant-web");

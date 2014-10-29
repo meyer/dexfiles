@@ -1,8 +1,8 @@
 .DS_Store
-screenshots.psd
-dexfiles.esproj
 node_modules/
 Gruntfile.*
+.sass-cache/
+*.map
+npm-debug.log
 
 # Ignored modules need a trailing slash
-dropbox.com/

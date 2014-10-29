@@ -5,5 +5,5 @@ softWrap = false
 wrapColumn = 80
 
 [source.coffee]
-softTabs = true
+softTabs = false
 tabSize = 4
