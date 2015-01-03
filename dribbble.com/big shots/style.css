@@ -8,8 +8,8 @@ ol.dribbbles li div.dribbble-img img {
 	max-height: 300px;
 }
 
-body#shots ol.dribbbles li.group:nth-child(2n),
-body#shots ol.dribbbles li.group {
+body#home ol.dribbbles li.group:nth-child(2n),
+body#home ol.dribbbles li.group {
 	width: 31.27147766323%;
 	margin: 0 3.092783505155% 0 0;
 	height: auto;
@@ -62,7 +62,7 @@ body#profile ol.dribbbles li.group:nth-child(2n){
 
 body#user-profile ol.dribbbles li.group:nth-child(2n),
 body#profile ol.dribbbles li.group:nth-child(2n),
-body#shots ol.dribbbles li.group:nth-child(3n){
+body#home ol.dribbbles li.group:nth-child(3n){
 	margin-right: 0;
 }
 
@@ -73,8 +73,8 @@ body#profile #content{
 	max-width: 1182px;
 }
 
-body#shots #header-inner,
-body#shots #content{
+body#home #header-inner,
+body#home #content{
 	max-width: 1344px;
 }
 
@@ -97,8 +97,8 @@ div.secondary {
 }
 */
 
-body#shots #main.main-full,
-body#shots #main.full-800 {
+body#home #main.main-full,
+body#home #main.full-800 {
 	float: none;
 	width: auto;
 	max-width: 100%;
