@@ -145,11 +145,20 @@
 	/* @end */
 }
 
+// Ugh
 @include replaceFontWithHelvetica("Lobster");
+
+// Dropbox
 @include replaceFontWithHelvetica("Open Sans");
+
+// Ugh, pt 2
 @include replaceFontWithHelvetica("Proxima Nova");
 @include replaceFontWithHelvetica("proxima-nova");
 @include replaceFontWithHelvetica("proxima-nova-1");
 @include replaceFontWithHelvetica("proxima-nova-2");
+
+// AirBNB
 @include replaceFontWithHelvetica("Circular");
+//@include replaceFontWithHelvetica("Circular Air Black");
+
 @include replaceFontWithHelvetica("bryant-web");
