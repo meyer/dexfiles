@@ -63,12 +63,10 @@ task :update_readme do
 					info = {}
 				end
 
-				title = ''
-				if info.has_key? 'Title'
-					title = info['Title']
-				else
-					title = subfolder.split('/')[1].gsub(/\w+/){|w| w.capitalize}
-				end
+				# Title comes from the folder name
+				title = subfolder.split('/')[1]
+				# title = title.gsub(/\w+/){|w|w.capitalize} if title === title.downcase
+				title.capitalize!
 
 				print "- **[#{title}](#{subfolder})**"
 

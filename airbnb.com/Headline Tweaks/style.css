@@ -1,0 +1,16 @@
+.uppercase{
+  text-transform: none;
+  letter-spacing: -2px;
+}
+
+.text-contrast{
+  text-shadow: 0 1px 40px #000;
+}
+
+h2{
+  letter-spacing: -1px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-rendering: optimizeLegibility;
+}
