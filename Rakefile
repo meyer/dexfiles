@@ -65,7 +65,6 @@ task :update_readme do
 
 				# Title comes from the folder name
 				title = subfolder.split('/')[1]
-				# title = title.gsub(/\w+/){|w|w.capitalize} if title === title.downcase
 
 				print "- **[#{title}](#{subfolder})**"
 
