@@ -4,6 +4,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - [500px.com](#500pxcom)
 - [airbnb.com](#airbnbcom)
+- [daringfireball.net](#daringfireballnet)
 - [developer.apple.com](#developerapplecom)
 - [dribbble.com](#dribbblecom)
 - [facebook.com](#facebookcom)
@@ -43,6 +44,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Headline Tweaks](airbnb.com/Headline Tweaks/)** — Whatever.
 
+## daringfireball.net
+
+- **[Switch titles back to Sentence Case](daringfireball.net/Switch titles back to Sentence Case/)** — Change titles (back to Sentence Case instead of SHOUTY CAPS.
+
 ## developer.apple.com
 
 - **[Fix menu issue in Chrome](developer.apple.com/Fix menu issue in Chrome/)** — No `info.yaml` file was found in `/developer.apple.com/Fix menu issue in Chrome/`.
@@ -52,6 +57,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Big Shots](dribbble.com/Big Shots/)** — Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
 - **[Like from Grid](dribbble.com/Like from Grid/)** — Adds the ability to like shots on grid pages by double-clicking on them. Hot!
 - **[Miscellaneous](dribbble.com/Miscellaneous/)** — I forgot what this is. Hmmm.
+- **[Retina badge on shot grid](dribbble.com/Retina badge on shot grid/)** — No `info.yaml` file was found in `/dribbble.com/Retina badge on shot grid/`.
 - **[Retina Loupe](dribbble.com/Retina Loupe/)** — Adds a retina loupe on individual shot pages for peeping those @2x pixels.
 - **[Show retina shots by default](dribbble.com/Show retina shots by default/)** — Auto-show retina shots on individual shot pages.
 - **[Special Tags](dribbble.com/Special Tags/)** — Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
