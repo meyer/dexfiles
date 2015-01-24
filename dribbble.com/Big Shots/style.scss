@@ -1,0 +1,65 @@
+ol.dribbbles li div.dribbble-img img {
+	width: 100%;
+	max-width: 400px;
+	max-height: 300px;
+}
+
+body#home,
+body#user-profile,
+body#profile,
+body#shots {
+	ol.dribbbles li.group{
+		width: 31.27147766323%;
+		margin: 0 3.092783505155% 0 0;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	ol.dribbbles li.group:nth-child(3n){
+		margin-right: 0;
+	}
+
+	#header-inner,
+	#content,
+	div.profile-dash div.profile-dash-inner
+	{
+		max-width: 1340px;
+	}
+}
+
+.dribbbles .dribbble div[data-picture]{
+	-webkit-filter: grayscale(50%);
+	opacity: .5;
+	image-rendering:-webkit-optimize-contrast;
+}
+
+@-webkit-keyframes fadeInAllSexyLike{
+	0%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+ol.dribbbles li div.dribbble a.dribbble-over{
+	bottom: 0px;
+}
+
+.dribbble-img{
+	position: relative;
+}
+
+.full-image{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-webkit-animation: fadeInAllSexyLike 1000ms;
+}
+
+#main.main-full,
+#main.full-800{
+	float: none;
+	width: auto;
+	max-width: 100%;
+}
