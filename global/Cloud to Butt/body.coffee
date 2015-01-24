@@ -37,4 +37,4 @@ try
 
     walk document.body
 catch e
-    console.log "cloud2butt: #{e}"
+    console.error e.message

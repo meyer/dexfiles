@@ -3,7 +3,7 @@
   var _ref;
 
   if (typeof (typeof Static !== "undefined" && Static !== null ? (_ref = Static.SQUARESPACE_CONTEXT) != null ? _ref.websiteSettings : void 0 : void 0) === "object") {
-    console.log("Squarespace detected, useEscapeKeyToLogin =", Static.SQUARESPACE_CONTEXT.websiteSettings.useEscapeKeyToLogin);
+    console.info("Squarespace detected, useEscapeKeyToLogin =", Static.SQUARESPACE_CONTEXT.websiteSettings.useEscapeKeyToLogin);
     Static.SQUARESPACE_CONTEXT.websiteSettings.useEscapeKeyToLogin = false;
     console.log("useEscapeKeyToLogin set to false");
   } else {

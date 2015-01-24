@@ -2,14 +2,13 @@
 (function() {
   var seeYa;
 
-  seeYa = function() {
-    document.body.innerHTML = '';
-    document.title = 'That’s gonna be a no.';
-    console.log("GTFO already");
-  };
+  seeYa = setInterval(function() {
+    document.body.innerHTML = "";
+    document.title = "NOPE";
+  }, 500);
 
-  setInterval(seeYa, 2000);
-
-  seeYa();
+  setTimeout(function() {
+    return clearInterval(seeYa);
+  }, 10000);
 
 }).call(this);

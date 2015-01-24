@@ -1,9 +1,9 @@
-seeYa = ->
-	document.body.innerHTML = '';
-	document.title = 'That’s gonna be a no.'
-	console.log "GTFO already"
+seeYa = setInterval ->
+	document.body.innerHTML = "";
+	document.title = "NOPE"
 	return
+, 500
 
-setInterval seeYa, 2000
-
-seeYa()
+setTimeout ->
+	clearInterval(seeYa)
+, 10000

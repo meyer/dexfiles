@@ -43,7 +43,7 @@
     walk(document.body);
   } catch (_error) {
     e = _error;
-    console.log("cloud2butt: " + e);
+    console.error(e.message);
   }
 
 }).call(this);

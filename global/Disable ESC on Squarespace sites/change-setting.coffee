@@ -1,5 +1,5 @@
 if typeof Static?.SQUARESPACE_CONTEXT?.websiteSettings == "object"
-	console.log "Squarespace detected, useEscapeKeyToLogin =",
+	console.info "Squarespace detected, useEscapeKeyToLogin =",
 		Static.SQUARESPACE_CONTEXT.websiteSettings.useEscapeKeyToLogin
 
 	Static.SQUARESPACE_CONTEXT.websiteSettings.useEscapeKeyToLogin = false
