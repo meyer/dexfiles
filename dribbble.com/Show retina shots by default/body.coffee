@@ -1,6 +1,3 @@
-$(document).ready ->
-	setTimeout ->
-		$('.twotimes').click()
-		return
-	, 100
+document.addEventListener "DOMContentLoaded", (e) ->
+	$('.twotimes').click()
 	return

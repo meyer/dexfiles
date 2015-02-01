@@ -1,0 +1,13 @@
+/* Major shoutout to John Gruber for using ems for font sizing. */
+
+body {
+  font-size: 16px;
+}
+
+#Box{
+  width: 920px;
+}
+
+#Main{
+  width: 625px;
+}

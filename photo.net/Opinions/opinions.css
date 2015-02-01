@@ -1,0 +1,119 @@
+#forum_thread {
+  margin-right: 320px;
+}
+
+
+
+body {
+  font-size: 16px;
+  line-height: 140%;
+  font-family: "Whitney SSm", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#wide-col .box h3,
+.box h3,
+.socialbox > h3,
+#sample-header h2,
+#explore-photos .col1,
+#explore-photos ul li a,
+.post h4,
+.post .by-line,
+.post p,
+.row .post h4,
+.home-view-more a,
+#about h2,
+#about p,
+#nav li a{
+  font-family: inherit!important;
+}
+
+.post .by-line{
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#about p,
+.post p{
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#crumbs p {
+  font-family: inherit;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.share_buttons{
+  display: none;
+}
+
+.pnet-content p, .pnet-content cite, .pnet-content li, .pnet-content td{
+  font-size: 16px;
+  line-height: 22px;
+  font-family: inherit;
+}
+
+.pnet-content P CITE {}
+.pnet-content CITE {}
+
+.pnet-content td p {
+  font-size: 16px;
+}
+
+.pnet-content td li{
+  font-size: 16px;
+}
+
+.pnet-content h1,
+#forum_thread h1 {
+  font-size: 30px;
+  font-family: inherit;
+  line-height: 40px;
+}
+
+.pnet-content h2 {
+  font-family: inherit;
+  font-size: 24px;
+}
+
+.pnet-content h3 {
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.pnet-content .byline {
+  font-weight:bold;
+}
+
+.pnet-content .sep {
+  color:#fff;
+}
+
+.pnet-content .comment {
+  background-color:#eee;
+}
+
+#pageaction p {
+  color:#666;
+  font-size: 20px;
+}
+
+#sky {
+  font-family: inherit;
+  font-size: 12px;
+}
+
+#footer {
+  font-family: inherit;
+}
+
+
+.pnet-content{
+  line-height: 120%;
+}
+
+.photog-nav{
+  font-family: inherit;
+}
