@@ -58,7 +58,6 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Big Shots](dribbble.com/Big Shots/)** — Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
 - **[Like from Grid](dribbble.com/Like from Grid/)** — Adds the ability to like shots on grid pages by double-clicking on them. Hot!
-- **[Module with a really long title this is it yesss very cool awesom](dribbble.com/Module with a really long title this is it yesss very cool awesom/)** — No `info.yaml` file was found in `/dribbble.com/Module with a really long title this is it yesss very cool awesom/`.
 - **[Retina badge on shot grid](dribbble.com/Retina badge on shot grid/)** — Adds `@2x` to retina shots on the shot grid.
 - **[Retina Loupe](dribbble.com/Retina Loupe/)** — Displays a retina loupe when mousing over 1x shots on individual shot pages.
 - **[Show retina shots by default](dribbble.com/Show retina shots by default/)** — Automatically loads retina shots on individual shot pages.
