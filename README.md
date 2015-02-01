@@ -11,6 +11,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [flickr.com](#flickrcom)
 - [instagram.com](#instagramcom)
 - [metafilter.com](#metafiltercom)
+- [photo.net](#photonet)
 - [pinterest.com](#pinterestcom)
 - [reddit.com](#redditcom)
 - [rog.ie](#rogie)
@@ -24,11 +25,11 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## global
 
-- **[Allow Pinning Anywhere](global/Allow Pinning Anywhere/)** — Remove the “no-pin” meta tag whenever it rears its stupid ugly head.
+- **[Allow Pinning Anywhere](global/Allow Pinning Anywhere/)** — Remove the `no-pin` meta tag whenever it rears its stupid ugly head.
 - **[Cloud to Butt](global/Cloud to Butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
-- **[Disable ESC on Squarespace sites](global/Disable ESC on Squarespace sites/)** — Set useEscapeKeyToLogin to “false” on Squarespace sites.
+- **[Disable ESC hijacking on Squarespace sites](global/Disable ESC hijacking on Squarespace sites/)** — Sets `useEscapeKeyToLogin` to `false` on Squarespace sites.
 - **[Minus Google Plus](global/Minus Google Plus/)** — I *really really* don’t like Google Plus.
-- **[Replace font with Helvetica](global/Replace font with Helvetica/)** — Turn that frown upside-down! Change Lobster, Open Sans, and Proxima Nova to much better alternatives.
+- **[Replace bad fonts with Helvetica](global/Replace bad fonts with Helvetica/)** — Changes a few less desirable fonts to Helvetica.
 - **[Shutup.css](global/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 - **[Typography Improvements](global/Typography Improvements/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: this module causes funky issues with a few websites.
 
@@ -38,7 +39,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## 500px.com
 
-- **[Fix letterspaced Helvetica](500px.com/Fix letterspaced Helvetica/)** — No more letterspaced Helvetica! Why would you do that to a font?!
+- **[Fix letterspaced Helvetica](500px.com/Fix letterspaced Helvetica/)** — Fixes some of the more annoying type decisions on 500px.
 
 ## airbnb.com
 
@@ -46,25 +47,26 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## daringfireball.net
 
-- **[Switch titles back to Sentence Case](daringfireball.net/Switch titles back to Sentence Case/)** — Change titles (back to Sentence Case instead of SHOUTY CAPS.
+- **[Set base font size to 16px](daringfireball.net/Set base font size to 16px/)** — Bumps font size up to something readable.
+- **[Switch titles back to Sentence Case](daringfireball.net/Switch titles back to Sentence Case/)** — Changes titles (back) to Sentence Case instead of tiny SHOUTY CAPS.
 
 ## developer.apple.com
 
-- **[Fix menu issue in Chrome](developer.apple.com/Fix menu issue in Chrome/)** — No `info.yaml` file was found in `/developer.apple.com/Fix menu issue in Chrome/`.
+- **[Fix menu issue in Chrome](developer.apple.com/Fix menu issue in Chrome/)** — Fixes a floating menu issue on Apple’s developer pages. This is (hopefully) a temporary fix.
 
 ## dribbble.com
 
 - **[Big Shots](dribbble.com/Big Shots/)** — Makes shots on grid pages full-size. Pretty nice on a 27-inch display.
 - **[Like from Grid](dribbble.com/Like from Grid/)** — Adds the ability to like shots on grid pages by double-clicking on them. Hot!
-- **[Miscellaneous](dribbble.com/Miscellaneous/)** — I forgot what this is. Hmmm.
-- **[Retina badge on shot grid](dribbble.com/Retina badge on shot grid/)** — No `info.yaml` file was found in `/dribbble.com/Retina badge on shot grid/`.
-- **[Retina Loupe](dribbble.com/Retina Loupe/)** — Adds a retina loupe on individual shot pages for peeping those @2x pixels.
-- **[Show retina shots by default](dribbble.com/Show retina shots by default/)** — Auto-show retina shots on individual shot pages.
+- **[Module with a really long title this is it yesss very cool awesom](dribbble.com/Module with a really long title this is it yesss very cool awesom/)** — No `info.yaml` file was found in `/dribbble.com/Module with a really long title this is it yesss very cool awesom/`.
+- **[Retina badge on shot grid](dribbble.com/Retina badge on shot grid/)** — Adds `@2x` to retina shots on the shot grid.
+- **[Retina Loupe](dribbble.com/Retina Loupe/)** — Displays a retina loupe when mousing over 1x shots on individual shot pages.
+- **[Show retina shots by default](dribbble.com/Show retina shots by default/)** — Automatically loads retina shots on individual shot pages.
 - **[Special Tags](dribbble.com/Special Tags/)** — Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
 
 ## facebook.com
 
-- **[Big “Remove New Item” button](facebook.com/Big “Remove New Item” button/)** — I think this is the number one button I click on Facebook.
+- **[Big Remove New Item button](facebook.com/Big Remove New Item button/)** — I think this is the number one button I click on Facebook.
 - **[Hide Ads](facebook.com/Hide Ads/)** — Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 - **[Hide comments and trends](facebook.com/Hide comments and trends/)** — Remove trends from the sidebar and comments from each feed post. WIP.
 
@@ -80,6 +82,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## metafilter.com
 
 - **[Legibility Improvements](metafilter.com/Legibility Improvements/)** — General legibility improvements. Work in progress.
+
+## photo.net
+
+- **[Opinions](photo.net/Opinions/)** — No description provided.
 
 ## pinterest.com
 
