@@ -1,4 +1,4 @@
-$(document).ready ->
+document.addEventListener "DOMContentLoaded", (e) ->
 	ignored_caps = ['and','of','the']
 
 	replacements =
