@@ -57,7 +57,7 @@ task :update_readme do
 				next if gitignore.include? subfolder
 				no_yaml = true
 				if File.exists? "#{subfolder}info.yaml"
-					info = YAML::load_file "#{subfolder}info.yaml"
+					info = YAML::load_file("#{subfolder}info.yaml") || {}
 					no_yaml = false
 				else
 					info = {}
