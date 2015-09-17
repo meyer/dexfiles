@@ -65,7 +65,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## facebook.com
 
-- **[Big Remove New Item button](facebook.com/Big Remove New Item button/)** — I think this is the number one button I click on Facebook.
+- **[Big Remove New Item button](facebook.com/Big Remove New Item button/)** — Makes the news item remove button *considerably* bigger.
 - **[Hide Ads](facebook.com/Hide Ads/)** — Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 - **[Hide comments and trends](facebook.com/Hide comments and trends/)** — Remove trends from the sidebar and comments from each feed post. WIP.
 
@@ -88,8 +88,8 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## pinterest.com
 
-- **[Hide related pins](pinterest.com/Hide related pins/)** — No `info.yaml` file was found in `/pinterest.com/Hide related pins/`.
-- **[Hide user news module](pinterest.com/Hide user news module/)** — No `info.yaml` file was found in `/pinterest.com/Hide user news module/`.
+- **[Hide related pins](pinterest.com/Hide related pins/)** — No description provided.
+- **[Hide user news module](pinterest.com/Hide user news module/)** — No description provided.
 
 ## reddit.com
 
