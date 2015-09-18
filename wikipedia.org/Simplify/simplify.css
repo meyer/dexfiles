@@ -1,0 +1,154 @@
+/* @override
+	https://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=user&only=styles&skin=vector&user=Mikemeyer&version=ThLK%2BWQJ&* */
+* {
+	box-sizing: border-box
+}
+
+#content {
+	max-width: 1100px;
+	margin: 3% auto;
+	border: none
+}
+
+p{
+	max-width: 800px;
+}
+
+html,
+body {
+	height: auto;
+	background-color: #FFF
+}
+
+#mw-navigation,
+#mw-page-base {
+	/*display: none*/
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+
+#mw-navigation:hover,
+#mw-page-base:hover{
+	opacity: 1;
+}
+
+#footer {
+	display: none
+}
+
+body,
+.mw-body h1,
+.mw-body h2,
+.mw-body h3,
+.mw-body h4,
+.mw-body h5,
+.mw-body h6 {
+	font-family: "SF UI Text";
+	border: none
+}
+
+h1 i {
+	font-weight: 600;
+	font-style: normal
+}
+
+b {
+	font-weight: 500
+}
+
+#toc {
+	border-radius: 5px;
+	border: none;
+	padding: 10px 18px
+}
+
+.mw-body h1 {
+	font-size: 32px
+}
+
+.mw-body h2 {
+	font-size: 26px;
+	margin: 40px 0 20px
+}
+
+.mw-content-ltr ul,
+.mw-content-rtl .mw-content-ltr ul {
+	margin: 10px 0 15px
+}
+
+#siteSub {
+	display: none
+}
+
+.mw-body{
+	color: rgba(0, 0, 0, .75);
+	font-size: 20px;
+}
+
+.infobox{
+	padding: 15px 20px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.04);
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+.infobox caption{
+	padding: 10px;
+	color: rgba(0,0,0,.7);
+}
+
+li a,
+td a,
+p a{
+	font-weight: 500;
+	color: #000;
+	text-decoration: underline;
+	-webkit-text-decoration-color: rgba(0, 0, 0, .3);
+			text-decoration-color: rgba(0, 0, 0, .3);
+}
+
+div.hatnote a{
+	color: rgb(116, 66, 0);
+	text-decoration: underline;
+	-webkit-text-decoration-color: rgba(116, 66, 0, .3);
+			text-decoration-color: rgba(116, 66, 0, .3);
+}
+
+div.hatnote{
+	color: rgb(116, 66, 0);
+	background-color: rgba(255, 203, 27, 0.21);
+	padding: 6px 10px;
+	margin: 0 -10px 18px;
+	border-radius: 5px;
+}
+
+div.hatnote + div.hatnote{
+	margin-top: -14px;
+}
+
+.mwe-popups{
+
+}
+
+.mw-body h3,.mw-body h4,.mw-body h5,.mw-body h6{
+	line-height:1.6;
+	margin-top:5px;
+	margin-bottom:0;
+	padding-bottom:0
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	color:black;
+	background:none;
+	font-weight:normal;
+	margin:0;
+	overflow:hidden;
+	padding-top:.5em;
+	padding-bottom:.17em;
+}
+
+#toc{
+	margin: 40px 0;
+}

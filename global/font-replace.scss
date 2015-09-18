@@ -1,0 +1,47 @@
+@mixin font-replace($old-font, $new-font-ps-prefix, $suffix-map) {
+	/* Man, #{$old-font} really is the worst font ever. You’re totally right, swapping it out for #{$new-font-ps-prefix}. */
+
+	/* @group #{$old-font} */
+
+	@each $weight, $suffix in $suffix-map{
+		$italic-suffix: false;
+
+		@if length($suffix) == 1 {
+			$italic-suffix: "#{$suffix}Italic";
+		} @else {
+			$italic-suffix: nth($suffix, 2);
+		}
+
+		@font-face {
+			font-family: $old-font;
+			font-weight: $weight;
+			font-style: normal;
+			src: local("#{$new-font-ps-prefix}-#{nth($suffix, 1)}");
+		}
+
+		@font-face {
+			font-family: $old-font;
+			font-weight: $weight;
+			font-style: italic;
+			src: local("#{$new-font-ps-prefix}-#{$italic-suffix}");
+		}
+	}
+
+	/* @end */
+}
+
+@mixin replace-font-with-San-Francisco-Text($old-font) {
+	$sf-map: (
+		100: "Light",
+		200: "Light",
+		300: "Light",
+		400: ("Regular", "Italic"), // "Italic", not "RegularItalic"
+		500: "Medium",
+		600: "Semibold",
+		700: "Bold",
+		800: "Heavy",
+		900: "Heavy"
+	);
+
+	@include font-replace($old-font, ".SFNSText", $sf-map);
+}

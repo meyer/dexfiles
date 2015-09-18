@@ -1,71 +1,22 @@
-/* This whole section is super weird. */
-.profile-head{
-	max-width: 600px;
-	margin: 0 auto;
+body.grid-large .grid-image{
+
 }
 
-ol.dribbbles li div.dribbble-img img {
-	width: 100%;
-	max-width: 400px;
-	max-height: 300px;
+body.grid-large ol.dribbbles   li.group,
+body.grid-large ol.collections li.group{
+    width: 420px;
 }
 
-body#home,
-body#user-profile,
-body#profile,
-body#shots {
-	ol.dribbbles li.group{
-		width: 31.27147766323%;
-		margin: 0 3.092783505155% 0 0;
-		height: auto;
-		margin-bottom: 20px;
-	}
-
-	ol.dribbbles li.group:nth-child(3n){
-		margin-right: 0;
-	}
-
-	#header-inner,
-	#content,
-	div.profile-dash div.profile-dash-inner
-	{
-		max-width: 1344px;
-	}
+body.grid-large ol.dribbbles,
+body.grid-large ol.collections {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.dribbbles .dribbble div[data-picture]{
-	-webkit-filter: grayscale(50%);
-	opacity: .5;
-	image-rendering:-webkit-optimize-contrast;
-}
-
-@-webkit-keyframes fadeInAllSexyLike{
-	0%{
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-ol.dribbbles li div.dribbble a.dribbble-over{
-	bottom: 0px;
-}
-
-.dribbble-img{
-	position: relative;
-}
-
-.full-image{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	-webkit-animation: fadeInAllSexyLike 1000ms;
-}
-
-#main.main-full,
-#main.full-800{
-	float: none;
-	width: auto;
-	max-width: 100%;
-}
+//@media screen and (max-width: 2190px) {
+//    body.grid-large ol.dribbbles,
+//    body.grid-large ol.collections {
+//        max-width: 1800px;
+//    }
+//}

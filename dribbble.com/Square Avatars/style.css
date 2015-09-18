@@ -1,0 +1,10 @@
+div.single-title a img,
+ol.comments li h2 img,
+#nav li#t-profile img,
+div.profile-head h1 img.photo,
+ol.dribbbles li h2 a img,
+ol.collections li h2 a img{
+  border-radius: 3px;
+  background-color: #FFF;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}

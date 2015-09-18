@@ -1,9 +1,8 @@
-[source,source.python]
-softTabs = false
-tabSize = 2
-softWrap = false
-wrapColumn = 80
+include = "{$include}"
+excludeInFileChooser = "{$excludeInFileChooser}"
+excludeInFolderSearch = "{$excludeInFolderSearch}"
 
-[source.coffee]
 softTabs = false
 tabSize = 4
+softWrap = false
+wrapColumn = 80

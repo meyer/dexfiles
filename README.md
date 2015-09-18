@@ -7,8 +7,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [daringfireball.net](#daringfireballnet)
 - [developer.apple.com](#developerapplecom)
 - [dribbble.com](#dribbblecom)
+- [dropbox.com](#dropboxcom)
 - [facebook.com](#facebookcom)
 - [flickr.com](#flickrcom)
+- [inbox.google.com](#inboxgooglecom)
 - [instagram.com](#instagramcom)
 - [metafilter.com](#metafiltercom)
 - [photo.net](#photonet)
@@ -18,10 +20,9 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [slack.com](#slackcom)
 - [tumblr.com](#tumblrcom)
 - [twitter.com](#twittercom)
-
+- [wikipedia.org](#wikipediaorg)
 
 ---
-
 
 ## global
 
@@ -30,6 +31,8 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Disable ESC hijacking on Squarespace sites](global/Disable ESC hijacking on Squarespace sites/)** — Sets `useEscapeKeyToLogin` to `false` on Squarespace sites.
 - **[Minus Google Plus](global/Minus Google Plus/)** — I *really really* don’t like Google Plus.
 - **[Replace bad fonts with Helvetica](global/Replace bad fonts with Helvetica/)** — Changes a few less desirable fonts to Helvetica.
+- **[Replace bad fonts with San Francisco](global/Replace bad fonts with San Francisco/)** — Changes a few less desirable fonts to San Francisco.
+- **[Replace Helvetica with San Francisco](global/Replace Helvetica with San Francisco/)** — Changes Helvetica and Helvetica Neue to San Francisco.
 - **[Shutup.css](global/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 - **[Typography Improvements](global/Typography Improvements/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: this module causes funky issues with a few websites.
 
@@ -62,21 +65,32 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Retina Loupe](dribbble.com/Retina Loupe/)** — Displays a retina loupe when mousing over 1x shots on individual shot pages.
 - **[Show retina shots by default](dribbble.com/Show retina shots by default/)** — Automatically loads retina shots on individual shot pages.
 - **[Special Tags](dribbble.com/Special Tags/)** — Turns tags prefixed with `font:` or `tool:` into highlighted tags. Still a work in progress.
+- **[Square Avatars](dribbble.com/Square Avatars/)** — *No description provided.*
+
+## dropbox.com
+
+- **[Hide custom nav](dropbox.com/Hide custom nav/)** — *No description provided.*
 
 ## facebook.com
 
 - **[Big Remove New Item button](facebook.com/Big Remove New Item button/)** — Makes the news item remove button *considerably* bigger.
 - **[Hide Ads](facebook.com/Hide Ads/)** — Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 - **[Hide comments and trends](facebook.com/Hide comments and trends/)** — Remove trends from the sidebar and comments from each feed post. WIP.
+- **[Hide like sentence](facebook.com/Hide like sentence/)** — *No description provided.*
 
 ## flickr.com
 
-- **[Hide Eyebrow](flickr.com/Hide Eyebrow/)** by Maykel Loomans/Nikhil Nigade — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/dezinezync/6173068).
+- **[Hide Eyebrow](flickr.com/Hide Eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) and Nikhil Nigade — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/dezinezync/6173068).
+
+## inbox.google.com
+
+- **[Hide hangouts link](inbox.google.com/Hide hangouts link/)** — *No description provided.*
 
 ## instagram.com
 
 - **[Lighten Up](instagram.com/Lighten Up/)** — Strip back all the borders and text shadows and stuff. Currently Ultra-Busted.
 - **[Round Avatars](instagram.com/Round Avatars/)** — Round user avatars on Instagram.com.
+- **[Simplify](instagram.com/Simplify/)** — *No description provided.*
 
 ## metafilter.com
 
@@ -84,12 +98,12 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## photo.net
 
-- **[Opinions](photo.net/Opinions/)** — No description provided.
+- **[Opinions](photo.net/Opinions/)** — *No description provided.*
 
 ## pinterest.com
 
-- **[Hide related pins](pinterest.com/Hide related pins/)** — No description provided.
-- **[Hide user news module](pinterest.com/Hide user news module/)** — No description provided.
+- **[Hide related pins](pinterest.com/Hide related pins/)** — *No description provided.*
+- **[Hide user news module](pinterest.com/Hide user news module/)** — *No description provided.*
 
 ## reddit.com
 
@@ -111,6 +125,12 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## twitter.com
 
 - **[De-emphasize Retweets and Ads](twitter.com/De-emphasize Retweets and Ads/)** — Fades out retweets and ads.
+- **[Hide Follower Stats](twitter.com/Hide Follower Stats/)** — *No description provided.*
 - **[Round Avatars](twitter.com/Round Avatars/)** — Round user avatars on Twitter.com.
 - **[Single-column Timeline](twitter.com/Single-column Timeline/)** — Experimental single-column timeline. Sidebar content is completely hidden.
+
+## wikipedia.org
+
+- **[Simplify](wikipedia.org/Simplify/)** — *No description provided.*
+
 

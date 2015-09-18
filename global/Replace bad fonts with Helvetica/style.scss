@@ -1,4 +1,4 @@
-@mixin replaceFontWithHelvetica($font) {
+@mixin replace-font-with-Helvetica($font) {
 
 	/* @group #{$font} */
 
@@ -146,19 +146,20 @@
 }
 
 // Ugh
-@include replaceFontWithHelvetica("Lobster");
+@include replace-font-with-Helvetica("Lobster");
 
 // Dropbox
-@include replaceFontWithHelvetica("Open Sans");
+@include replace-font-with-Helvetica("Open Sans");
 
 // Ugh, pt 2
-@include replaceFontWithHelvetica("Proxima Nova");
-@include replaceFontWithHelvetica("proxima-nova");
-@include replaceFontWithHelvetica("proxima-nova-1");
-@include replaceFontWithHelvetica("proxima-nova-2");
+@include replace-font-with-Helvetica("Proxima Nova");
+@include replace-font-with-Helvetica("proxima-nova");
+@include replace-font-with-Helvetica("proxima-nova-1");
+@include replace-font-with-Helvetica("proxima-nova-2");
+@include replace-font-with-Helvetica("proxima_nova"); // Spotify
 
 // AirBNB
-@include replaceFontWithHelvetica("Circular");
-//@include replaceFontWithHelvetica("Circular Air Black");
+@include replace-font-with-Helvetica("Circular");
+//@include replace-font-with-Helvetica("Circular Air Black");
 
-@include replaceFontWithHelvetica("bryant-web");
+@include replace-font-with-Helvetica("bryant-web");

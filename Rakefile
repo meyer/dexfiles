@@ -4,33 +4,26 @@
 require 'yaml'
 require 'stringio'
 
-# http://thinkingdigitally.com/archive/capturing-output-from-puts-in-ruby/
-module Kernel
-	def capture_stdout
-		out = StringIO.new
-		$stdout = out
-		yield
-		return out
-	ensure
-		$stdout = STDOUT
-	end
-end
-
 desc "Symlink dexfiles directory to ~/.dex"
 task :install_dexfiles do
 	FileUtils.ln_s Dir.pwd, File.join(Dir.home, ".dex")
 end
 
+class Array
+	def to_sentence
+		if self.length <= 2
+			self.join(' and ')
+		else
+			self.push(self.pop(2).join(", and ")).join(", ")
+		end
+	end
+end
+
 desc "Generate updated README"
 task :update_readme do
-
 	authors = YAML::load_file 'authors.yaml'
-
-	toc = "# dexfiles\n\n"
-
-	toc << "Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.\n\n"
-
-	n = 0
+	toc = []
+	guts = []
 
 	# Ignore gitignored folders
 	gitignore = []
@@ -38,73 +31,71 @@ task :update_readme do
 		gitignore.push f
 	end
 
-	out = capture_stdout do
-		puts "\n"
 		Dir.glob("{global/,utilities/,*.*/}").each do |folder|
 			# Check for /folder/
 			next if gitignore.include? folder
 
-			puts "## #{folder[0...-1]}\n\n"
+			guts << "## #{folder[0...-1]}\n\n"
 
 			unless ['global/','utilities/'].include? folder
 				# TODO: Make sure this is how Github slugifies headings
 				slug = folder[0...-1].downcase.strip.gsub(/\s+/,'-').gsub(/[^\w-]/,'')
-				toc << "- [#{folder[0...-1]}](##{slug})\n"
+				toc << "- [#{folder[0...-1]}](##{slug})"
 			end
 
 			Dir.glob("#{folder}*/").each do |subfolder|
 				# Check for /folder/subfolder/
 				next if gitignore.include? subfolder
-				no_yaml = true
-				if File.exists? "#{subfolder}info.yaml"
+				begin
 					info = YAML::load_file("#{subfolder}info.yaml") || {}
-					no_yaml = false
-				else
+				rescue Errno::ENOENT
+					puts "No `info.yaml` file was found in `/#{subfolder}`."
 					info = {}
 				end
 
 				# Title comes from the folder name
 				title = subfolder.split('/')[1]
 
-				print "- **[#{title}](#{subfolder})**"
+				guts << "- **[#{title}](#{subfolder})**"
 
 				if info.has_key? 'Author' and info['Author'] != 'Mike Meyer'
-					print ' by '
-					if authors.has_key? info['Author']
-						print '['
-						print info['Author']
-						print ']('
-						print authors[info['Author']]
-						print ')'
-					else
-						print info['Author']
-					end
+					guts << ' by '
+					guts << info['Author'].split(/(?:\s*[\/,\&]\s*)/).map! do |a|
+						authors.has_key?(a) ? "[#{a}](#{authors[a]})" : a
+					end.to_sentence
 				end
 
-				print " — "
+				guts << " — "
 
 				if info.has_key? 'Description'
-					print info['Description']
-					print '.' unless '.?!'.include? info['Description'][-1,1]
+					guts << info['Description']
+					guts << '.' unless '.?!'.include? info['Description'][-1]
 				else
-					if no_yaml
-						print "No `info.yaml` file was found in `/#{subfolder}`."
-					else
-						print "No description provided."
-					end
+					guts << "*No description provided.*"
 				end
 
 				if info.has_key? 'URL'
-					print " [View source page](#{info['URL']})."
+					guts << " [View source page](#{info['URL']})."
 				end
 
-				puts
+				guts << "\n"
 			end
-			puts "\n"
+			guts << "\n"
 		end
-	end
 
-	File.open('README.md', 'w+') {|f| f.write(toc + "\n\n---\n\n" + out.string) }
+	File.open('README.md', 'w+') do |f|
+		f.write <<-README
+# dexfiles
+
+Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
+
+#{toc.join("\n")}
+
+---
+
+#{guts.join}
+		README
+	end
 
 	puts "Updated dat README"
 end

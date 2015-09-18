@@ -1,0 +1,8 @@
+.custom-nav{
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+}
+
+.custom-nav:hover{
+  opacity: 1;
+}
