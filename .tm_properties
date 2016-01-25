@@ -1,8 +1,0 @@
-include = "{$include}"
-excludeInFileChooser = "{$excludeInFileChooser}"
-excludeInFolderSearch = "{$excludeInFolderSearch}"
-
-softTabs = false
-tabSize = 4
-softWrap = false
-wrapColumn = 80

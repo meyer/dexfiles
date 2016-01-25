@@ -1,0 +1,15 @@
+/* formerly: Freight Sans */
+#cta, #header nav, #header nav .subnav .toggle-menu, #profile-nav li, #tab-synopsis h4, #tabbed-content header li, #viewing-content header, .acc-col, .badge, .bar-nav, .bar-nav label, .browse-nav-smenu .smenu-selected, .column-block h3, .connections h2, .crew p, .daychart-labels, .editorial .section-nav, .editorial .sidebar h1, .empty-list p, .flat-button, .has-spoilers, .inline-heading small, .large-more-button, .like-heading small, .list-stacked .secondary-heading, .logged-summary li h3, .modal h1, .page-heading, .person-heading small, .placeholder-empty p, .popup-link, .private-slug, .progress-status, .promopanel, .read-more, .sans-main, .section-heading, .setting h2, .stacked-heading small, .sub-nav, .synopsis h4, .ui-block-heading, .view-date, .yir-briefs, .yir-footer, .yir-genres li, .yir-header h2 em, .yir-intro h1, .yir-label, a.button, a.button-add, button.button, h4.tagline, input[type=submit],
+
+/* formerly: Georgia */
+#featured h2, #featured-film-header .film-title, #featured-film-header em, #featured-film-header p, #toggle-footer-nav, .captcha-quote, .film-title, .highlights, .home .popular-content, .inline-heading, .list-entry-heading, .list-set .list-stacked .secondary-heading, .list-title, .name-heading, .panel-user h3, .person-heading, .person-table h3, .posters-150 .frame-title, .posters-230 .frame-title, .profile-summary h1, .search-result-title, .secondary-heading, .section-content h2, .stacked-heading, .text, .welcome .title-wrapper, .yir h2, .yir-header h3, .yir-intro h1 strong, .yir-posters-text, .yir-reviews h4, .yir-wide h1, footer nav, h1.person-name, h1.title, h3.list-edit-introduction,
+
+/* formerly: Proxima Nova */
+#featured-film-header p small, #import-count strong, .change-number, .count, .decade-browser li, .diary-day, .featured-person-stats strong, .film-table .date, .film-title small, .large-more-button .button-number, .like-heading em small, .list-entry-heading small, .list-number, .lists .list-number, .logged-summary li dt, .panel li a.quantity, .poster-meta li, .progress-status strong, .stacked-heading em small, .stats em, .stats strong, .styled-number, .sub-nav span.count, .yir h2 .yir-number, .yir-briefs strong, .yir-number, .yir-numbers li strong, .yir-year,
+
+/* formerly: Lucida Grande */
+#header nav li .subnav li, .activity-table .activity-person-info p, .activity-table .table-activity-description blockquote, .activity-table .table-activity-description blockquote li, .activity-table .table-activity-description blockquote p, .comment-body, .comment-body.text, .editorial table td, .empty-list p small, .empty-text p small, .list-stacked .list-meta, .list-stacked .secondary-heading small, .modal textarea, .no-poster .frame-title, .panel-user h3 small, .text-large .condense_control_less, .text-large p.text-link, .yir-tweet .yir-twitter-name, body, input, label, p.text-link, select, textarea
+
+{
+  font-family: -apple-system, BlinkMacSystemFont;
+}
