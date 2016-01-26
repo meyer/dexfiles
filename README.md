@@ -12,11 +12,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [flickr.com](#flickrcom)
 - [inbox.google.com](#inboxgooglecom)
 - [instagram.com](#instagramcom)
+- [letterboxd.com](#letterboxdcom)
 - [metafilter.com](#metafiltercom)
 - [photo.net](#photonet)
 - [pinterest.com](#pinterestcom)
-- [reddit.com](#redditcom)
-- [rog.ie](#rogie)
 - [slack.com](#slackcom)
 - [tumblr.com](#tumblrcom)
 - [twitter.com](#twittercom)
@@ -92,6 +91,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Round Avatars](instagram.com/Round Avatars/)** — Round user avatars on Instagram.com.
 - **[Simplify](instagram.com/Simplify/)** — *No description provided.*
 
+## letterboxd.com
+
+- **[Fix webfonts](letterboxd.com/Fix webfonts/)** — Disable the 3-second delay that occurs when Typekit is blocked.
+
 ## metafilter.com
 
 - **[Legibility Improvements](metafilter.com/Legibility Improvements/)** — General legibility improvements. Work in progress.
@@ -104,14 +107,6 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Hide related pins](pinterest.com/Hide related pins/)** — *No description provided.*
 - **[Hide user news module](pinterest.com/Hide user news module/)** — *No description provided.*
-
-## reddit.com
-
-- **[Embiggen.js](reddit.com/Embiggen.js/)** by [Elliott Kember](http://twitter.com/elliottkember) — A bookmarklet for expanding images on Reddit. [View source page](https://gist.github.com/elliottkember/6121258).
-
-## rog.ie
-
-- **[Left-align text](rog.ie/Left-align text/)** — Changes justified text to be left-aligned.
 
 ## slack.com
 
