@@ -10,8 +10,5 @@ if (
   );
 
   window.Static.SQUARESPACE_CONTEXT.websiteSettings.useEscapeKeyToLogin = false;
-
-  console.log('useEscapeKeyToLogin set to false');
-} else {
-  console.log('No Squarespace in here...');
+  console.log('useEscapeKeyToLogin set to', false);
 }
