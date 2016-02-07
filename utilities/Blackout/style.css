@@ -1,18 +1,24 @@
-body{
-	background: #FFF!important;
+body, html{
+  overflow: hidden;
 }
 
-body:after{
-	content: "NOPE";
-	font: 50px/500px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	text-align: center;
-	width: 100%;
-	background: #000;
-	color: #FFF;
-	font-weight: 900!important;
-	z-index: 10000000;
+body {
+  -webkit-filter: grayscale(1) blur(5px);
+}
+
+html:after{
+  content: "NOPE";
+  font-size: 50px;
+  line-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0,0,0,0.9);
+  color: #FFF;
+  font-weight: 900!important;
+  z-index: 10000000;
 }
