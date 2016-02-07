@@ -1,0 +1,64 @@
+@import "../font-replace";
+
+/* Ugh */
+@font-face {
+  font-family: 'Lobster';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'proxima-nova-1';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'proxima-nova-2';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+/* Spotify */
+@font-face {
+  font-family: 'proxima_nova';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Dribbble';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+/* AirBNB */
+@font-face {
+  font-family: 'Circular';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'Circular Air Black';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'bryant-web';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}

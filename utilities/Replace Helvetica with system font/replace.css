@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
+
+@font-face {
+  font-family: 'arial';
+  src: local('BlinkMacSystemFont'), local('-apple-system');
+}
