@@ -84,7 +84,7 @@ task :update_readme do
 		end
 
 	File.open('README.md', 'w+') do |f|
-		f.write <<-README
+		f.write <<-README.strip
 # dexfiles
 
 Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
@@ -95,6 +95,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 #{guts.join}
 		README
+    f.puts
 	end
 
 	puts "Updated dat README"

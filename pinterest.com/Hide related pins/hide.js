@@ -1,7 +1,5 @@
 'use strict';
-
 let itemsBlocked = 0;
-
 const naughtyURLs = [
   '/resource/ContextLogResource/create/',
   '/resource/UserHomefeedResource/get/',

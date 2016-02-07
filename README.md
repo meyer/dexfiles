@@ -10,7 +10,6 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [dropbox.com](#dropboxcom)
 - [facebook.com](#facebookcom)
 - [flickr.com](#flickrcom)
-- [inbox.google.com](#inboxgooglecom)
 - [instagram.com](#instagramcom)
 - [letterboxd.com](#letterboxdcom)
 - [metafilter.com](#metafiltercom)
@@ -29,15 +28,13 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Cloud to Butt](global/Cloud to Butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
 - **[Disable ESC hijacking on Squarespace sites](global/Disable ESC hijacking on Squarespace sites/)** — Sets `useEscapeKeyToLogin` to `false` on Squarespace sites.
 - **[Minus Google Plus](global/Minus Google Plus/)** — I *really really* don’t like Google Plus.
-- **[Replace bad fonts with Helvetica](global/Replace bad fonts with Helvetica/)** — Changes a few less desirable fonts to Helvetica.
-- **[Replace bad fonts with San Francisco](global/Replace bad fonts with San Francisco/)** — Changes a few less desirable fonts to San Francisco.
-- **[Replace Helvetica with San Francisco](global/Replace Helvetica with San Francisco/)** — Changes Helvetica and Helvetica Neue to San Francisco.
-- **[Shutup.css](global/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
-- **[Typography Improvements](global/Typography Improvements/)** — Disable antialiased font smoothing and enable kerning everywhere! Note: this module causes funky issues with a few websites.
 
 ## utilities
 
 - **[Blackout](utilities/Blackout/)** — Wipe a whole website from the face of the earth! Like opt-in SOPA.
+- **[Replace bad fonts with system font](utilities/Replace bad fonts with system font/)** — Changes a few less desirable fonts to San Francisco.
+- **[Replace Helvetica with system font](utilities/Replace Helvetica with system font/)** — Changes Helvetica and Helvetica Neue to San Francisco.
+- **[Shutup.css](utilities/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
 
 ## 500px.com
 
@@ -76,14 +73,11 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Hide Ads](facebook.com/Hide Ads/)** — Hide ads in timeline. Not really necessary if you’ve got a full-fledged ad blocker.
 - **[Hide comments and trends](facebook.com/Hide comments and trends/)** — Remove trends from the sidebar and comments from each feed post. WIP.
 - **[Hide like sentence](facebook.com/Hide like sentence/)** — *No description provided.*
+- **[Kill Newsfeed](facebook.com/Kill Newsfeed/)** — A CSS-only version of the "Kill Newsfeed" Chrome extension. [View source page](https://github.com/nealwu/KillNewsFeed).
 
 ## flickr.com
 
 - **[Hide Eyebrow](flickr.com/Hide Eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) and Nikhil Nigade — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/dezinezync/6173068).
-
-## inbox.google.com
-
-- **[Hide hangouts link](inbox.google.com/Hide hangouts link/)** — *No description provided.*
 
 ## instagram.com
 
@@ -127,5 +121,3 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## wikipedia.org
 
 - **[Simplify](wikipedia.org/Simplify/)** — *No description provided.*
-
-
