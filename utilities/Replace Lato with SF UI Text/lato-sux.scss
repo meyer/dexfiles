@@ -1,0 +1,4 @@
+@import "../font-replace";
+
+@include replace-font-with-San-Francisco-Text('Slack-Lato');
+@include replace-font-with-San-Francisco-Text('Lato');

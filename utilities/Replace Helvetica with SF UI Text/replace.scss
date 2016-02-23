@@ -1,0 +1,5 @@
+@import "../font-replace";
+
+@include replace-font-with-San-Francisco-Text('Helvetica');
+@include replace-font-with-San-Francisco-Text('Helvetica Neue');
+@include replace-font-with-San-Francisco-Text('arial');

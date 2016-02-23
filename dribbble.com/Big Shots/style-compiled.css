@@ -1,0 +1,9 @@
+body.grid-large ol.dribbbles li.group,
+body.grid-large ol.collections li.group {
+  width: 420px; }
+
+body.grid-large ol.dribbbles,
+body.grid-large ol.collections {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap; }

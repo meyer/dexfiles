@@ -3,6 +3,7 @@
 
 require 'yaml'
 require 'stringio'
+require 'shellwords'
 
 desc "Symlink dexfiles directory to ~/.dex"
 task :install_dexfiles do
@@ -99,4 +100,15 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 	end
 
 	puts "Updated dat README"
+end
+
+SASS_BIN = './node_modules/.bin/node-sass'
+
+desc 'Compile SCSS files'
+task :compile_scss do
+  # Only match module-level SCSS files
+  Dir.glob('*/*/*.scss').map do |src|
+    dest = src.gsub(/\.scss/, '-compiled.css')
+    system "#{SASS_BIN} #{src.shellescape} #{dest.shellescape}"
+  end
 end

@@ -32,9 +32,10 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## utilities
 
 - **[Blackout](utilities/Blackout/)** — Wipe a whole website from the face of the earth! Like opt-in SOPA.
-- **[Replace bad fonts with system font](utilities/Replace bad fonts with system font/)** — Changes a few less desirable fonts to San Francisco.
-- **[Replace Helvetica with system font](utilities/Replace Helvetica with system font/)** — Changes Helvetica and Helvetica Neue to San Francisco.
-- **[Shutup.css](utilities/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](http://stevenf.com/shutup-css).
+- **[Replace bad fonts with SF UI Text](utilities/Replace bad fonts with SF UI Text/)** — Changes a few less desirable fonts to San Francisco.
+- **[Replace Helvetica with SF UI Text](utilities/Replace Helvetica with SF UI Text/)** — Changes Helvetica and Helvetica Neue to San Francisco.
+- **[Replace Lato with SF UI Text](utilities/Replace Lato with SF UI Text/)** — *No description provided.*
+- **[Shutup.css](utilities/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](https://stevenf.com/shutup-css).
 
 ## 500px.com
 

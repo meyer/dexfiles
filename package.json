@@ -1,0 +1,24 @@
+{
+  "name": "dexfiles",
+  "version": "1.0.0",
+  "description": "Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meyer/dexfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meyer/dexfiles/issues"
+  },
+  "homepage": "https://github.com/meyer/dexfiles#readme"
+}
