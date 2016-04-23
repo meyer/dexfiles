@@ -110,6 +110,117 @@
   src: local(".SFNSText-HeavyItalic"); }
 
 /* @end */
+/* Man, Montserrat really is the worst font ever. You’re totally right, swapping it out for .SFNSText. */
+/* @group Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: normal;
+  src: local(".SFNSText-Light"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: italic;
+  src: local(".SFNSText-LightItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-style: normal;
+  src: local(".SFNSText-Light"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-style: italic;
+  src: local(".SFNSText-LightItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+  src: local(".SFNSText-Light"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+  src: local(".SFNSText-LightItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: local(".SFNSText-Regular"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: italic;
+  src: local(".SFNSText-Italic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: local(".SFNSText-Medium"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: italic;
+  src: local(".SFNSText-MediumItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  src: local(".SFNSText-Semibold"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: italic;
+  src: local(".SFNSText-SemiboldItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  src: local(".SFNSText-Bold"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: italic;
+  src: local(".SFNSText-BoldItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: normal;
+  src: local(".SFNSText-Heavy"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: italic;
+  src: local(".SFNSText-HeavyItalic"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  src: local(".SFNSText-Heavy"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: italic;
+  src: local(".SFNSText-HeavyItalic"); }
+
+/* @end */
 /* Man, Open Sans really is the worst font ever. You’re totally right, swapping it out for .SFNSText. */
 /* @group Open Sans */
 @font-face {

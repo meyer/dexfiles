@@ -1,6 +1,7 @@
 @import "../font-replace";
 
 @include replace-font-with-San-Francisco-Text('Lobster');
+@include replace-font-with-San-Francisco-Text('Montserrat');
 @include replace-font-with-San-Francisco-Text('Open Sans');
 @include replace-font-with-San-Francisco-Text('Roboto');
 @include replace-font-with-San-Francisco-Text('Proxima Nova');
