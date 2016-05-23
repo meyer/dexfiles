@@ -2,7 +2,7 @@
 
 window.dex = new function() {
   const _cache = {};
-  let conf = false;
+  const conf = {};
 
   this.utils = {
     ajax: function(o, callback) {
@@ -21,8 +21,6 @@ window.dex = new function() {
   };
 
   this.__defineSetter__('config', function(configDict) {
-    conf = {};
-
     Object.keys(configDict).forEach(function(m) {
       let fn = configDict[m];
 
@@ -31,10 +29,11 @@ window.dex = new function() {
         if (!_cache[m]) {
           _cache[m] = fn();
         }
+        return 'wow';
       });
 
       conf.__defineSetter__(m, function(s) {
-        console.log(`Config object is read-only, cannot set ${m} to ${s}.`);
+        console.error(`Config object is read-only, cannot set ${m} to ${s}.`);
       });
 
     });

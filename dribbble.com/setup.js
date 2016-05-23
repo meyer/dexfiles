@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 window.dex.config = {
   loggedIn: function() {
     return document.body.classList.contains('logged-in');
@@ -23,3 +24,4 @@ window.dex.config = {
     return shotsByID;
   },
 };
+*/
