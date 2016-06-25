@@ -10,6 +10,8 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - [dropbox.com](#dropboxcom)
 - [facebook.com](#facebookcom)
 - [flickr.com](#flickrcom)
+- [github.com](#githubcom)
+- [hackingwithswift.com](#hackingwithswiftcom)
 - [instagram.com](#instagramcom)
 - [letterboxd.com](#letterboxdcom)
 - [metafilter.com](#metafiltercom)
@@ -32,14 +34,15 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## utilities
 
 - **[Blackout](utilities/Blackout/)** — Wipe a whole website from the face of the earth! Like opt-in SOPA.
-- **[Replace bad fonts with SF UI Text](utilities/Replace bad fonts with SF UI Text/)** — Changes a few less desirable fonts to San Francisco.
-- **[Replace Helvetica with SF UI Text](utilities/Replace Helvetica with SF UI Text/)** — Changes Helvetica and Helvetica Neue to San Francisco.
-- **[Replace Lato with SF UI Text](utilities/Replace Lato with SF UI Text/)** — *No description provided.*
+- **[Disable Lato webfont](utilities/Disable Lato webfont/)** — Disable any stylesheet tag that contains “lato”. It’s super effective!
+- **[Replace bad fonts with SF UI Text](utilities/Replace bad fonts with SF UI Text/)** — Change a few less desirable fonts to San Francisco.
+- **[Replace Helvetica with SF UI Text](utilities/Replace Helvetica with SF UI Text/)** — Change Helvetica and Helvetica Neue to San Francisco.
+- **[Replace Lato with SF UI Text](utilities/Replace Lato with SF UI Text/)** — Change Lato to San Francisco Text.
 - **[Shutup.css](utilities/Shutup.css/)** by [Steven Frank](http://twitter.com/stevenf) — Loads a CSS file that nukes comments around the web. [View source page](https://stevenf.com/shutup-css).
 
 ## 500px.com
 
-- **[Fix letterspaced Helvetica](500px.com/Fix letterspaced Helvetica/)** — Fixes some of the more annoying type decisions on 500px.
+- **[Fix letterspaced Helvetica](500px.com/Fix letterspaced Helvetica/)** — Fix some of the more annoying type decisions on 500px.
 
 ## airbnb.com
 
@@ -48,11 +51,11 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 ## daringfireball.net
 
 - **[Set base font size to 16px](daringfireball.net/Set base font size to 16px/)** — Bumps font size up to something readable.
-- **[Switch titles back to Sentence Case](daringfireball.net/Switch titles back to Sentence Case/)** — Changes titles (back) to Sentence Case instead of tiny SHOUTY CAPS.
+- **[Switch titles back to Sentence Case](daringfireball.net/Switch titles back to Sentence Case/)** — Change titles (back) to Sentence Case instead of tiny SHOUTY CAPS.
 
 ## developer.apple.com
 
-- **[Fix menu issue in Chrome](developer.apple.com/Fix menu issue in Chrome/)** — Fixes a floating menu issue on Apple’s developer pages. This is (hopefully) a temporary fix.
+- **[Fix menu issue in Chrome](developer.apple.com/Fix menu issue in Chrome/)** — Fix a floating menu issue on Apple’s developer pages. This is (hopefully) a temporary fix.
 
 ## dribbble.com
 
@@ -80,6 +83,14 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 - **[Hide Eyebrow](flickr.com/Hide Eyebrow/)** by [Maykel Loomans](http://twitter.com/miekd) and Nikhil Nigade — Remove that hovering Yahoo bar from Flickr. Note: not 100% awesome (yet). [View source page](https://gist.github.com/dezinezync/6173068).
 
+## github.com
+
+- **[Hide diff table](github.com/Hide diff table/)** — Hide the contents of each diff on commit pages.
+
+## hackingwithswift.com
+
+- **[fuck yo ads](hackingwithswift.com/fuck yo ads/)** — siiiiiiiiiiiigh.
+
 ## instagram.com
 
 - **[Lighten Up](instagram.com/Lighten Up/)** — Strip back all the borders and text shadows and stuff. Currently Ultra-Busted.
@@ -100,8 +111,8 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## pinterest.com
 
-- **[Hide related pins](pinterest.com/Hide related pins/)** — *No description provided.*
-- **[Hide user news module](pinterest.com/Hide user news module/)** — *No description provided.*
+- **[Hide related pins](pinterest.com/Hide related pins/)** — Nice.
+- **[Hide user news module](pinterest.com/Hide user news module/)** — Kinda busted but whatever.
 
 ## slack.com
 
@@ -109,16 +120,17 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 
 ## tumblr.com
 
-- **[De-emphasize sponsored content](tumblr.com/De-emphasize sponsored content/)** — Fades out sponsored content.
+- **[De-emphasize sponsored content](tumblr.com/De-emphasize sponsored content/)** — Fade out sponsored content.
 - **[Fix Pagination Confusion](tumblr.com/Fix Pagination Confusion/)** — I’m dumb. Here’s the proof.
 
 ## twitter.com
 
-- **[De-emphasize Retweets and Ads](twitter.com/De-emphasize Retweets and Ads/)** — Fades out retweets and ads.
-- **[Hide Follower Stats](twitter.com/Hide Follower Stats/)** — *No description provided.*
+- **[De-emphasize Retweets and Ads](twitter.com/De-emphasize Retweets and Ads/)** — Fade out retweets and ads.
+- **[Hide Dismissable Content](twitter.com/Hide Dismissable Content/)** — See ya later, “while you were away”.
+- **[Hide Follower Stats](twitter.com/Hide Follower Stats/)** — Ah, that’s better.
 - **[Round Avatars](twitter.com/Round Avatars/)** — Round user avatars on Twitter.com.
 - **[Single-column Timeline](twitter.com/Single-column Timeline/)** — Experimental single-column timeline. Sidebar content is completely hidden.
 
 ## wikipedia.org
 
-- **[Simplify](wikipedia.org/Simplify/)** — *No description provided.*
+- **[Simplify](wikipedia.org/Simplify/)** — uuuuhhhhhhh.

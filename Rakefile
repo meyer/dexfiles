@@ -112,3 +112,6 @@ task :compile_scss do
     system "#{SASS_BIN} #{src.shellescape} #{dest.shellescape}"
   end
 end
+
+desc 'Do everything i guess'
+task :default => [:compile_scss, :update_readme]

@@ -4,7 +4,7 @@
   "description": "Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.8.0"
   },
   "devDependencies": {},
   "scripts": {
