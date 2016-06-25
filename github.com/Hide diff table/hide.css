@@ -1,0 +1,22 @@
+.js-details-container {
+  opacity: 0.9;
+}
+
+.js-details-container:hover {
+  opacity: 1.0;
+}
+
+
+.js-details-container .diff-table,
+.js-details-container .image {
+  display: none;
+}
+
+.js-details-container:active .diff-table,
+.js-details-container:active .image {
+  display: block;
+}
+
+.js-details-container:hover .file-info::after {
+  content: " (Click to show file)";
+}
