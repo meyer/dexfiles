@@ -6,24 +6,18 @@
   @each $weight, $suffix in $suffix-map{
     $italic-suffix: false;
 
-    @if length($suffix) == 1 {
-      $italic-suffix: "#{$suffix}Italic";
-    } @else {
-      $italic-suffix: nth($suffix, 2);
-    }
-
     @font-face {
       font-family: $old-font;
       font-weight: $weight;
       font-style: normal;
-      src: local("#{$new-font-ps-prefix}-#{nth($suffix, 1)}");
+      src: local("#{$new-font-ps-prefix}#{nth($suffix, 1)}");
     }
 
     @font-face {
       font-family: $old-font;
       font-weight: $weight;
       font-style: italic;
-      src: local("#{$new-font-ps-prefix}-#{$italic-suffix}");
+      src: local("#{$new-font-ps-prefix}#{nth($suffix, 2)}");
     }
   }
 
@@ -32,15 +26,15 @@
 
 @mixin replace-font-with-San-Francisco-Text($old-font) {
   $sf-map: (
-    100: "Light",
-    200: "Light",
-    300: "Light",
-    400: ("Regular", "Italic"), // "Italic", not "RegularItalic"
-    500: "Medium",
-    600: "Semibold",
-    700: "Bold",
-    800: "Heavy",
-    900: "Heavy"
+    100: ("-Light", "-LightItalic"),
+    200: ("-Light", "-LightItalic"),
+    300: ("-Light", "-LightItalic"),
+    400: ("", "-Italic"),
+    500: ("-Medium", "-MediumItalic"),
+    600: ("-Semibold", "-SemiboldItalic"),
+    700: ("-Bold", "-BoldItalic"),
+    800: ("-Heavy", "-HeavyItalic"),
+    900: ("-Heavy", "-HeavyItalic"),
   );
 
   @include font-replace($old-font, ".SFNSText", $sf-map);
@@ -48,15 +42,15 @@
 
 @mixin replace-font-with-San-Francisco-Display($old-font) {
   $sf-map: (
-    100: "Light",
-    200: "Light",
-    300: "Light",
-    400: ("Regular", "Italic"), // "Italic", not "RegularItalic"
-    500: "Medium",
-    600: "Semibold",
-    700: "Bold",
-    800: "Heavy",
-    900: "Heavy"
+    100: ("-Light", "-LightItalic"),
+    200: ("-Light", "-LightItalic"),
+    300: ("-Light", "-LightItalic"),
+    400: ("", "-Italic"),
+    500: ("-Medium", "-MediumItalic"),
+    600: ("-Semibold", "-SemiboldItalic"),
+    700: ("-Bold", "-BoldItalic"),
+    800: ("-Heavy", "-HeavyItalic"),
+    900: ("-Heavy", "-HeavyItalic")
   );
 
   @include font-replace($old-font, ".SFNSDisplay", $sf-map);

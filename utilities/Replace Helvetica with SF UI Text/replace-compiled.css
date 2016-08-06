@@ -41,7 +41,7 @@
   font-family: "Helvetica";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Helvetica";
@@ -152,7 +152,7 @@
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -263,7 +263,7 @@
   font-family: "arial";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "arial";

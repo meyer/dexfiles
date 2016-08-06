@@ -41,7 +41,7 @@
   font-family: "Slack-Lato";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Slack-Lato";
@@ -152,7 +152,7 @@
   font-family: "Lato";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Lato";

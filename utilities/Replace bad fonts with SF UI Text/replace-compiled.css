@@ -41,7 +41,7 @@
   font-family: "Lobster";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Lobster";
@@ -152,7 +152,7 @@
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Montserrat";
@@ -263,7 +263,7 @@
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Open Sans";
@@ -374,7 +374,7 @@
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Roboto";
@@ -485,7 +485,7 @@
   font-family: "Proxima Nova";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Proxima Nova";
@@ -596,7 +596,7 @@
   font-family: "proxima-nova";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "proxima-nova";
@@ -707,7 +707,7 @@
   font-family: "proxima-nova-1";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "proxima-nova-1";
@@ -818,7 +818,7 @@
   font-family: "proxima-nova-2";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "proxima-nova-2";
@@ -929,7 +929,7 @@
   font-family: "proxima_nova";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "proxima_nova";
@@ -1040,7 +1040,7 @@
   font-family: "Proxima Nova Dribbble";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Proxima Nova Dribbble";
@@ -1151,7 +1151,7 @@
   font-family: "Circular";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Circular";
@@ -1262,7 +1262,7 @@
   font-family: "Circular Air Black";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "Circular Air Black";
@@ -1373,7 +1373,7 @@
   font-family: "bryant-web";
   font-weight: 400;
   font-style: normal;
-  src: local(".SFNSText-Regular"); }
+  src: local(".SFNSText"); }
 
 @font-face {
   font-family: "bryant-web";
