@@ -29,6 +29,7 @@ Sites I’ve tweaked with **[Dex](https://github.com/meyer/dex)**.
 - **[Allow Pinning Anywhere](global/Allow Pinning Anywhere/)** — Remove the `no-pin` meta tag whenever it rears its stupid ugly head.
 - **[Cloud to Butt](global/Cloud to Butt/)** by [Steven Frank](http://twitter.com/stevenf) — Replace occurrences of “cloud/the cloud” with “butt/my butt” because I am twelve years old. [View source page](https://github.com/panicsteve/cloud-to-butt).
 - **[Disable ESC hijacking on Squarespace sites](global/Disable ESC hijacking on Squarespace sites/)** — Sets `useEscapeKeyToLogin` to `false` on Squarespace sites.
+- **[Disable opensearch](global/Disable opensearch/)** — Remove opensearch tag from the page so Chrome won’t auto-add search engines.
 - **[Minus Google Plus](global/Minus Google Plus/)** — I *really really* don’t like Google Plus.
 
 ## utilities
